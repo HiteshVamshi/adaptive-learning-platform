@@ -1,12 +1,12 @@
 {
   "recommendation_count": 10,
   "chapters": {
-    "Introduction to Trigonometry": 3,
-    "Arithmetic Progressions": 2,
-    "Polynomials": 2,
-    "Statistics": 1,
+    "Arithmetic Progressions": 3,
+    "Introduction to Trigonometry": 2,
+    "Statistics": 2,
     "Quadratic Equations": 1,
-    "Areas Related to Circles": 1
+    "Circles": 1,
+    "Polynomials": 1
   },
   "difficulties": {
     "medium": 6,
@@ -19,6 +19,13 @@
       "difficulty": "easy",
       "recommendation_score": 0.7927,
       "rationale": "Standard Trigonometric Values is currently needs_support (mastery=0.17); recommended difficulty is easy and this question is easy; lightly repeated practice; local concept practice."
+    },
+    {
+      "question_id": "q_tb_ap_sum_002",
+      "concept_name": "Sum of First n Terms of an Arithmetic Progression",
+      "difficulty": "medium",
+      "recommendation_score": 0.7552,
+      "rationale": "Sum of First n Terms of an Arithmetic Progression is currently needs_support (mastery=0.19); recommended difficulty is easy and this question is medium; new question; high graph priority."
     },
     {
       "question_id": "q_tb_grouped_data_mean_001",
@@ -40,13 +47,6 @@
       "difficulty": "medium",
       "recommendation_score": 0.7132,
       "rationale": "Sum of First n Terms of an Arithmetic Progression is currently needs_support (mastery=0.19); recommended difficulty is easy and this question is medium; lightly repeated practice; high graph priority."
-    },
-    {
-      "question_id": "q_trig_001",
-      "concept_name": "Trigonometric Ratios",
-      "difficulty": "easy",
-      "recommendation_score": 0.7065,
-      "rationale": "Trigonometric Ratios is currently needs_support (mastery=0.37); recommended difficulty is easy and this question is easy; lightly repeated practice; high graph priority."
     }
   ]
 }

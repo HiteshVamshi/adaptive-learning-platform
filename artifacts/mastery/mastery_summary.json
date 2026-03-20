@@ -3,33 +3,33 @@
   "display_name": "Aarav",
   "attempt_count": 60,
   "mastered_concepts": 0,
-  "developing_concepts": 10,
-  "needs_support_concepts": 29,
+  "developing_concepts": 7,
+  "needs_support_concepts": 32,
   "lowest_mastery_concepts": [
     {
-      "concept_id": "c_grouped_data_mean",
-      "concept_name": "Mean of Grouped Data",
-      "graph_adjusted_mastery": 0.141244
+      "concept_id": "c_ap_applications",
+      "concept_name": "Applications of Arithmetic Progressions",
+      "graph_adjusted_mastery": 0.129056
     },
     {
       "concept_id": "c_sectors_segments",
       "concept_name": "Sectors and Segments of a Circle",
+      "graph_adjusted_mastery": 0.132756
+    },
+    {
+      "concept_id": "c_combination_solids_volume",
+      "concept_name": "Volume of Combined Solids",
+      "graph_adjusted_mastery": 0.14019600000000002
+    },
+    {
+      "concept_id": "c_similarity_area_ratio",
+      "concept_name": "Criteria for Similarity and Area Ratio",
+      "graph_adjusted_mastery": 0.142624
+    },
+    {
+      "concept_id": "c_fundamental_theorem_arithmetic",
+      "concept_name": "Fundamental Theorem of Arithmetic",
       "graph_adjusted_mastery": 0.144716
-    },
-    {
-      "concept_id": "c_ap_applications",
-      "concept_name": "Applications of Arithmetic Progressions",
-      "graph_adjusted_mastery": 0.14718000000000003
-    },
-    {
-      "concept_id": "c_irrational_numbers",
-      "concept_name": "Irrational Numbers",
-      "graph_adjusted_mastery": 0.15077600000000002
-    },
-    {
-      "concept_id": "c_grouped_data_median_mode",
-      "concept_name": "Median and Mode of Grouped Data",
-      "graph_adjusted_mastery": 0.153256
     }
   ]
 }
