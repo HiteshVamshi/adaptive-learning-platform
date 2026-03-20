@@ -1,0 +1,1141 @@
+user_id,simulation_step,timestamp,concept_id,concept_name,chapter_name,attempts_count,direct_mastery,graph_adjusted_mastery,mastery_band
+student_cbse_01,1,2026-03-01T09:00:00,c_area_of_triangle,Area of a Triangle in Coordinates,Coordinate Geometry,1,0.1451,0.133492,needs_support
+,1,2026-03-01T09:00:00,c_distance_formula,Distance Formula,Coordinate Geometry,0,0.0,0.005808,needs_support
+,1,2026-03-01T09:00:00,c_section_formula,Section Formula,Coordinate Geometry,0,0.0,0.005808,needs_support
+,1,2026-03-01T09:00:00,c_euclid_division_lemma,Euclid Division Lemma,Real Numbers,0,0.0,0.0,needs_support
+,1,2026-03-01T09:00:00,c_hcf_lcm,HCF and LCM,Real Numbers,0,0.0,0.0,needs_support
+,1,2026-03-01T09:00:00,c_irrational_numbers,Irrational Numbers,Real Numbers,0,0.0,0.0,needs_support
+,1,2026-03-01T09:00:00,c_decimal_expansions,Decimal Expansions of Rational Numbers,Real Numbers,0,0.0,0.0,needs_support
+,1,2026-03-01T09:00:00,c_polynomial_degree_terms,Polynomial Degree and Terms,Polynomials,0,0.0,0.0,needs_support
+,1,2026-03-01T09:00:00,c_zeroes_of_polynomial,Zeroes of a Polynomial,Polynomials,0,0.0,0.0,needs_support
+,1,2026-03-01T09:00:00,c_zero_coeff_relationship,Relationship Between Zeroes and Coefficients,Polynomials,0,0.0,0.0,needs_support
+,1,2026-03-01T09:00:00,c_factorisation_remainder,Factorisation and Remainder Theorem,Polynomials,0,0.0,0.0,needs_support
+,1,2026-03-01T09:00:00,c_similar_triangles,Similar Triangles,Triangles,0,0.0,0.0,needs_support
+,1,2026-03-01T09:00:00,c_basic_proportionality_theorem,Basic Proportionality Theorem,Triangles,0,0.0,0.0,needs_support
+,1,2026-03-01T09:00:00,c_pythagoras_theorem,Pythagoras Theorem,Triangles,0,0.0,0.0,needs_support
+,1,2026-03-01T09:00:00,c_similarity_area_ratio,Criteria for Similarity and Area Ratio,Triangles,0,0.0,0.0,needs_support
+,1,2026-03-01T09:00:00,c_trigonometric_ratios,Trigonometric Ratios,Introduction to Trigonometry,0,0.0,0.0,needs_support
+,1,2026-03-01T09:00:00,c_standard_trig_values,Standard Trigonometric Values,Introduction to Trigonometry,0,0.0,0.0,needs_support
+,1,2026-03-01T09:00:00,c_trig_identities,Trigonometric Identities,Introduction to Trigonometry,0,0.0,0.0,needs_support
+,1,2026-03-01T09:00:00,c_heights_distances,Heights and Distances,Introduction to Trigonometry,0,0.0,0.0,needs_support
+student_cbse_01,2,2026-03-01T09:34:00,c_basic_proportionality_theorem,Basic Proportionality Theorem,Triangles,1,0.5382,0.49514400000000003,needs_support
+student_cbse_01,2,2026-03-01T09:34:00,c_area_of_triangle,Area of a Triangle in Coordinates,Coordinate Geometry,1,0.1451,0.133492,needs_support
+,2,2026-03-01T09:34:00,c_similarity_area_ratio,Criteria for Similarity and Area Ratio,Triangles,0,0.0,0.010768,needs_support
+,2,2026-03-01T09:34:00,c_distance_formula,Distance Formula,Coordinate Geometry,0,0.0,0.005808,needs_support
+,2,2026-03-01T09:34:00,c_section_formula,Section Formula,Coordinate Geometry,0,0.0,0.005808,needs_support
+,2,2026-03-01T09:34:00,c_euclid_division_lemma,Euclid Division Lemma,Real Numbers,0,0.0,0.0,needs_support
+,2,2026-03-01T09:34:00,c_hcf_lcm,HCF and LCM,Real Numbers,0,0.0,0.0,needs_support
+,2,2026-03-01T09:34:00,c_irrational_numbers,Irrational Numbers,Real Numbers,0,0.0,0.0,needs_support
+,2,2026-03-01T09:34:00,c_decimal_expansions,Decimal Expansions of Rational Numbers,Real Numbers,0,0.0,0.0,needs_support
+,2,2026-03-01T09:34:00,c_polynomial_degree_terms,Polynomial Degree and Terms,Polynomials,0,0.0,0.0,needs_support
+,2,2026-03-01T09:34:00,c_zeroes_of_polynomial,Zeroes of a Polynomial,Polynomials,0,0.0,0.0,needs_support
+,2,2026-03-01T09:34:00,c_zero_coeff_relationship,Relationship Between Zeroes and Coefficients,Polynomials,0,0.0,0.0,needs_support
+,2,2026-03-01T09:34:00,c_factorisation_remainder,Factorisation and Remainder Theorem,Polynomials,0,0.0,0.0,needs_support
+,2,2026-03-01T09:34:00,c_similar_triangles,Similar Triangles,Triangles,0,0.0,0.0,needs_support
+,2,2026-03-01T09:34:00,c_pythagoras_theorem,Pythagoras Theorem,Triangles,0,0.0,0.0,needs_support
+,2,2026-03-01T09:34:00,c_trigonometric_ratios,Trigonometric Ratios,Introduction to Trigonometry,0,0.0,0.0,needs_support
+,2,2026-03-01T09:34:00,c_standard_trig_values,Standard Trigonometric Values,Introduction to Trigonometry,0,0.0,0.0,needs_support
+,2,2026-03-01T09:34:00,c_trig_identities,Trigonometric Identities,Introduction to Trigonometry,0,0.0,0.0,needs_support
+,2,2026-03-01T09:34:00,c_heights_distances,Heights and Distances,Introduction to Trigonometry,0,0.0,0.0,needs_support
+student_cbse_01,3,2026-03-01T10:07:00,c_basic_proportionality_theorem,Basic Proportionality Theorem,Triangles,1,0.5382,0.49514400000000003,needs_support
+student_cbse_01,3,2026-03-01T10:07:00,c_area_of_triangle,Area of a Triangle in Coordinates,Coordinate Geometry,1,0.1451,0.133492,needs_support
+student_cbse_01,3,2026-03-01T10:07:00,c_decimal_expansions,Decimal Expansions of Rational Numbers,Real Numbers,1,0.1358,0.124936,needs_support
+,3,2026-03-01T10:07:00,c_irrational_numbers,Irrational Numbers,Real Numbers,0,0.0,0.010864,needs_support
+,3,2026-03-01T10:07:00,c_similarity_area_ratio,Criteria for Similarity and Area Ratio,Triangles,0,0.0,0.010768,needs_support
+,3,2026-03-01T10:07:00,c_distance_formula,Distance Formula,Coordinate Geometry,0,0.0,0.005808,needs_support
+,3,2026-03-01T10:07:00,c_section_formula,Section Formula,Coordinate Geometry,0,0.0,0.005808,needs_support
+,3,2026-03-01T10:07:00,c_hcf_lcm,HCF and LCM,Real Numbers,0,0.0,0.00272,needs_support
+,3,2026-03-01T10:07:00,c_euclid_division_lemma,Euclid Division Lemma,Real Numbers,0,0.0,0.0,needs_support
+,3,2026-03-01T10:07:00,c_polynomial_degree_terms,Polynomial Degree and Terms,Polynomials,0,0.0,0.0,needs_support
+,3,2026-03-01T10:07:00,c_zeroes_of_polynomial,Zeroes of a Polynomial,Polynomials,0,0.0,0.0,needs_support
+,3,2026-03-01T10:07:00,c_zero_coeff_relationship,Relationship Between Zeroes and Coefficients,Polynomials,0,0.0,0.0,needs_support
+,3,2026-03-01T10:07:00,c_factorisation_remainder,Factorisation and Remainder Theorem,Polynomials,0,0.0,0.0,needs_support
+,3,2026-03-01T10:07:00,c_similar_triangles,Similar Triangles,Triangles,0,0.0,0.0,needs_support
+,3,2026-03-01T10:07:00,c_pythagoras_theorem,Pythagoras Theorem,Triangles,0,0.0,0.0,needs_support
+,3,2026-03-01T10:07:00,c_trigonometric_ratios,Trigonometric Ratios,Introduction to Trigonometry,0,0.0,0.0,needs_support
+,3,2026-03-01T10:07:00,c_standard_trig_values,Standard Trigonometric Values,Introduction to Trigonometry,0,0.0,0.0,needs_support
+,3,2026-03-01T10:07:00,c_trig_identities,Trigonometric Identities,Introduction to Trigonometry,0,0.0,0.0,needs_support
+,3,2026-03-01T10:07:00,c_heights_distances,Heights and Distances,Introduction to Trigonometry,0,0.0,0.0,needs_support
+student_cbse_01,4,2026-03-01T10:40:00,c_distance_formula,Distance Formula,Coordinate Geometry,1,0.5347,0.49773199999999995,needs_support
+student_cbse_01,4,2026-03-01T10:40:00,c_basic_proportionality_theorem,Basic Proportionality Theorem,Triangles,1,0.5382,0.49514400000000003,needs_support
+student_cbse_01,4,2026-03-01T10:40:00,c_area_of_triangle,Area of a Triangle in Coordinates,Coordinate Geometry,1,0.1451,0.154876,needs_support
+student_cbse_01,4,2026-03-01T10:40:00,c_decimal_expansions,Decimal Expansions of Rational Numbers,Real Numbers,1,0.1358,0.124936,needs_support
+,4,2026-03-01T10:40:00,c_section_formula,Section Formula,Coordinate Geometry,0,0.0,0.027191999999999997,needs_support
+,4,2026-03-01T10:40:00,c_irrational_numbers,Irrational Numbers,Real Numbers,0,0.0,0.010864,needs_support
+,4,2026-03-01T10:40:00,c_similarity_area_ratio,Criteria for Similarity and Area Ratio,Triangles,0,0.0,0.010768,needs_support
+,4,2026-03-01T10:40:00,c_hcf_lcm,HCF and LCM,Real Numbers,0,0.0,0.00272,needs_support
+,4,2026-03-01T10:40:00,c_euclid_division_lemma,Euclid Division Lemma,Real Numbers,0,0.0,0.0,needs_support
+,4,2026-03-01T10:40:00,c_polynomial_degree_terms,Polynomial Degree and Terms,Polynomials,0,0.0,0.0,needs_support
+,4,2026-03-01T10:40:00,c_zeroes_of_polynomial,Zeroes of a Polynomial,Polynomials,0,0.0,0.0,needs_support
+,4,2026-03-01T10:40:00,c_zero_coeff_relationship,Relationship Between Zeroes and Coefficients,Polynomials,0,0.0,0.0,needs_support
+,4,2026-03-01T10:40:00,c_factorisation_remainder,Factorisation and Remainder Theorem,Polynomials,0,0.0,0.0,needs_support
+,4,2026-03-01T10:40:00,c_similar_triangles,Similar Triangles,Triangles,0,0.0,0.0,needs_support
+,4,2026-03-01T10:40:00,c_pythagoras_theorem,Pythagoras Theorem,Triangles,0,0.0,0.0,needs_support
+,4,2026-03-01T10:40:00,c_trigonometric_ratios,Trigonometric Ratios,Introduction to Trigonometry,0,0.0,0.0,needs_support
+,4,2026-03-01T10:40:00,c_standard_trig_values,Standard Trigonometric Values,Introduction to Trigonometry,0,0.0,0.0,needs_support
+,4,2026-03-01T10:40:00,c_trig_identities,Trigonometric Identities,Introduction to Trigonometry,0,0.0,0.0,needs_support
+,4,2026-03-01T10:40:00,c_heights_distances,Heights and Distances,Introduction to Trigonometry,0,0.0,0.0,needs_support
+student_cbse_01,5,2026-03-01T11:12:00,c_distance_formula,Distance Formula,Coordinate Geometry,1,0.5347,0.49773199999999995,needs_support
+student_cbse_01,5,2026-03-01T11:12:00,c_basic_proportionality_theorem,Basic Proportionality Theorem,Triangles,1,0.5382,0.49514400000000003,needs_support
+student_cbse_01,5,2026-03-01T11:12:00,c_euclid_division_lemma,Euclid Division Lemma,Real Numbers,1,0.5347,0.491924,needs_support
+student_cbse_01,5,2026-03-01T11:12:00,c_area_of_triangle,Area of a Triangle in Coordinates,Coordinate Geometry,1,0.1451,0.154876,needs_support
+student_cbse_01,5,2026-03-01T11:12:00,c_decimal_expansions,Decimal Expansions of Rational Numbers,Real Numbers,1,0.1358,0.124936,needs_support
+,5,2026-03-01T11:12:00,c_hcf_lcm,HCF and LCM,Real Numbers,0,0.0,0.0348,needs_support
+,5,2026-03-01T11:12:00,c_section_formula,Section Formula,Coordinate Geometry,0,0.0,0.027191999999999997,needs_support
+,5,2026-03-01T11:12:00,c_irrational_numbers,Irrational Numbers,Real Numbers,0,0.0,0.010864,needs_support
+,5,2026-03-01T11:12:00,c_similarity_area_ratio,Criteria for Similarity and Area Ratio,Triangles,0,0.0,0.010768,needs_support
+,5,2026-03-01T11:12:00,c_polynomial_degree_terms,Polynomial Degree and Terms,Polynomials,0,0.0,0.0,needs_support
+,5,2026-03-01T11:12:00,c_zeroes_of_polynomial,Zeroes of a Polynomial,Polynomials,0,0.0,0.0,needs_support
+,5,2026-03-01T11:12:00,c_zero_coeff_relationship,Relationship Between Zeroes and Coefficients,Polynomials,0,0.0,0.0,needs_support
+,5,2026-03-01T11:12:00,c_factorisation_remainder,Factorisation and Remainder Theorem,Polynomials,0,0.0,0.0,needs_support
+,5,2026-03-01T11:12:00,c_similar_triangles,Similar Triangles,Triangles,0,0.0,0.0,needs_support
+,5,2026-03-01T11:12:00,c_pythagoras_theorem,Pythagoras Theorem,Triangles,0,0.0,0.0,needs_support
+,5,2026-03-01T11:12:00,c_trigonometric_ratios,Trigonometric Ratios,Introduction to Trigonometry,0,0.0,0.0,needs_support
+,5,2026-03-01T11:12:00,c_standard_trig_values,Standard Trigonometric Values,Introduction to Trigonometry,0,0.0,0.0,needs_support
+,5,2026-03-01T11:12:00,c_trig_identities,Trigonometric Identities,Introduction to Trigonometry,0,0.0,0.0,needs_support
+,5,2026-03-01T11:12:00,c_heights_distances,Heights and Distances,Introduction to Trigonometry,0,0.0,0.0,needs_support
+student_cbse_01,6,2026-03-01T11:43:00,c_distance_formula,Distance Formula,Coordinate Geometry,1,0.5347,0.49773199999999995,needs_support
+student_cbse_01,6,2026-03-01T11:43:00,c_basic_proportionality_theorem,Basic Proportionality Theorem,Triangles,1,0.5382,0.49514400000000003,needs_support
+student_cbse_01,6,2026-03-01T11:43:00,c_euclid_division_lemma,Euclid Division Lemma,Real Numbers,1,0.5347,0.491924,needs_support
+student_cbse_01,6,2026-03-01T11:43:00,c_area_of_triangle,Area of a Triangle in Coordinates,Coordinate Geometry,1,0.1451,0.154876,needs_support
+student_cbse_01,6,2026-03-01T11:43:00,c_decimal_expansions,Decimal Expansions of Rational Numbers,Real Numbers,1,0.1358,0.124936,needs_support
+student_cbse_01,6,2026-03-01T11:43:00,c_factorisation_remainder,Factorisation and Remainder Theorem,Polynomials,1,0.1261,0.11601199999999999,needs_support
+,6,2026-03-01T11:43:00,c_hcf_lcm,HCF and LCM,Real Numbers,0,0.0,0.0348,needs_support
+,6,2026-03-01T11:43:00,c_section_formula,Section Formula,Coordinate Geometry,0,0.0,0.027191999999999997,needs_support
+,6,2026-03-01T11:43:00,c_irrational_numbers,Irrational Numbers,Real Numbers,0,0.0,0.010864,needs_support
+,6,2026-03-01T11:43:00,c_similarity_area_ratio,Criteria for Similarity and Area Ratio,Triangles,0,0.0,0.010768,needs_support
+,6,2026-03-01T11:43:00,c_polynomial_degree_terms,Polynomial Degree and Terms,Polynomials,0,0.0,0.0,needs_support
+,6,2026-03-01T11:43:00,c_zeroes_of_polynomial,Zeroes of a Polynomial,Polynomials,0,0.0,0.0,needs_support
+,6,2026-03-01T11:43:00,c_zero_coeff_relationship,Relationship Between Zeroes and Coefficients,Polynomials,0,0.0,0.0,needs_support
+,6,2026-03-01T11:43:00,c_similar_triangles,Similar Triangles,Triangles,0,0.0,0.0,needs_support
+,6,2026-03-01T11:43:00,c_pythagoras_theorem,Pythagoras Theorem,Triangles,0,0.0,0.0,needs_support
+,6,2026-03-01T11:43:00,c_trigonometric_ratios,Trigonometric Ratios,Introduction to Trigonometry,0,0.0,0.0,needs_support
+,6,2026-03-01T11:43:00,c_standard_trig_values,Standard Trigonometric Values,Introduction to Trigonometry,0,0.0,0.0,needs_support
+,6,2026-03-01T11:43:00,c_trig_identities,Trigonometric Identities,Introduction to Trigonometry,0,0.0,0.0,needs_support
+,6,2026-03-01T11:43:00,c_heights_distances,Heights and Distances,Introduction to Trigonometry,0,0.0,0.0,needs_support
+student_cbse_01,7,2026-03-01T12:24:00,c_hcf_lcm,HCF and LCM,Real Numbers,1,0.5707,0.559844,developing
+student_cbse_01,7,2026-03-01T12:24:00,c_distance_formula,Distance Formula,Coordinate Geometry,1,0.5347,0.49773199999999995,needs_support
+student_cbse_01,7,2026-03-01T12:24:00,c_basic_proportionality_theorem,Basic Proportionality Theorem,Triangles,1,0.5382,0.49514400000000003,needs_support
+student_cbse_01,7,2026-03-01T12:24:00,c_euclid_division_lemma,Euclid Division Lemma,Real Numbers,1,0.5347,0.491924,needs_support
+student_cbse_01,7,2026-03-01T12:24:00,c_area_of_triangle,Area of a Triangle in Coordinates,Coordinate Geometry,1,0.1451,0.154876,needs_support
+student_cbse_01,7,2026-03-01T12:24:00,c_decimal_expansions,Decimal Expansions of Rational Numbers,Real Numbers,1,0.1358,0.14776,needs_support
+student_cbse_01,7,2026-03-01T12:24:00,c_factorisation_remainder,Factorisation and Remainder Theorem,Polynomials,1,0.1261,0.11601199999999999,needs_support
+,7,2026-03-01T12:24:00,c_section_formula,Section Formula,Coordinate Geometry,0,0.0,0.027191999999999997,needs_support
+,7,2026-03-01T12:24:00,c_irrational_numbers,Irrational Numbers,Real Numbers,0,0.0,0.010864,needs_support
+,7,2026-03-01T12:24:00,c_similarity_area_ratio,Criteria for Similarity and Area Ratio,Triangles,0,0.0,0.010768,needs_support
+,7,2026-03-01T12:24:00,c_polynomial_degree_terms,Polynomial Degree and Terms,Polynomials,0,0.0,0.0,needs_support
+,7,2026-03-01T12:24:00,c_zeroes_of_polynomial,Zeroes of a Polynomial,Polynomials,0,0.0,0.0,needs_support
+,7,2026-03-01T12:24:00,c_zero_coeff_relationship,Relationship Between Zeroes and Coefficients,Polynomials,0,0.0,0.0,needs_support
+,7,2026-03-01T12:24:00,c_similar_triangles,Similar Triangles,Triangles,0,0.0,0.0,needs_support
+,7,2026-03-01T12:24:00,c_pythagoras_theorem,Pythagoras Theorem,Triangles,0,0.0,0.0,needs_support
+,7,2026-03-01T12:24:00,c_trigonometric_ratios,Trigonometric Ratios,Introduction to Trigonometry,0,0.0,0.0,needs_support
+,7,2026-03-01T12:24:00,c_standard_trig_values,Standard Trigonometric Values,Introduction to Trigonometry,0,0.0,0.0,needs_support
+,7,2026-03-01T12:24:00,c_trig_identities,Trigonometric Identities,Introduction to Trigonometry,0,0.0,0.0,needs_support
+,7,2026-03-01T12:24:00,c_heights_distances,Heights and Distances,Introduction to Trigonometry,0,0.0,0.0,needs_support
+student_cbse_01,8,2026-03-01T12:50:00,c_hcf_lcm,HCF and LCM,Real Numbers,1,0.5707,0.559844,developing
+student_cbse_01,8,2026-03-01T12:50:00,c_distance_formula,Distance Formula,Coordinate Geometry,1,0.5347,0.49773199999999995,needs_support
+student_cbse_01,8,2026-03-01T12:50:00,c_basic_proportionality_theorem,Basic Proportionality Theorem,Triangles,1,0.5382,0.49514400000000003,needs_support
+student_cbse_01,8,2026-03-01T12:50:00,c_euclid_division_lemma,Euclid Division Lemma,Real Numbers,1,0.5347,0.491924,needs_support
+student_cbse_01,8,2026-03-01T12:50:00,c_heights_distances,Heights and Distances,Introduction to Trigonometry,1,0.524,0.48208000000000006,needs_support
+student_cbse_01,8,2026-03-01T12:50:00,c_area_of_triangle,Area of a Triangle in Coordinates,Coordinate Geometry,1,0.1451,0.154876,needs_support
+student_cbse_01,8,2026-03-01T12:50:00,c_decimal_expansions,Decimal Expansions of Rational Numbers,Real Numbers,1,0.1358,0.14776,needs_support
+student_cbse_01,8,2026-03-01T12:50:00,c_factorisation_remainder,Factorisation and Remainder Theorem,Polynomials,1,0.1261,0.11601199999999999,needs_support
+,8,2026-03-01T12:50:00,c_section_formula,Section Formula,Coordinate Geometry,0,0.0,0.027191999999999997,needs_support
+,8,2026-03-01T12:50:00,c_irrational_numbers,Irrational Numbers,Real Numbers,0,0.0,0.010864,needs_support
+,8,2026-03-01T12:50:00,c_similarity_area_ratio,Criteria for Similarity and Area Ratio,Triangles,0,0.0,0.010768,needs_support
+,8,2026-03-01T12:50:00,c_standard_trig_values,Standard Trigonometric Values,Introduction to Trigonometry,0,0.0,0.010480000000000001,needs_support
+,8,2026-03-01T12:50:00,c_polynomial_degree_terms,Polynomial Degree and Terms,Polynomials,0,0.0,0.0,needs_support
+,8,2026-03-01T12:50:00,c_zeroes_of_polynomial,Zeroes of a Polynomial,Polynomials,0,0.0,0.0,needs_support
+,8,2026-03-01T12:50:00,c_zero_coeff_relationship,Relationship Between Zeroes and Coefficients,Polynomials,0,0.0,0.0,needs_support
+,8,2026-03-01T12:50:00,c_similar_triangles,Similar Triangles,Triangles,0,0.0,0.0,needs_support
+,8,2026-03-01T12:50:00,c_pythagoras_theorem,Pythagoras Theorem,Triangles,0,0.0,0.0,needs_support
+,8,2026-03-01T12:50:00,c_trigonometric_ratios,Trigonometric Ratios,Introduction to Trigonometry,0,0.0,0.0,needs_support
+,8,2026-03-01T12:50:00,c_trig_identities,Trigonometric Identities,Introduction to Trigonometry,0,0.0,0.0,needs_support
+student_cbse_01,9,2026-03-01T13:13:00,c_hcf_lcm,HCF and LCM,Real Numbers,1,0.5707,0.559844,developing
+student_cbse_01,9,2026-03-01T13:13:00,c_distance_formula,Distance Formula,Coordinate Geometry,1,0.5347,0.49773199999999995,needs_support
+student_cbse_01,9,2026-03-01T13:13:00,c_basic_proportionality_theorem,Basic Proportionality Theorem,Triangles,1,0.5382,0.49514400000000003,needs_support
+student_cbse_01,9,2026-03-01T13:13:00,c_euclid_division_lemma,Euclid Division Lemma,Real Numbers,1,0.5347,0.491924,needs_support
+student_cbse_01,9,2026-03-01T13:13:00,c_heights_distances,Heights and Distances,Introduction to Trigonometry,1,0.524,0.48208000000000006,needs_support
+student_cbse_01,9,2026-03-01T13:13:00,c_area_of_triangle,Area of a Triangle in Coordinates,Coordinate Geometry,1,0.1451,0.154876,needs_support
+student_cbse_01,9,2026-03-01T13:13:00,c_decimal_expansions,Decimal Expansions of Rational Numbers,Real Numbers,1,0.1358,0.1524,needs_support
+student_cbse_01,9,2026-03-01T13:13:00,c_irrational_numbers,Irrational Numbers,Real Numbers,1,0.116,0.11758400000000001,needs_support
+student_cbse_01,9,2026-03-01T13:13:00,c_factorisation_remainder,Factorisation and Remainder Theorem,Polynomials,1,0.1261,0.11601199999999999,needs_support
+,9,2026-03-01T13:13:00,c_section_formula,Section Formula,Coordinate Geometry,0,0.0,0.027191999999999997,needs_support
+,9,2026-03-01T13:13:00,c_similarity_area_ratio,Criteria for Similarity and Area Ratio,Triangles,0,0.0,0.010768,needs_support
+,9,2026-03-01T13:13:00,c_standard_trig_values,Standard Trigonometric Values,Introduction to Trigonometry,0,0.0,0.010480000000000001,needs_support
+,9,2026-03-01T13:13:00,c_polynomial_degree_terms,Polynomial Degree and Terms,Polynomials,0,0.0,0.0,needs_support
+,9,2026-03-01T13:13:00,c_zeroes_of_polynomial,Zeroes of a Polynomial,Polynomials,0,0.0,0.0,needs_support
+,9,2026-03-01T13:13:00,c_zero_coeff_relationship,Relationship Between Zeroes and Coefficients,Polynomials,0,0.0,0.0,needs_support
+,9,2026-03-01T13:13:00,c_similar_triangles,Similar Triangles,Triangles,0,0.0,0.0,needs_support
+,9,2026-03-01T13:13:00,c_pythagoras_theorem,Pythagoras Theorem,Triangles,0,0.0,0.0,needs_support
+,9,2026-03-01T13:13:00,c_trigonometric_ratios,Trigonometric Ratios,Introduction to Trigonometry,0,0.0,0.0,needs_support
+,9,2026-03-01T13:13:00,c_trig_identities,Trigonometric Identities,Introduction to Trigonometry,0,0.0,0.0,needs_support
+student_cbse_01,10,2026-03-01T13:42:00,c_hcf_lcm,HCF and LCM,Real Numbers,1,0.5707,0.559844,developing
+student_cbse_01,10,2026-03-01T13:42:00,c_distance_formula,Distance Formula,Coordinate Geometry,1,0.5347,0.49773199999999995,needs_support
+student_cbse_01,10,2026-03-01T13:42:00,c_basic_proportionality_theorem,Basic Proportionality Theorem,Triangles,1,0.5382,0.49514400000000003,needs_support
+student_cbse_01,10,2026-03-01T13:42:00,c_euclid_division_lemma,Euclid Division Lemma,Real Numbers,1,0.5347,0.491924,needs_support
+student_cbse_01,10,2026-03-01T13:42:00,c_polynomial_degree_terms,Polynomial Degree and Terms,Polynomials,1,0.5347,0.491924,needs_support
+student_cbse_01,10,2026-03-01T13:42:00,c_heights_distances,Heights and Distances,Introduction to Trigonometry,1,0.524,0.48208000000000006,needs_support
+student_cbse_01,10,2026-03-01T13:42:00,c_area_of_triangle,Area of a Triangle in Coordinates,Coordinate Geometry,1,0.1451,0.154876,needs_support
+student_cbse_01,10,2026-03-01T13:42:00,c_decimal_expansions,Decimal Expansions of Rational Numbers,Real Numbers,1,0.1358,0.1524,needs_support
+student_cbse_01,10,2026-03-01T13:42:00,c_irrational_numbers,Irrational Numbers,Real Numbers,1,0.116,0.11758400000000001,needs_support
+student_cbse_01,10,2026-03-01T13:42:00,c_factorisation_remainder,Factorisation and Remainder Theorem,Polynomials,1,0.1261,0.11601199999999999,needs_support
+,10,2026-03-01T13:42:00,c_zeroes_of_polynomial,Zeroes of a Polynomial,Polynomials,0,0.0,0.042775999999999995,needs_support
+,10,2026-03-01T13:42:00,c_section_formula,Section Formula,Coordinate Geometry,0,0.0,0.027191999999999997,needs_support
+,10,2026-03-01T13:42:00,c_similarity_area_ratio,Criteria for Similarity and Area Ratio,Triangles,0,0.0,0.010768,needs_support
+,10,2026-03-01T13:42:00,c_standard_trig_values,Standard Trigonometric Values,Introduction to Trigonometry,0,0.0,0.010480000000000001,needs_support
+,10,2026-03-01T13:42:00,c_zero_coeff_relationship,Relationship Between Zeroes and Coefficients,Polynomials,0,0.0,0.0,needs_support
+,10,2026-03-01T13:42:00,c_similar_triangles,Similar Triangles,Triangles,0,0.0,0.0,needs_support
+,10,2026-03-01T13:42:00,c_pythagoras_theorem,Pythagoras Theorem,Triangles,0,0.0,0.0,needs_support
+,10,2026-03-01T13:42:00,c_trigonometric_ratios,Trigonometric Ratios,Introduction to Trigonometry,0,0.0,0.0,needs_support
+,10,2026-03-01T13:42:00,c_trig_identities,Trigonometric Identities,Introduction to Trigonometry,0,0.0,0.0,needs_support
+student_cbse_01,11,2026-03-01T14:20:00,c_hcf_lcm,HCF and LCM,Real Numbers,1,0.5707,0.559844,developing
+student_cbse_01,11,2026-03-01T14:20:00,c_distance_formula,Distance Formula,Coordinate Geometry,1,0.5347,0.49773199999999995,needs_support
+student_cbse_01,11,2026-03-01T14:20:00,c_basic_proportionality_theorem,Basic Proportionality Theorem,Triangles,1,0.5382,0.49514400000000003,needs_support
+student_cbse_01,11,2026-03-01T14:20:00,c_euclid_division_lemma,Euclid Division Lemma,Real Numbers,1,0.5347,0.491924,needs_support
+student_cbse_01,11,2026-03-01T14:20:00,c_polynomial_degree_terms,Polynomial Degree and Terms,Polynomials,1,0.5347,0.491924,needs_support
+student_cbse_01,11,2026-03-01T14:20:00,c_heights_distances,Heights and Distances,Introduction to Trigonometry,1,0.524,0.48208000000000006,needs_support
+student_cbse_01,11,2026-03-01T14:20:00,c_area_of_triangle,Area of a Triangle in Coordinates,Coordinate Geometry,1,0.1451,0.154876,needs_support
+student_cbse_01,11,2026-03-01T14:20:00,c_decimal_expansions,Decimal Expansions of Rational Numbers,Real Numbers,1,0.1358,0.1524,needs_support
+student_cbse_01,11,2026-03-01T14:20:00,c_pythagoras_theorem,Pythagoras Theorem,Triangles,1,0.1573,0.144716,needs_support
+student_cbse_01,11,2026-03-01T14:20:00,c_irrational_numbers,Irrational Numbers,Real Numbers,1,0.116,0.11758400000000001,needs_support
+student_cbse_01,11,2026-03-01T14:20:00,c_factorisation_remainder,Factorisation and Remainder Theorem,Polynomials,1,0.1261,0.11601199999999999,needs_support
+,11,2026-03-01T14:20:00,c_zeroes_of_polynomial,Zeroes of a Polynomial,Polynomials,0,0.0,0.042775999999999995,needs_support
+,11,2026-03-01T14:20:00,c_section_formula,Section Formula,Coordinate Geometry,0,0.0,0.027191999999999997,needs_support
+,11,2026-03-01T14:20:00,c_trigonometric_ratios,Trigonometric Ratios,Introduction to Trigonometry,0,0.0,0.012584,needs_support
+,11,2026-03-01T14:20:00,c_similarity_area_ratio,Criteria for Similarity and Area Ratio,Triangles,0,0.0,0.010768,needs_support
+,11,2026-03-01T14:20:00,c_standard_trig_values,Standard Trigonometric Values,Introduction to Trigonometry,0,0.0,0.010480000000000001,needs_support
+,11,2026-03-01T14:20:00,c_zero_coeff_relationship,Relationship Between Zeroes and Coefficients,Polynomials,0,0.0,0.0,needs_support
+,11,2026-03-01T14:20:00,c_similar_triangles,Similar Triangles,Triangles,0,0.0,0.0,needs_support
+,11,2026-03-01T14:20:00,c_trig_identities,Trigonometric Identities,Introduction to Trigonometry,0,0.0,0.0,needs_support
+student_cbse_01,12,2026-03-01T14:44:00,c_hcf_lcm,HCF and LCM,Real Numbers,1,0.5707,0.559844,developing
+student_cbse_01,12,2026-03-01T14:44:00,c_distance_formula,Distance Formula,Coordinate Geometry,1,0.5347,0.50402,developing
+student_cbse_01,12,2026-03-01T14:44:00,c_basic_proportionality_theorem,Basic Proportionality Theorem,Triangles,1,0.5382,0.49514400000000003,needs_support
+student_cbse_01,12,2026-03-01T14:44:00,c_euclid_division_lemma,Euclid Division Lemma,Real Numbers,1,0.5347,0.491924,needs_support
+student_cbse_01,12,2026-03-01T14:44:00,c_polynomial_degree_terms,Polynomial Degree and Terms,Polynomials,1,0.5347,0.491924,needs_support
+student_cbse_01,12,2026-03-01T14:44:00,c_heights_distances,Heights and Distances,Introduction to Trigonometry,1,0.524,0.48208000000000006,needs_support
+student_cbse_01,12,2026-03-01T14:44:00,c_section_formula,Section Formula,Coordinate Geometry,1,0.1573,0.171908,needs_support
+student_cbse_01,12,2026-03-01T14:44:00,c_area_of_triangle,Area of a Triangle in Coordinates,Coordinate Geometry,1,0.1451,0.161172,needs_support
+student_cbse_01,12,2026-03-01T14:44:00,c_decimal_expansions,Decimal Expansions of Rational Numbers,Real Numbers,1,0.1358,0.1524,needs_support
+student_cbse_01,12,2026-03-01T14:44:00,c_pythagoras_theorem,Pythagoras Theorem,Triangles,1,0.1573,0.144716,needs_support
+student_cbse_01,12,2026-03-01T14:44:00,c_irrational_numbers,Irrational Numbers,Real Numbers,1,0.116,0.11758400000000001,needs_support
+student_cbse_01,12,2026-03-01T14:44:00,c_factorisation_remainder,Factorisation and Remainder Theorem,Polynomials,1,0.1261,0.11601199999999999,needs_support
+,12,2026-03-01T14:44:00,c_zeroes_of_polynomial,Zeroes of a Polynomial,Polynomials,0,0.0,0.042775999999999995,needs_support
+,12,2026-03-01T14:44:00,c_trigonometric_ratios,Trigonometric Ratios,Introduction to Trigonometry,0,0.0,0.012584,needs_support
+,12,2026-03-01T14:44:00,c_similarity_area_ratio,Criteria for Similarity and Area Ratio,Triangles,0,0.0,0.010768,needs_support
+,12,2026-03-01T14:44:00,c_standard_trig_values,Standard Trigonometric Values,Introduction to Trigonometry,0,0.0,0.010480000000000001,needs_support
+,12,2026-03-01T14:44:00,c_zero_coeff_relationship,Relationship Between Zeroes and Coefficients,Polynomials,0,0.0,0.0,needs_support
+,12,2026-03-01T14:44:00,c_similar_triangles,Similar Triangles,Triangles,0,0.0,0.0,needs_support
+,12,2026-03-01T14:44:00,c_trig_identities,Trigonometric Identities,Introduction to Trigonometry,0,0.0,0.0,needs_support
+student_cbse_01,13,2026-03-01T15:05:00,c_hcf_lcm,HCF and LCM,Real Numbers,1,0.5707,0.559844,developing
+student_cbse_01,13,2026-03-01T15:05:00,c_basic_proportionality_theorem,Basic Proportionality Theorem,Triangles,1,0.5382,0.504584,developing
+student_cbse_01,13,2026-03-01T15:05:00,c_distance_formula,Distance Formula,Coordinate Geometry,1,0.5347,0.50402,developing
+student_cbse_01,13,2026-03-01T15:05:00,c_euclid_division_lemma,Euclid Division Lemma,Real Numbers,1,0.5347,0.491924,needs_support
+student_cbse_01,13,2026-03-01T15:05:00,c_polynomial_degree_terms,Polynomial Degree and Terms,Polynomials,1,0.5347,0.491924,needs_support
+student_cbse_01,13,2026-03-01T15:05:00,c_heights_distances,Heights and Distances,Introduction to Trigonometry,1,0.524,0.48208000000000006,needs_support
+student_cbse_01,13,2026-03-01T15:05:00,c_section_formula,Section Formula,Coordinate Geometry,1,0.1573,0.171908,needs_support
+student_cbse_01,13,2026-03-01T15:05:00,c_area_of_triangle,Area of a Triangle in Coordinates,Coordinate Geometry,1,0.1451,0.161172,needs_support
+student_cbse_01,13,2026-03-01T15:05:00,c_decimal_expansions,Decimal Expansions of Rational Numbers,Real Numbers,1,0.1358,0.1524,needs_support
+student_cbse_01,13,2026-03-01T15:05:00,c_similar_triangles,Similar Triangles,Triangles,1,0.1573,0.144716,needs_support
+student_cbse_01,13,2026-03-01T15:05:00,c_pythagoras_theorem,Pythagoras Theorem,Triangles,1,0.1573,0.144716,needs_support
+student_cbse_01,13,2026-03-01T15:05:00,c_irrational_numbers,Irrational Numbers,Real Numbers,1,0.116,0.11758400000000001,needs_support
+student_cbse_01,13,2026-03-01T15:05:00,c_factorisation_remainder,Factorisation and Remainder Theorem,Polynomials,1,0.1261,0.11601199999999999,needs_support
+,13,2026-03-01T15:05:00,c_zeroes_of_polynomial,Zeroes of a Polynomial,Polynomials,0,0.0,0.042775999999999995,needs_support
+,13,2026-03-01T15:05:00,c_similarity_area_ratio,Criteria for Similarity and Area Ratio,Triangles,0,0.0,0.0202,needs_support
+,13,2026-03-01T15:05:00,c_trigonometric_ratios,Trigonometric Ratios,Introduction to Trigonometry,0,0.0,0.012584,needs_support
+,13,2026-03-01T15:05:00,c_standard_trig_values,Standard Trigonometric Values,Introduction to Trigonometry,0,0.0,0.010480000000000001,needs_support
+,13,2026-03-01T15:05:00,c_zero_coeff_relationship,Relationship Between Zeroes and Coefficients,Polynomials,0,0.0,0.0,needs_support
+,13,2026-03-01T15:05:00,c_trig_identities,Trigonometric Identities,Introduction to Trigonometry,0,0.0,0.0,needs_support
+student_cbse_01,14,2026-03-01T15:37:00,c_hcf_lcm,HCF and LCM,Real Numbers,1,0.5707,0.559844,developing
+student_cbse_01,14,2026-03-01T15:37:00,c_basic_proportionality_theorem,Basic Proportionality Theorem,Triangles,1,0.5382,0.506856,developing
+student_cbse_01,14,2026-03-01T15:37:00,c_distance_formula,Distance Formula,Coordinate Geometry,1,0.5347,0.50402,developing
+student_cbse_01,14,2026-03-01T15:37:00,c_euclid_division_lemma,Euclid Division Lemma,Real Numbers,1,0.5347,0.491924,needs_support
+student_cbse_01,14,2026-03-01T15:37:00,c_polynomial_degree_terms,Polynomial Degree and Terms,Polynomials,1,0.5347,0.491924,needs_support
+student_cbse_01,14,2026-03-01T15:37:00,c_heights_distances,Heights and Distances,Introduction to Trigonometry,1,0.524,0.48208000000000006,needs_support
+student_cbse_01,14,2026-03-01T15:37:00,c_section_formula,Section Formula,Coordinate Geometry,1,0.1573,0.171908,needs_support
+student_cbse_01,14,2026-03-01T15:37:00,c_area_of_triangle,Area of a Triangle in Coordinates,Coordinate Geometry,1,0.1451,0.161172,needs_support
+student_cbse_01,14,2026-03-01T15:37:00,c_decimal_expansions,Decimal Expansions of Rational Numbers,Real Numbers,1,0.1358,0.1524,needs_support
+student_cbse_01,14,2026-03-01T15:37:00,c_similar_triangles,Similar Triangles,Triangles,1,0.1573,0.144716,needs_support
+student_cbse_01,14,2026-03-01T15:37:00,c_pythagoras_theorem,Pythagoras Theorem,Triangles,1,0.1573,0.144716,needs_support
+student_cbse_01,14,2026-03-01T15:37:00,c_similarity_area_ratio,Criteria for Similarity and Area Ratio,Triangles,1,0.1138,0.124896,needs_support
+student_cbse_01,14,2026-03-01T15:37:00,c_irrational_numbers,Irrational Numbers,Real Numbers,1,0.116,0.11758400000000001,needs_support
+student_cbse_01,14,2026-03-01T15:37:00,c_factorisation_remainder,Factorisation and Remainder Theorem,Polynomials,1,0.1261,0.11601199999999999,needs_support
+,14,2026-03-01T15:37:00,c_zeroes_of_polynomial,Zeroes of a Polynomial,Polynomials,0,0.0,0.042775999999999995,needs_support
+,14,2026-03-01T15:37:00,c_trigonometric_ratios,Trigonometric Ratios,Introduction to Trigonometry,0,0.0,0.012584,needs_support
+,14,2026-03-01T15:37:00,c_standard_trig_values,Standard Trigonometric Values,Introduction to Trigonometry,0,0.0,0.010480000000000001,needs_support
+,14,2026-03-01T15:37:00,c_zero_coeff_relationship,Relationship Between Zeroes and Coefficients,Polynomials,0,0.0,0.0,needs_support
+,14,2026-03-01T15:37:00,c_trig_identities,Trigonometric Identities,Introduction to Trigonometry,0,0.0,0.0,needs_support
+student_cbse_01,15,2026-03-01T16:08:00,c_hcf_lcm,HCF and LCM,Real Numbers,1,0.5707,0.559844,developing
+student_cbse_01,15,2026-03-01T16:08:00,c_basic_proportionality_theorem,Basic Proportionality Theorem,Triangles,1,0.5382,0.506856,developing
+student_cbse_01,15,2026-03-01T16:08:00,c_distance_formula,Distance Formula,Coordinate Geometry,1,0.5347,0.50402,developing
+student_cbse_01,15,2026-03-01T16:08:00,c_standard_trig_values,Standard Trigonometric Values,Introduction to Trigonometry,1,0.5347,0.502404,developing
+student_cbse_01,15,2026-03-01T16:08:00,c_heights_distances,Heights and Distances,Introduction to Trigonometry,1,0.524,0.49277600000000005,needs_support
+student_cbse_01,15,2026-03-01T16:08:00,c_euclid_division_lemma,Euclid Division Lemma,Real Numbers,1,0.5347,0.491924,needs_support
+student_cbse_01,15,2026-03-01T16:08:00,c_polynomial_degree_terms,Polynomial Degree and Terms,Polynomials,1,0.5347,0.491924,needs_support
+student_cbse_01,15,2026-03-01T16:08:00,c_section_formula,Section Formula,Coordinate Geometry,1,0.1573,0.171908,needs_support
+student_cbse_01,15,2026-03-01T16:08:00,c_area_of_triangle,Area of a Triangle in Coordinates,Coordinate Geometry,1,0.1451,0.161172,needs_support
+student_cbse_01,15,2026-03-01T16:08:00,c_decimal_expansions,Decimal Expansions of Rational Numbers,Real Numbers,1,0.1358,0.1524,needs_support
+student_cbse_01,15,2026-03-01T16:08:00,c_similar_triangles,Similar Triangles,Triangles,1,0.1573,0.144716,needs_support
+student_cbse_01,15,2026-03-01T16:08:00,c_pythagoras_theorem,Pythagoras Theorem,Triangles,1,0.1573,0.144716,needs_support
+student_cbse_01,15,2026-03-01T16:08:00,c_similarity_area_ratio,Criteria for Similarity and Area Ratio,Triangles,1,0.1138,0.124896,needs_support
+student_cbse_01,15,2026-03-01T16:08:00,c_irrational_numbers,Irrational Numbers,Real Numbers,1,0.116,0.11758400000000001,needs_support
+student_cbse_01,15,2026-03-01T16:08:00,c_factorisation_remainder,Factorisation and Remainder Theorem,Polynomials,1,0.1261,0.11601199999999999,needs_support
+,15,2026-03-01T16:08:00,c_zeroes_of_polynomial,Zeroes of a Polynomial,Polynomials,0,0.0,0.042775999999999995,needs_support
+,15,2026-03-01T16:08:00,c_trigonometric_ratios,Trigonometric Ratios,Introduction to Trigonometry,0,0.0,0.012584,needs_support
+,15,2026-03-01T16:08:00,c_zero_coeff_relationship,Relationship Between Zeroes and Coefficients,Polynomials,0,0.0,0.0,needs_support
+,15,2026-03-01T16:08:00,c_trig_identities,Trigonometric Identities,Introduction to Trigonometry,0,0.0,0.0,needs_support
+student_cbse_01,16,2026-03-01T16:44:00,c_hcf_lcm,HCF and LCM,Real Numbers,1,0.5707,0.559844,developing
+student_cbse_01,16,2026-03-01T16:44:00,c_basic_proportionality_theorem,Basic Proportionality Theorem,Triangles,1,0.5382,0.506856,developing
+student_cbse_01,16,2026-03-01T16:44:00,c_distance_formula,Distance Formula,Coordinate Geometry,1,0.5347,0.50402,developing
+student_cbse_01,16,2026-03-01T16:44:00,c_standard_trig_values,Standard Trigonometric Values,Introduction to Trigonometry,1,0.5347,0.502404,developing
+student_cbse_01,16,2026-03-01T16:44:00,c_heights_distances,Heights and Distances,Introduction to Trigonometry,1,0.524,0.49277600000000005,needs_support
+student_cbse_01,16,2026-03-01T16:44:00,c_euclid_division_lemma,Euclid Division Lemma,Real Numbers,1,0.5347,0.491924,needs_support
+student_cbse_01,16,2026-03-01T16:44:00,c_polynomial_degree_terms,Polynomial Degree and Terms,Polynomials,1,0.5347,0.491924,needs_support
+student_cbse_01,16,2026-03-01T16:44:00,c_section_formula,Section Formula,Coordinate Geometry,1,0.1573,0.171908,needs_support
+student_cbse_01,16,2026-03-01T16:44:00,c_area_of_triangle,Area of a Triangle in Coordinates,Coordinate Geometry,1,0.1451,0.161172,needs_support
+student_cbse_01,16,2026-03-01T16:44:00,c_decimal_expansions,Decimal Expansions of Rational Numbers,Real Numbers,1,0.1358,0.1524,needs_support
+student_cbse_01,16,2026-03-01T16:44:00,c_similar_triangles,Similar Triangles,Triangles,1,0.1573,0.144716,needs_support
+student_cbse_01,16,2026-03-01T16:44:00,c_pythagoras_theorem,Pythagoras Theorem,Triangles,1,0.1573,0.144716,needs_support
+student_cbse_01,16,2026-03-01T16:44:00,c_trig_identities,Trigonometric Identities,Introduction to Trigonometry,1,0.1434,0.13192800000000002,needs_support
+student_cbse_01,16,2026-03-01T16:44:00,c_similarity_area_ratio,Criteria for Similarity and Area Ratio,Triangles,1,0.1138,0.124896,needs_support
+student_cbse_01,16,2026-03-01T16:44:00,c_irrational_numbers,Irrational Numbers,Real Numbers,1,0.116,0.11758400000000001,needs_support
+student_cbse_01,16,2026-03-01T16:44:00,c_factorisation_remainder,Factorisation and Remainder Theorem,Polynomials,1,0.1261,0.11601199999999999,needs_support
+,16,2026-03-01T16:44:00,c_zeroes_of_polynomial,Zeroes of a Polynomial,Polynomials,0,0.0,0.042775999999999995,needs_support
+,16,2026-03-01T16:44:00,c_trigonometric_ratios,Trigonometric Ratios,Introduction to Trigonometry,0,0.0,0.012584,needs_support
+,16,2026-03-01T16:44:00,c_zero_coeff_relationship,Relationship Between Zeroes and Coefficients,Polynomials,0,0.0,0.0,needs_support
+student_cbse_01,17,2026-03-01T17:15:00,c_hcf_lcm,HCF and LCM,Real Numbers,1,0.5707,0.559844,developing
+student_cbse_01,17,2026-03-01T17:15:00,c_standard_trig_values,Standard Trigonometric Values,Introduction to Trigonometry,1,0.5347,0.534484,developing
+student_cbse_01,17,2026-03-01T17:15:00,c_heights_distances,Heights and Distances,Introduction to Trigonometry,1,0.524,0.5248560000000001,developing
+student_cbse_01,17,2026-03-01T17:15:00,c_basic_proportionality_theorem,Basic Proportionality Theorem,Triangles,1,0.5382,0.506856,developing
+student_cbse_01,17,2026-03-01T17:15:00,c_trigonometric_ratios,Trigonometric Ratios,Introduction to Trigonometry,1,0.5347,0.504508,developing
+student_cbse_01,17,2026-03-01T17:15:00,c_distance_formula,Distance Formula,Coordinate Geometry,1,0.5347,0.50402,developing
+student_cbse_01,17,2026-03-01T17:15:00,c_euclid_division_lemma,Euclid Division Lemma,Real Numbers,1,0.5347,0.491924,needs_support
+student_cbse_01,17,2026-03-01T17:15:00,c_polynomial_degree_terms,Polynomial Degree and Terms,Polynomials,1,0.5347,0.491924,needs_support
+student_cbse_01,17,2026-03-01T17:15:00,c_trig_identities,Trigonometric Identities,Introduction to Trigonometry,1,0.1434,0.17470400000000003,needs_support
+student_cbse_01,17,2026-03-01T17:15:00,c_section_formula,Section Formula,Coordinate Geometry,1,0.1573,0.171908,needs_support
+student_cbse_01,17,2026-03-01T17:15:00,c_area_of_triangle,Area of a Triangle in Coordinates,Coordinate Geometry,1,0.1451,0.161172,needs_support
+student_cbse_01,17,2026-03-01T17:15:00,c_decimal_expansions,Decimal Expansions of Rational Numbers,Real Numbers,1,0.1358,0.1524,needs_support
+student_cbse_01,17,2026-03-01T17:15:00,c_similar_triangles,Similar Triangles,Triangles,1,0.1573,0.144716,needs_support
+student_cbse_01,17,2026-03-01T17:15:00,c_pythagoras_theorem,Pythagoras Theorem,Triangles,1,0.1573,0.144716,needs_support
+student_cbse_01,17,2026-03-01T17:15:00,c_similarity_area_ratio,Criteria for Similarity and Area Ratio,Triangles,1,0.1138,0.124896,needs_support
+student_cbse_01,17,2026-03-01T17:15:00,c_irrational_numbers,Irrational Numbers,Real Numbers,1,0.116,0.11758400000000001,needs_support
+student_cbse_01,17,2026-03-01T17:15:00,c_factorisation_remainder,Factorisation and Remainder Theorem,Polynomials,1,0.1261,0.11601199999999999,needs_support
+,17,2026-03-01T17:15:00,c_zeroes_of_polynomial,Zeroes of a Polynomial,Polynomials,0,0.0,0.042775999999999995,needs_support
+,17,2026-03-01T17:15:00,c_zero_coeff_relationship,Relationship Between Zeroes and Coefficients,Polynomials,0,0.0,0.0,needs_support
+student_cbse_01,18,2026-03-01T17:42:00,c_hcf_lcm,HCF and LCM,Real Numbers,1,0.5707,0.559844,developing
+student_cbse_01,18,2026-03-01T17:42:00,c_standard_trig_values,Standard Trigonometric Values,Introduction to Trigonometry,1,0.5347,0.534484,developing
+student_cbse_01,18,2026-03-01T17:42:00,c_heights_distances,Heights and Distances,Introduction to Trigonometry,1,0.524,0.5248560000000001,developing
+student_cbse_01,18,2026-03-01T17:42:00,c_basic_proportionality_theorem,Basic Proportionality Theorem,Triangles,1,0.5382,0.506856,developing
+student_cbse_01,18,2026-03-01T17:42:00,c_trigonometric_ratios,Trigonometric Ratios,Introduction to Trigonometry,1,0.5347,0.504508,developing
+student_cbse_01,18,2026-03-01T17:42:00,c_distance_formula,Distance Formula,Coordinate Geometry,1,0.5347,0.50402,developing
+student_cbse_01,18,2026-03-01T17:42:00,c_euclid_division_lemma,Euclid Division Lemma,Real Numbers,1,0.5347,0.491924,needs_support
+student_cbse_01,18,2026-03-01T17:42:00,c_polynomial_degree_terms,Polynomial Degree and Terms,Polynomials,1,0.5347,0.491924,needs_support
+student_cbse_01,18,2026-03-01T17:42:00,c_trig_identities,Trigonometric Identities,Introduction to Trigonometry,1,0.1434,0.17470400000000003,needs_support
+student_cbse_01,18,2026-03-01T17:42:00,c_section_formula,Section Formula,Coordinate Geometry,1,0.1573,0.171908,needs_support
+student_cbse_01,18,2026-03-01T17:42:00,c_area_of_triangle,Area of a Triangle in Coordinates,Coordinate Geometry,1,0.1451,0.161172,needs_support
+student_cbse_01,18,2026-03-01T17:42:00,c_decimal_expansions,Decimal Expansions of Rational Numbers,Real Numbers,1,0.1358,0.1524,needs_support
+student_cbse_01,18,2026-03-01T17:42:00,c_similar_triangles,Similar Triangles,Triangles,1,0.1573,0.144716,needs_support
+student_cbse_01,18,2026-03-01T17:42:00,c_pythagoras_theorem,Pythagoras Theorem,Triangles,1,0.1573,0.144716,needs_support
+student_cbse_01,18,2026-03-01T17:42:00,c_similarity_area_ratio,Criteria for Similarity and Area Ratio,Triangles,1,0.1138,0.124896,needs_support
+student_cbse_01,18,2026-03-01T17:42:00,c_zero_coeff_relationship,Relationship Between Zeroes and Coefficients,Polynomials,1,0.1349,0.124108,needs_support
+student_cbse_01,18,2026-03-01T17:42:00,c_irrational_numbers,Irrational Numbers,Real Numbers,1,0.116,0.11758400000000001,needs_support
+student_cbse_01,18,2026-03-01T17:42:00,c_factorisation_remainder,Factorisation and Remainder Theorem,Polynomials,1,0.1261,0.11601199999999999,needs_support
+,18,2026-03-01T17:42:00,c_zeroes_of_polynomial,Zeroes of a Polynomial,Polynomials,0,0.0,0.042775999999999995,needs_support
+student_cbse_01,19,2026-03-01T18:23:00,c_hcf_lcm,HCF and LCM,Real Numbers,1,0.5707,0.559844,developing
+student_cbse_01,19,2026-03-01T18:23:00,c_zeroes_of_polynomial,Zeroes of a Polynomial,Polynomials,1,0.5347,0.5347,developing
+student_cbse_01,19,2026-03-01T18:23:00,c_standard_trig_values,Standard Trigonometric Values,Introduction to Trigonometry,1,0.5347,0.534484,developing
+student_cbse_01,19,2026-03-01T18:23:00,c_heights_distances,Heights and Distances,Introduction to Trigonometry,1,0.524,0.5248560000000001,developing
+student_cbse_01,19,2026-03-01T18:23:00,c_basic_proportionality_theorem,Basic Proportionality Theorem,Triangles,1,0.5382,0.506856,developing
+student_cbse_01,19,2026-03-01T18:23:00,c_trigonometric_ratios,Trigonometric Ratios,Introduction to Trigonometry,1,0.5347,0.504508,developing
+student_cbse_01,19,2026-03-01T18:23:00,c_distance_formula,Distance Formula,Coordinate Geometry,1,0.5347,0.50402,developing
+student_cbse_01,19,2026-03-01T18:23:00,c_euclid_division_lemma,Euclid Division Lemma,Real Numbers,1,0.5347,0.491924,needs_support
+student_cbse_01,19,2026-03-01T18:23:00,c_polynomial_degree_terms,Polynomial Degree and Terms,Polynomials,1,0.5347,0.491924,needs_support
+student_cbse_01,19,2026-03-01T18:23:00,c_trig_identities,Trigonometric Identities,Introduction to Trigonometry,1,0.1434,0.17470400000000003,needs_support
+student_cbse_01,19,2026-03-01T18:23:00,c_section_formula,Section Formula,Coordinate Geometry,1,0.1573,0.171908,needs_support
+student_cbse_01,19,2026-03-01T18:23:00,c_zero_coeff_relationship,Relationship Between Zeroes and Coefficients,Polynomials,1,0.1349,0.16688399999999998,needs_support
+student_cbse_01,19,2026-03-01T18:23:00,c_area_of_triangle,Area of a Triangle in Coordinates,Coordinate Geometry,1,0.1451,0.161172,needs_support
+student_cbse_01,19,2026-03-01T18:23:00,c_factorisation_remainder,Factorisation and Remainder Theorem,Polynomials,1,0.1261,0.15878799999999998,needs_support
+student_cbse_01,19,2026-03-01T18:23:00,c_decimal_expansions,Decimal Expansions of Rational Numbers,Real Numbers,1,0.1358,0.1524,needs_support
+student_cbse_01,19,2026-03-01T18:23:00,c_similar_triangles,Similar Triangles,Triangles,1,0.1573,0.144716,needs_support
+student_cbse_01,19,2026-03-01T18:23:00,c_pythagoras_theorem,Pythagoras Theorem,Triangles,1,0.1573,0.144716,needs_support
+student_cbse_01,19,2026-03-01T18:23:00,c_similarity_area_ratio,Criteria for Similarity and Area Ratio,Triangles,1,0.1138,0.124896,needs_support
+student_cbse_01,19,2026-03-01T18:23:00,c_irrational_numbers,Irrational Numbers,Real Numbers,1,0.116,0.11758400000000001,needs_support
+student_cbse_01,20,2026-03-01T18:47:00,c_hcf_lcm,HCF and LCM,Real Numbers,1,0.5707,0.559844,developing
+student_cbse_01,20,2026-03-01T18:47:00,c_zeroes_of_polynomial,Zeroes of a Polynomial,Polynomials,1,0.5347,0.5347,developing
+student_cbse_01,20,2026-03-01T18:47:00,c_standard_trig_values,Standard Trigonometric Values,Introduction to Trigonometry,1,0.5347,0.534484,developing
+student_cbse_01,20,2026-03-01T18:47:00,c_heights_distances,Heights and Distances,Introduction to Trigonometry,1,0.524,0.5248560000000001,developing
+student_cbse_01,20,2026-03-01T18:47:00,c_trigonometric_ratios,Trigonometric Ratios,Introduction to Trigonometry,1,0.5347,0.504508,developing
+student_cbse_01,20,2026-03-01T18:47:00,c_distance_formula,Distance Formula,Coordinate Geometry,1,0.5347,0.50402,developing
+student_cbse_01,20,2026-03-01T18:47:00,c_euclid_division_lemma,Euclid Division Lemma,Real Numbers,1,0.5347,0.491924,needs_support
+student_cbse_01,20,2026-03-01T18:47:00,c_polynomial_degree_terms,Polynomial Degree and Terms,Polynomials,1,0.5347,0.491924,needs_support
+student_cbse_01,20,2026-03-01T18:47:00,c_basic_proportionality_theorem,Basic Proportionality Theorem,Triangles,2,0.3686,0.350824,needs_support
+student_cbse_01,20,2026-03-01T18:47:00,c_trig_identities,Trigonometric Identities,Introduction to Trigonometry,1,0.1434,0.17470400000000003,needs_support
+student_cbse_01,20,2026-03-01T18:47:00,c_section_formula,Section Formula,Coordinate Geometry,1,0.1573,0.171908,needs_support
+student_cbse_01,20,2026-03-01T18:47:00,c_zero_coeff_relationship,Relationship Between Zeroes and Coefficients,Polynomials,1,0.1349,0.16688399999999998,needs_support
+student_cbse_01,20,2026-03-01T18:47:00,c_area_of_triangle,Area of a Triangle in Coordinates,Coordinate Geometry,1,0.1451,0.161172,needs_support
+student_cbse_01,20,2026-03-01T18:47:00,c_factorisation_remainder,Factorisation and Remainder Theorem,Polynomials,1,0.1261,0.15878799999999998,needs_support
+student_cbse_01,20,2026-03-01T18:47:00,c_decimal_expansions,Decimal Expansions of Rational Numbers,Real Numbers,1,0.1358,0.1524,needs_support
+student_cbse_01,20,2026-03-01T18:47:00,c_similar_triangles,Similar Triangles,Triangles,1,0.1573,0.144716,needs_support
+student_cbse_01,20,2026-03-01T18:47:00,c_pythagoras_theorem,Pythagoras Theorem,Triangles,1,0.1573,0.144716,needs_support
+student_cbse_01,20,2026-03-01T18:47:00,c_similarity_area_ratio,Criteria for Similarity and Area Ratio,Triangles,1,0.1138,0.121504,needs_support
+student_cbse_01,20,2026-03-01T18:47:00,c_irrational_numbers,Irrational Numbers,Real Numbers,1,0.116,0.11758400000000001,needs_support
+student_cbse_01,21,2026-03-01T19:21:00,c_hcf_lcm,HCF and LCM,Real Numbers,1,0.5707,0.559844,developing
+student_cbse_01,21,2026-03-01T19:21:00,c_zeroes_of_polynomial,Zeroes of a Polynomial,Polynomials,1,0.5347,0.5347,developing
+student_cbse_01,21,2026-03-01T19:21:00,c_standard_trig_values,Standard Trigonometric Values,Introduction to Trigonometry,1,0.5347,0.534484,developing
+student_cbse_01,21,2026-03-01T19:21:00,c_heights_distances,Heights and Distances,Introduction to Trigonometry,1,0.524,0.5248560000000001,developing
+student_cbse_01,21,2026-03-01T19:21:00,c_trigonometric_ratios,Trigonometric Ratios,Introduction to Trigonometry,1,0.5347,0.504508,developing
+student_cbse_01,21,2026-03-01T19:21:00,c_distance_formula,Distance Formula,Coordinate Geometry,1,0.5347,0.50402,developing
+student_cbse_01,21,2026-03-01T19:21:00,c_euclid_division_lemma,Euclid Division Lemma,Real Numbers,1,0.5347,0.491924,needs_support
+student_cbse_01,21,2026-03-01T19:21:00,c_polynomial_degree_terms,Polynomial Degree and Terms,Polynomials,1,0.5347,0.491924,needs_support
+student_cbse_01,21,2026-03-01T19:21:00,c_trig_identities,Trigonometric Identities,Introduction to Trigonometry,2,0.3788,0.391272,needs_support
+student_cbse_01,21,2026-03-01T19:21:00,c_basic_proportionality_theorem,Basic Proportionality Theorem,Triangles,2,0.3686,0.350824,needs_support
+student_cbse_01,21,2026-03-01T19:21:00,c_section_formula,Section Formula,Coordinate Geometry,1,0.1573,0.171908,needs_support
+student_cbse_01,21,2026-03-01T19:21:00,c_zero_coeff_relationship,Relationship Between Zeroes and Coefficients,Polynomials,1,0.1349,0.16688399999999998,needs_support
+student_cbse_01,21,2026-03-01T19:21:00,c_area_of_triangle,Area of a Triangle in Coordinates,Coordinate Geometry,1,0.1451,0.161172,needs_support
+student_cbse_01,21,2026-03-01T19:21:00,c_factorisation_remainder,Factorisation and Remainder Theorem,Polynomials,1,0.1261,0.15878799999999998,needs_support
+student_cbse_01,21,2026-03-01T19:21:00,c_decimal_expansions,Decimal Expansions of Rational Numbers,Real Numbers,1,0.1358,0.1524,needs_support
+student_cbse_01,21,2026-03-01T19:21:00,c_similar_triangles,Similar Triangles,Triangles,1,0.1573,0.144716,needs_support
+student_cbse_01,21,2026-03-01T19:21:00,c_pythagoras_theorem,Pythagoras Theorem,Triangles,1,0.1573,0.144716,needs_support
+student_cbse_01,21,2026-03-01T19:21:00,c_similarity_area_ratio,Criteria for Similarity and Area Ratio,Triangles,1,0.1138,0.121504,needs_support
+student_cbse_01,21,2026-03-01T19:21:00,c_irrational_numbers,Irrational Numbers,Real Numbers,1,0.116,0.11758400000000001,needs_support
+student_cbse_01,22,2026-03-01T19:46:00,c_hcf_lcm,HCF and LCM,Real Numbers,1,0.5707,0.559844,developing
+student_cbse_01,22,2026-03-01T19:46:00,c_zeroes_of_polynomial,Zeroes of a Polynomial,Polynomials,1,0.5347,0.5347,developing
+student_cbse_01,22,2026-03-01T19:46:00,c_standard_trig_values,Standard Trigonometric Values,Introduction to Trigonometry,1,0.5347,0.534484,developing
+student_cbse_01,22,2026-03-01T19:46:00,c_heights_distances,Heights and Distances,Introduction to Trigonometry,1,0.524,0.5248560000000001,developing
+student_cbse_01,22,2026-03-01T19:46:00,c_trigonometric_ratios,Trigonometric Ratios,Introduction to Trigonometry,1,0.5347,0.504508,developing
+student_cbse_01,22,2026-03-01T19:46:00,c_distance_formula,Distance Formula,Coordinate Geometry,1,0.5347,0.50402,developing
+student_cbse_01,22,2026-03-01T19:46:00,c_euclid_division_lemma,Euclid Division Lemma,Real Numbers,1,0.5347,0.491924,needs_support
+student_cbse_01,22,2026-03-01T19:46:00,c_polynomial_degree_terms,Polynomial Degree and Terms,Polynomials,1,0.5347,0.491924,needs_support
+student_cbse_01,22,2026-03-01T19:46:00,c_trig_identities,Trigonometric Identities,Introduction to Trigonometry,2,0.3788,0.391272,needs_support
+student_cbse_01,22,2026-03-01T19:46:00,c_basic_proportionality_theorem,Basic Proportionality Theorem,Triangles,2,0.3686,0.35167200000000004,needs_support
+student_cbse_01,22,2026-03-01T19:46:00,c_section_formula,Section Formula,Coordinate Geometry,1,0.1573,0.171908,needs_support
+student_cbse_01,22,2026-03-01T19:46:00,c_zero_coeff_relationship,Relationship Between Zeroes and Coefficients,Polynomials,1,0.1349,0.16688399999999998,needs_support
+student_cbse_01,22,2026-03-01T19:46:00,c_area_of_triangle,Area of a Triangle in Coordinates,Coordinate Geometry,1,0.1451,0.161172,needs_support
+student_cbse_01,22,2026-03-01T19:46:00,c_similarity_area_ratio,Criteria for Similarity and Area Ratio,Triangles,2,0.156,0.160328,needs_support
+student_cbse_01,22,2026-03-01T19:46:00,c_factorisation_remainder,Factorisation and Remainder Theorem,Polynomials,1,0.1261,0.15878799999999998,needs_support
+student_cbse_01,22,2026-03-01T19:46:00,c_decimal_expansions,Decimal Expansions of Rational Numbers,Real Numbers,1,0.1358,0.1524,needs_support
+student_cbse_01,22,2026-03-01T19:46:00,c_similar_triangles,Similar Triangles,Triangles,1,0.1573,0.144716,needs_support
+student_cbse_01,22,2026-03-01T19:46:00,c_pythagoras_theorem,Pythagoras Theorem,Triangles,1,0.1573,0.144716,needs_support
+student_cbse_01,22,2026-03-01T19:46:00,c_irrational_numbers,Irrational Numbers,Real Numbers,1,0.116,0.11758400000000001,needs_support
+student_cbse_01,23,2026-03-01T20:04:00,c_hcf_lcm,HCF and LCM,Real Numbers,1,0.5707,0.559844,developing
+student_cbse_01,23,2026-03-01T20:04:00,c_zeroes_of_polynomial,Zeroes of a Polynomial,Polynomials,1,0.5347,0.5347,developing
+student_cbse_01,23,2026-03-01T20:04:00,c_standard_trig_values,Standard Trigonometric Values,Introduction to Trigonometry,1,0.5347,0.534484,developing
+student_cbse_01,23,2026-03-01T20:04:00,c_heights_distances,Heights and Distances,Introduction to Trigonometry,1,0.524,0.5248560000000001,developing
+student_cbse_01,23,2026-03-01T20:04:00,c_trigonometric_ratios,Trigonometric Ratios,Introduction to Trigonometry,1,0.5347,0.504508,developing
+student_cbse_01,23,2026-03-01T20:04:00,c_distance_formula,Distance Formula,Coordinate Geometry,1,0.5347,0.50402,developing
+student_cbse_01,23,2026-03-01T20:04:00,c_euclid_division_lemma,Euclid Division Lemma,Real Numbers,1,0.5347,0.491924,needs_support
+student_cbse_01,23,2026-03-01T20:04:00,c_polynomial_degree_terms,Polynomial Degree and Terms,Polynomials,1,0.5347,0.491924,needs_support
+student_cbse_01,23,2026-03-01T20:04:00,c_trig_identities,Trigonometric Identities,Introduction to Trigonometry,2,0.3788,0.391272,needs_support
+student_cbse_01,23,2026-03-01T20:04:00,c_basic_proportionality_theorem,Basic Proportionality Theorem,Triangles,2,0.3686,0.35167200000000004,needs_support
+student_cbse_01,23,2026-03-01T20:04:00,c_factorisation_remainder,Factorisation and Remainder Theorem,Polynomials,2,0.1754,0.204144,needs_support
+student_cbse_01,23,2026-03-01T20:04:00,c_section_formula,Section Formula,Coordinate Geometry,1,0.1573,0.171908,needs_support
+student_cbse_01,23,2026-03-01T20:04:00,c_zero_coeff_relationship,Relationship Between Zeroes and Coefficients,Polynomials,1,0.1349,0.16688399999999998,needs_support
+student_cbse_01,23,2026-03-01T20:04:00,c_area_of_triangle,Area of a Triangle in Coordinates,Coordinate Geometry,1,0.1451,0.161172,needs_support
+student_cbse_01,23,2026-03-01T20:04:00,c_similarity_area_ratio,Criteria for Similarity and Area Ratio,Triangles,2,0.156,0.160328,needs_support
+student_cbse_01,23,2026-03-01T20:04:00,c_decimal_expansions,Decimal Expansions of Rational Numbers,Real Numbers,1,0.1358,0.1524,needs_support
+student_cbse_01,23,2026-03-01T20:04:00,c_similar_triangles,Similar Triangles,Triangles,1,0.1573,0.144716,needs_support
+student_cbse_01,23,2026-03-01T20:04:00,c_pythagoras_theorem,Pythagoras Theorem,Triangles,1,0.1573,0.144716,needs_support
+student_cbse_01,23,2026-03-01T20:04:00,c_irrational_numbers,Irrational Numbers,Real Numbers,1,0.116,0.11758400000000001,needs_support
+student_cbse_01,24,2026-03-01T20:42:00,c_hcf_lcm,HCF and LCM,Real Numbers,1,0.5707,0.559844,developing
+student_cbse_01,24,2026-03-01T20:42:00,c_zeroes_of_polynomial,Zeroes of a Polynomial,Polynomials,1,0.5347,0.5347,developing
+student_cbse_01,24,2026-03-01T20:42:00,c_standard_trig_values,Standard Trigonometric Values,Introduction to Trigonometry,1,0.5347,0.534484,developing
+student_cbse_01,24,2026-03-01T20:42:00,c_heights_distances,Heights and Distances,Introduction to Trigonometry,1,0.524,0.5248560000000001,developing
+student_cbse_01,24,2026-03-01T20:42:00,c_trigonometric_ratios,Trigonometric Ratios,Introduction to Trigonometry,1,0.5347,0.504508,developing
+student_cbse_01,24,2026-03-01T20:42:00,c_distance_formula,Distance Formula,Coordinate Geometry,1,0.5347,0.50402,developing
+student_cbse_01,24,2026-03-01T20:42:00,c_euclid_division_lemma,Euclid Division Lemma,Real Numbers,1,0.5347,0.491924,needs_support
+student_cbse_01,24,2026-03-01T20:42:00,c_polynomial_degree_terms,Polynomial Degree and Terms,Polynomials,1,0.5347,0.491924,needs_support
+student_cbse_01,24,2026-03-01T20:42:00,c_trig_identities,Trigonometric Identities,Introduction to Trigonometry,2,0.3788,0.391272,needs_support
+student_cbse_01,24,2026-03-01T20:42:00,c_basic_proportionality_theorem,Basic Proportionality Theorem,Triangles,2,0.3686,0.35167200000000004,needs_support
+student_cbse_01,24,2026-03-01T20:42:00,c_zero_coeff_relationship,Relationship Between Zeroes and Coefficients,Polynomials,2,0.1871,0.214908,needs_support
+student_cbse_01,24,2026-03-01T20:42:00,c_factorisation_remainder,Factorisation and Remainder Theorem,Polynomials,2,0.1754,0.204144,needs_support
+student_cbse_01,24,2026-03-01T20:42:00,c_section_formula,Section Formula,Coordinate Geometry,1,0.1573,0.171908,needs_support
+student_cbse_01,24,2026-03-01T20:42:00,c_area_of_triangle,Area of a Triangle in Coordinates,Coordinate Geometry,1,0.1451,0.161172,needs_support
+student_cbse_01,24,2026-03-01T20:42:00,c_similarity_area_ratio,Criteria for Similarity and Area Ratio,Triangles,2,0.156,0.160328,needs_support
+student_cbse_01,24,2026-03-01T20:42:00,c_decimal_expansions,Decimal Expansions of Rational Numbers,Real Numbers,1,0.1358,0.1524,needs_support
+student_cbse_01,24,2026-03-01T20:42:00,c_similar_triangles,Similar Triangles,Triangles,1,0.1573,0.144716,needs_support
+student_cbse_01,24,2026-03-01T20:42:00,c_pythagoras_theorem,Pythagoras Theorem,Triangles,1,0.1573,0.144716,needs_support
+student_cbse_01,24,2026-03-01T20:42:00,c_irrational_numbers,Irrational Numbers,Real Numbers,1,0.116,0.11758400000000001,needs_support
+student_cbse_01,25,2026-03-01T21:15:00,c_standard_trig_values,Standard Trigonometric Values,Introduction to Trigonometry,2,0.6145,0.6079000000000001,developing
+student_cbse_01,25,2026-03-01T21:15:00,c_hcf_lcm,HCF and LCM,Real Numbers,1,0.5707,0.559844,developing
+student_cbse_01,25,2026-03-01T21:15:00,c_zeroes_of_polynomial,Zeroes of a Polynomial,Polynomials,1,0.5347,0.5347,developing
+student_cbse_01,25,2026-03-01T21:15:00,c_heights_distances,Heights and Distances,Introduction to Trigonometry,1,0.524,0.526448,developing
+student_cbse_01,25,2026-03-01T21:15:00,c_trigonometric_ratios,Trigonometric Ratios,Introduction to Trigonometry,1,0.5347,0.504508,developing
+student_cbse_01,25,2026-03-01T21:15:00,c_distance_formula,Distance Formula,Coordinate Geometry,1,0.5347,0.50402,developing
+student_cbse_01,25,2026-03-01T21:15:00,c_euclid_division_lemma,Euclid Division Lemma,Real Numbers,1,0.5347,0.491924,needs_support
+student_cbse_01,25,2026-03-01T21:15:00,c_polynomial_degree_terms,Polynomial Degree and Terms,Polynomials,1,0.5347,0.491924,needs_support
+student_cbse_01,25,2026-03-01T21:15:00,c_trig_identities,Trigonometric Identities,Introduction to Trigonometry,2,0.3788,0.391272,needs_support
+student_cbse_01,25,2026-03-01T21:15:00,c_basic_proportionality_theorem,Basic Proportionality Theorem,Triangles,2,0.3686,0.35167200000000004,needs_support
+student_cbse_01,25,2026-03-01T21:15:00,c_zero_coeff_relationship,Relationship Between Zeroes and Coefficients,Polynomials,2,0.1871,0.214908,needs_support
+student_cbse_01,25,2026-03-01T21:15:00,c_factorisation_remainder,Factorisation and Remainder Theorem,Polynomials,2,0.1754,0.204144,needs_support
+student_cbse_01,25,2026-03-01T21:15:00,c_section_formula,Section Formula,Coordinate Geometry,1,0.1573,0.171908,needs_support
+student_cbse_01,25,2026-03-01T21:15:00,c_area_of_triangle,Area of a Triangle in Coordinates,Coordinate Geometry,1,0.1451,0.161172,needs_support
+student_cbse_01,25,2026-03-01T21:15:00,c_similarity_area_ratio,Criteria for Similarity and Area Ratio,Triangles,2,0.156,0.160328,needs_support
+student_cbse_01,25,2026-03-01T21:15:00,c_decimal_expansions,Decimal Expansions of Rational Numbers,Real Numbers,1,0.1358,0.1524,needs_support
+student_cbse_01,25,2026-03-01T21:15:00,c_similar_triangles,Similar Triangles,Triangles,1,0.1573,0.144716,needs_support
+student_cbse_01,25,2026-03-01T21:15:00,c_pythagoras_theorem,Pythagoras Theorem,Triangles,1,0.1573,0.144716,needs_support
+student_cbse_01,25,2026-03-01T21:15:00,c_irrational_numbers,Irrational Numbers,Real Numbers,1,0.116,0.11758400000000001,needs_support
+student_cbse_01,26,2026-03-01T21:35:00,c_standard_trig_values,Standard Trigonometric Values,Introduction to Trigonometry,2,0.6145,0.6079000000000001,developing
+student_cbse_01,26,2026-03-01T21:35:00,c_hcf_lcm,HCF and LCM,Real Numbers,1,0.5707,0.559844,developing
+student_cbse_01,26,2026-03-01T21:35:00,c_zeroes_of_polynomial,Zeroes of a Polynomial,Polynomials,1,0.5347,0.5347,developing
+student_cbse_01,26,2026-03-01T21:35:00,c_heights_distances,Heights and Distances,Introduction to Trigonometry,1,0.524,0.526448,developing
+student_cbse_01,26,2026-03-01T21:35:00,c_distance_formula,Distance Formula,Coordinate Geometry,1,0.5347,0.505532,developing
+student_cbse_01,26,2026-03-01T21:35:00,c_trigonometric_ratios,Trigonometric Ratios,Introduction to Trigonometry,1,0.5347,0.504508,developing
+student_cbse_01,26,2026-03-01T21:35:00,c_euclid_division_lemma,Euclid Division Lemma,Real Numbers,1,0.5347,0.491924,needs_support
+student_cbse_01,26,2026-03-01T21:35:00,c_polynomial_degree_terms,Polynomial Degree and Terms,Polynomials,1,0.5347,0.491924,needs_support
+student_cbse_01,26,2026-03-01T21:35:00,c_trig_identities,Trigonometric Identities,Introduction to Trigonometry,2,0.3788,0.391272,needs_support
+student_cbse_01,26,2026-03-01T21:35:00,c_basic_proportionality_theorem,Basic Proportionality Theorem,Triangles,2,0.3686,0.35167200000000004,needs_support
+student_cbse_01,26,2026-03-01T21:35:00,c_zero_coeff_relationship,Relationship Between Zeroes and Coefficients,Polynomials,2,0.1871,0.214908,needs_support
+student_cbse_01,26,2026-03-01T21:35:00,c_factorisation_remainder,Factorisation and Remainder Theorem,Polynomials,2,0.1754,0.204144,needs_support
+student_cbse_01,26,2026-03-01T21:35:00,c_area_of_triangle,Area of a Triangle in Coordinates,Coordinate Geometry,2,0.1829,0.195948,needs_support
+student_cbse_01,26,2026-03-01T21:35:00,c_section_formula,Section Formula,Coordinate Geometry,1,0.1573,0.17342000000000002,needs_support
+student_cbse_01,26,2026-03-01T21:35:00,c_similarity_area_ratio,Criteria for Similarity and Area Ratio,Triangles,2,0.156,0.160328,needs_support
+student_cbse_01,26,2026-03-01T21:35:00,c_decimal_expansions,Decimal Expansions of Rational Numbers,Real Numbers,1,0.1358,0.1524,needs_support
+student_cbse_01,26,2026-03-01T21:35:00,c_similar_triangles,Similar Triangles,Triangles,1,0.1573,0.144716,needs_support
+student_cbse_01,26,2026-03-01T21:35:00,c_pythagoras_theorem,Pythagoras Theorem,Triangles,1,0.1573,0.144716,needs_support
+student_cbse_01,26,2026-03-01T21:35:00,c_irrational_numbers,Irrational Numbers,Real Numbers,1,0.116,0.11758400000000001,needs_support
+student_cbse_01,27,2026-03-01T21:57:00,c_heights_distances,Heights and Distances,Introduction to Trigonometry,2,0.6175,0.612468,developing
+student_cbse_01,27,2026-03-01T21:57:00,c_standard_trig_values,Standard Trigonometric Values,Introduction to Trigonometry,2,0.6145,0.6097720000000001,developing
+student_cbse_01,27,2026-03-01T21:57:00,c_hcf_lcm,HCF and LCM,Real Numbers,1,0.5707,0.559844,developing
+student_cbse_01,27,2026-03-01T21:57:00,c_zeroes_of_polynomial,Zeroes of a Polynomial,Polynomials,1,0.5347,0.5347,developing
+student_cbse_01,27,2026-03-01T21:57:00,c_distance_formula,Distance Formula,Coordinate Geometry,1,0.5347,0.505532,developing
+student_cbse_01,27,2026-03-01T21:57:00,c_trigonometric_ratios,Trigonometric Ratios,Introduction to Trigonometry,1,0.5347,0.504508,developing
+student_cbse_01,27,2026-03-01T21:57:00,c_euclid_division_lemma,Euclid Division Lemma,Real Numbers,1,0.5347,0.491924,needs_support
+student_cbse_01,27,2026-03-01T21:57:00,c_polynomial_degree_terms,Polynomial Degree and Terms,Polynomials,1,0.5347,0.491924,needs_support
+student_cbse_01,27,2026-03-01T21:57:00,c_trig_identities,Trigonometric Identities,Introduction to Trigonometry,2,0.3788,0.391272,needs_support
+student_cbse_01,27,2026-03-01T21:57:00,c_basic_proportionality_theorem,Basic Proportionality Theorem,Triangles,2,0.3686,0.35167200000000004,needs_support
+student_cbse_01,27,2026-03-01T21:57:00,c_zero_coeff_relationship,Relationship Between Zeroes and Coefficients,Polynomials,2,0.1871,0.214908,needs_support
+student_cbse_01,27,2026-03-01T21:57:00,c_factorisation_remainder,Factorisation and Remainder Theorem,Polynomials,2,0.1754,0.204144,needs_support
+student_cbse_01,27,2026-03-01T21:57:00,c_area_of_triangle,Area of a Triangle in Coordinates,Coordinate Geometry,2,0.1829,0.195948,needs_support
+student_cbse_01,27,2026-03-01T21:57:00,c_section_formula,Section Formula,Coordinate Geometry,1,0.1573,0.17342000000000002,needs_support
+student_cbse_01,27,2026-03-01T21:57:00,c_similarity_area_ratio,Criteria for Similarity and Area Ratio,Triangles,2,0.156,0.160328,needs_support
+student_cbse_01,27,2026-03-01T21:57:00,c_decimal_expansions,Decimal Expansions of Rational Numbers,Real Numbers,1,0.1358,0.1524,needs_support
+student_cbse_01,27,2026-03-01T21:57:00,c_similar_triangles,Similar Triangles,Triangles,1,0.1573,0.144716,needs_support
+student_cbse_01,27,2026-03-01T21:57:00,c_pythagoras_theorem,Pythagoras Theorem,Triangles,1,0.1573,0.144716,needs_support
+student_cbse_01,27,2026-03-01T21:57:00,c_irrational_numbers,Irrational Numbers,Real Numbers,1,0.116,0.11758400000000001,needs_support
+student_cbse_01,28,2026-03-01T22:20:00,c_heights_distances,Heights and Distances,Introduction to Trigonometry,2,0.6175,0.612468,developing
+student_cbse_01,28,2026-03-01T22:20:00,c_standard_trig_values,Standard Trigonometric Values,Introduction to Trigonometry,2,0.6145,0.6097720000000001,developing
+student_cbse_01,28,2026-03-01T22:20:00,c_hcf_lcm,HCF and LCM,Real Numbers,1,0.5707,0.559844,developing
+student_cbse_01,28,2026-03-01T22:20:00,c_zeroes_of_polynomial,Zeroes of a Polynomial,Polynomials,1,0.5347,0.5347,developing
+student_cbse_01,28,2026-03-01T22:20:00,c_distance_formula,Distance Formula,Coordinate Geometry,1,0.5347,0.505532,developing
+student_cbse_01,28,2026-03-01T22:20:00,c_trigonometric_ratios,Trigonometric Ratios,Introduction to Trigonometry,1,0.5347,0.504508,developing
+student_cbse_01,28,2026-03-01T22:20:00,c_euclid_division_lemma,Euclid Division Lemma,Real Numbers,1,0.5347,0.491924,needs_support
+student_cbse_01,28,2026-03-01T22:20:00,c_polynomial_degree_terms,Polynomial Degree and Terms,Polynomials,1,0.5347,0.491924,needs_support
+student_cbse_01,28,2026-03-01T22:20:00,c_trig_identities,Trigonometric Identities,Introduction to Trigonometry,2,0.3788,0.391272,needs_support
+student_cbse_01,28,2026-03-01T22:20:00,c_basic_proportionality_theorem,Basic Proportionality Theorem,Triangles,2,0.3686,0.3526,needs_support
+student_cbse_01,28,2026-03-01T22:20:00,c_zero_coeff_relationship,Relationship Between Zeroes and Coefficients,Polynomials,2,0.1871,0.214908,needs_support
+student_cbse_01,28,2026-03-01T22:20:00,c_factorisation_remainder,Factorisation and Remainder Theorem,Polynomials,2,0.1754,0.204144,needs_support
+student_cbse_01,28,2026-03-01T22:20:00,c_similarity_area_ratio,Criteria for Similarity and Area Ratio,Triangles,3,0.2027,0.203292,needs_support
+student_cbse_01,28,2026-03-01T22:20:00,c_area_of_triangle,Area of a Triangle in Coordinates,Coordinate Geometry,2,0.1829,0.195948,needs_support
+student_cbse_01,28,2026-03-01T22:20:00,c_section_formula,Section Formula,Coordinate Geometry,1,0.1573,0.17342000000000002,needs_support
+student_cbse_01,28,2026-03-01T22:20:00,c_decimal_expansions,Decimal Expansions of Rational Numbers,Real Numbers,1,0.1358,0.1524,needs_support
+student_cbse_01,28,2026-03-01T22:20:00,c_similar_triangles,Similar Triangles,Triangles,1,0.1573,0.144716,needs_support
+student_cbse_01,28,2026-03-01T22:20:00,c_pythagoras_theorem,Pythagoras Theorem,Triangles,1,0.1573,0.144716,needs_support
+student_cbse_01,28,2026-03-01T22:20:00,c_irrational_numbers,Irrational Numbers,Real Numbers,1,0.116,0.11758400000000001,needs_support
+student_cbse_01,29,2026-03-01T22:48:00,c_heights_distances,Heights and Distances,Introduction to Trigonometry,2,0.6175,0.612468,developing
+student_cbse_01,29,2026-03-01T22:48:00,c_standard_trig_values,Standard Trigonometric Values,Introduction to Trigonometry,2,0.6145,0.6097720000000001,developing
+student_cbse_01,29,2026-03-01T22:48:00,c_euclid_division_lemma,Euclid Division Lemma,Real Numbers,2,0.6145,0.5653400000000001,developing
+student_cbse_01,29,2026-03-01T22:48:00,c_hcf_lcm,HCF and LCM,Real Numbers,1,0.5707,0.5646279999999999,developing
+student_cbse_01,29,2026-03-01T22:48:00,c_zeroes_of_polynomial,Zeroes of a Polynomial,Polynomials,1,0.5347,0.5347,developing
+student_cbse_01,29,2026-03-01T22:48:00,c_distance_formula,Distance Formula,Coordinate Geometry,1,0.5347,0.505532,developing
+student_cbse_01,29,2026-03-01T22:48:00,c_trigonometric_ratios,Trigonometric Ratios,Introduction to Trigonometry,1,0.5347,0.504508,developing
+student_cbse_01,29,2026-03-01T22:48:00,c_polynomial_degree_terms,Polynomial Degree and Terms,Polynomials,1,0.5347,0.491924,needs_support
+student_cbse_01,29,2026-03-01T22:48:00,c_trig_identities,Trigonometric Identities,Introduction to Trigonometry,2,0.3788,0.391272,needs_support
+student_cbse_01,29,2026-03-01T22:48:00,c_basic_proportionality_theorem,Basic Proportionality Theorem,Triangles,2,0.3686,0.3526,needs_support
+student_cbse_01,29,2026-03-01T22:48:00,c_zero_coeff_relationship,Relationship Between Zeroes and Coefficients,Polynomials,2,0.1871,0.214908,needs_support
+student_cbse_01,29,2026-03-01T22:48:00,c_factorisation_remainder,Factorisation and Remainder Theorem,Polynomials,2,0.1754,0.204144,needs_support
+student_cbse_01,29,2026-03-01T22:48:00,c_similarity_area_ratio,Criteria for Similarity and Area Ratio,Triangles,3,0.2027,0.203292,needs_support
+student_cbse_01,29,2026-03-01T22:48:00,c_area_of_triangle,Area of a Triangle in Coordinates,Coordinate Geometry,2,0.1829,0.195948,needs_support
+student_cbse_01,29,2026-03-01T22:48:00,c_section_formula,Section Formula,Coordinate Geometry,1,0.1573,0.17342000000000002,needs_support
+student_cbse_01,29,2026-03-01T22:48:00,c_decimal_expansions,Decimal Expansions of Rational Numbers,Real Numbers,1,0.1358,0.1524,needs_support
+student_cbse_01,29,2026-03-01T22:48:00,c_similar_triangles,Similar Triangles,Triangles,1,0.1573,0.144716,needs_support
+student_cbse_01,29,2026-03-01T22:48:00,c_pythagoras_theorem,Pythagoras Theorem,Triangles,1,0.1573,0.144716,needs_support
+student_cbse_01,29,2026-03-01T22:48:00,c_irrational_numbers,Irrational Numbers,Real Numbers,1,0.116,0.11758400000000001,needs_support
+student_cbse_01,30,2026-03-01T23:25:00,c_heights_distances,Heights and Distances,Introduction to Trigonometry,2,0.6175,0.612468,developing
+student_cbse_01,30,2026-03-01T23:25:00,c_standard_trig_values,Standard Trigonometric Values,Introduction to Trigonometry,2,0.6145,0.6097720000000001,developing
+student_cbse_01,30,2026-03-01T23:25:00,c_euclid_division_lemma,Euclid Division Lemma,Real Numbers,2,0.6145,0.5653400000000001,developing
+student_cbse_01,30,2026-03-01T23:25:00,c_hcf_lcm,HCF and LCM,Real Numbers,1,0.5707,0.5646279999999999,developing
+student_cbse_01,30,2026-03-01T23:25:00,c_zeroes_of_polynomial,Zeroes of a Polynomial,Polynomials,1,0.5347,0.5347,developing
+student_cbse_01,30,2026-03-01T23:25:00,c_distance_formula,Distance Formula,Coordinate Geometry,1,0.5347,0.505532,developing
+student_cbse_01,30,2026-03-01T23:25:00,c_trigonometric_ratios,Trigonometric Ratios,Introduction to Trigonometry,1,0.5347,0.504508,developing
+student_cbse_01,30,2026-03-01T23:25:00,c_polynomial_degree_terms,Polynomial Degree and Terms,Polynomials,1,0.5347,0.491924,needs_support
+student_cbse_01,30,2026-03-01T23:25:00,c_trig_identities,Trigonometric Identities,Introduction to Trigonometry,2,0.3788,0.391272,needs_support
+student_cbse_01,30,2026-03-01T23:25:00,c_basic_proportionality_theorem,Basic Proportionality Theorem,Triangles,2,0.3686,0.3526,needs_support
+student_cbse_01,30,2026-03-01T23:25:00,c_zero_coeff_relationship,Relationship Between Zeroes and Coefficients,Polynomials,3,0.2327,0.25686,needs_support
+student_cbse_01,30,2026-03-01T23:25:00,c_factorisation_remainder,Factorisation and Remainder Theorem,Polynomials,2,0.1754,0.204144,needs_support
+student_cbse_01,30,2026-03-01T23:25:00,c_similarity_area_ratio,Criteria for Similarity and Area Ratio,Triangles,3,0.2027,0.203292,needs_support
+student_cbse_01,30,2026-03-01T23:25:00,c_area_of_triangle,Area of a Triangle in Coordinates,Coordinate Geometry,2,0.1829,0.195948,needs_support
+student_cbse_01,30,2026-03-01T23:25:00,c_section_formula,Section Formula,Coordinate Geometry,1,0.1573,0.17342000000000002,needs_support
+student_cbse_01,30,2026-03-01T23:25:00,c_decimal_expansions,Decimal Expansions of Rational Numbers,Real Numbers,1,0.1358,0.1524,needs_support
+student_cbse_01,30,2026-03-01T23:25:00,c_similar_triangles,Similar Triangles,Triangles,1,0.1573,0.144716,needs_support
+student_cbse_01,30,2026-03-01T23:25:00,c_pythagoras_theorem,Pythagoras Theorem,Triangles,1,0.1573,0.144716,needs_support
+student_cbse_01,30,2026-03-01T23:25:00,c_irrational_numbers,Irrational Numbers,Real Numbers,1,0.116,0.11758400000000001,needs_support
+student_cbse_01,31,2026-03-01T23:53:00,c_heights_distances,Heights and Distances,Introduction to Trigonometry,2,0.6175,0.612468,developing
+student_cbse_01,31,2026-03-01T23:53:00,c_standard_trig_values,Standard Trigonometric Values,Introduction to Trigonometry,2,0.6145,0.6097720000000001,developing
+student_cbse_01,31,2026-03-01T23:53:00,c_euclid_division_lemma,Euclid Division Lemma,Real Numbers,2,0.6145,0.5653400000000001,developing
+student_cbse_01,31,2026-03-01T23:53:00,c_polynomial_degree_terms,Polynomial Degree and Terms,Polynomials,2,0.6145,0.5653400000000001,developing
+student_cbse_01,31,2026-03-01T23:53:00,c_hcf_lcm,HCF and LCM,Real Numbers,1,0.5707,0.5646279999999999,developing
+student_cbse_01,31,2026-03-01T23:53:00,c_zeroes_of_polynomial,Zeroes of a Polynomial,Polynomials,1,0.5347,0.541084,developing
+student_cbse_01,31,2026-03-01T23:53:00,c_distance_formula,Distance Formula,Coordinate Geometry,1,0.5347,0.505532,developing
+student_cbse_01,31,2026-03-01T23:53:00,c_trigonometric_ratios,Trigonometric Ratios,Introduction to Trigonometry,1,0.5347,0.504508,developing
+student_cbse_01,31,2026-03-01T23:53:00,c_trig_identities,Trigonometric Identities,Introduction to Trigonometry,2,0.3788,0.391272,needs_support
+student_cbse_01,31,2026-03-01T23:53:00,c_basic_proportionality_theorem,Basic Proportionality Theorem,Triangles,2,0.3686,0.3526,needs_support
+student_cbse_01,31,2026-03-01T23:53:00,c_zero_coeff_relationship,Relationship Between Zeroes and Coefficients,Polynomials,3,0.2327,0.25686,needs_support
+student_cbse_01,31,2026-03-01T23:53:00,c_factorisation_remainder,Factorisation and Remainder Theorem,Polynomials,2,0.1754,0.204144,needs_support
+student_cbse_01,31,2026-03-01T23:53:00,c_similarity_area_ratio,Criteria for Similarity and Area Ratio,Triangles,3,0.2027,0.203292,needs_support
+student_cbse_01,31,2026-03-01T23:53:00,c_area_of_triangle,Area of a Triangle in Coordinates,Coordinate Geometry,2,0.1829,0.195948,needs_support
+student_cbse_01,31,2026-03-01T23:53:00,c_section_formula,Section Formula,Coordinate Geometry,1,0.1573,0.17342000000000002,needs_support
+student_cbse_01,31,2026-03-01T23:53:00,c_decimal_expansions,Decimal Expansions of Rational Numbers,Real Numbers,1,0.1358,0.1524,needs_support
+student_cbse_01,31,2026-03-01T23:53:00,c_similar_triangles,Similar Triangles,Triangles,1,0.1573,0.144716,needs_support
+student_cbse_01,31,2026-03-01T23:53:00,c_pythagoras_theorem,Pythagoras Theorem,Triangles,1,0.1573,0.144716,needs_support
+student_cbse_01,31,2026-03-01T23:53:00,c_irrational_numbers,Irrational Numbers,Real Numbers,1,0.116,0.11758400000000001,needs_support
+student_cbse_01,32,2026-03-02T00:23:00,c_heights_distances,Heights and Distances,Introduction to Trigonometry,2,0.6175,0.612468,developing
+student_cbse_01,32,2026-03-02T00:23:00,c_standard_trig_values,Standard Trigonometric Values,Introduction to Trigonometry,2,0.6145,0.6097720000000001,developing
+student_cbse_01,32,2026-03-02T00:23:00,c_euclid_division_lemma,Euclid Division Lemma,Real Numbers,2,0.6145,0.5653400000000001,developing
+student_cbse_01,32,2026-03-02T00:23:00,c_polynomial_degree_terms,Polynomial Degree and Terms,Polynomials,2,0.6145,0.5653400000000001,developing
+student_cbse_01,32,2026-03-02T00:23:00,c_hcf_lcm,HCF and LCM,Real Numbers,1,0.5707,0.5646279999999999,developing
+student_cbse_01,32,2026-03-02T00:23:00,c_zeroes_of_polynomial,Zeroes of a Polynomial,Polynomials,1,0.5347,0.541084,developing
+student_cbse_01,32,2026-03-02T00:23:00,c_distance_formula,Distance Formula,Coordinate Geometry,1,0.5347,0.505532,developing
+student_cbse_01,32,2026-03-02T00:23:00,c_trigonometric_ratios,Trigonometric Ratios,Introduction to Trigonometry,1,0.5347,0.504508,developing
+student_cbse_01,32,2026-03-02T00:23:00,c_trig_identities,Trigonometric Identities,Introduction to Trigonometry,2,0.3788,0.391272,needs_support
+student_cbse_01,32,2026-03-02T00:23:00,c_basic_proportionality_theorem,Basic Proportionality Theorem,Triangles,2,0.3686,0.3526,needs_support
+student_cbse_01,32,2026-03-02T00:23:00,c_zero_coeff_relationship,Relationship Between Zeroes and Coefficients,Polynomials,3,0.2327,0.25686,needs_support
+student_cbse_01,32,2026-03-02T00:23:00,c_factorisation_remainder,Factorisation and Remainder Theorem,Polynomials,3,0.2272,0.2518,needs_support
+student_cbse_01,32,2026-03-02T00:23:00,c_similarity_area_ratio,Criteria for Similarity and Area Ratio,Triangles,3,0.2027,0.203292,needs_support
+student_cbse_01,32,2026-03-02T00:23:00,c_area_of_triangle,Area of a Triangle in Coordinates,Coordinate Geometry,2,0.1829,0.195948,needs_support
+student_cbse_01,32,2026-03-02T00:23:00,c_section_formula,Section Formula,Coordinate Geometry,1,0.1573,0.17342000000000002,needs_support
+student_cbse_01,32,2026-03-02T00:23:00,c_decimal_expansions,Decimal Expansions of Rational Numbers,Real Numbers,1,0.1358,0.1524,needs_support
+student_cbse_01,32,2026-03-02T00:23:00,c_similar_triangles,Similar Triangles,Triangles,1,0.1573,0.144716,needs_support
+student_cbse_01,32,2026-03-02T00:23:00,c_pythagoras_theorem,Pythagoras Theorem,Triangles,1,0.1573,0.144716,needs_support
+student_cbse_01,32,2026-03-02T00:23:00,c_irrational_numbers,Irrational Numbers,Real Numbers,1,0.116,0.11758400000000001,needs_support
+student_cbse_01,33,2026-03-02T01:03:00,c_euclid_division_lemma,Euclid Division Lemma,Real Numbers,3,0.6992,0.6432640000000001,developing
+student_cbse_01,33,2026-03-02T01:03:00,c_heights_distances,Heights and Distances,Introduction to Trigonometry,2,0.6175,0.612468,developing
+student_cbse_01,33,2026-03-02T01:03:00,c_standard_trig_values,Standard Trigonometric Values,Introduction to Trigonometry,2,0.6145,0.6097720000000001,developing
+student_cbse_01,33,2026-03-02T01:03:00,c_hcf_lcm,HCF and LCM,Real Numbers,1,0.5707,0.569716,developing
+student_cbse_01,33,2026-03-02T01:03:00,c_polynomial_degree_terms,Polynomial Degree and Terms,Polynomials,2,0.6145,0.5653400000000001,developing
+student_cbse_01,33,2026-03-02T01:03:00,c_zeroes_of_polynomial,Zeroes of a Polynomial,Polynomials,1,0.5347,0.541084,developing
+student_cbse_01,33,2026-03-02T01:03:00,c_distance_formula,Distance Formula,Coordinate Geometry,1,0.5347,0.505532,developing
+student_cbse_01,33,2026-03-02T01:03:00,c_trigonometric_ratios,Trigonometric Ratios,Introduction to Trigonometry,1,0.5347,0.504508,developing
+student_cbse_01,33,2026-03-02T01:03:00,c_trig_identities,Trigonometric Identities,Introduction to Trigonometry,2,0.3788,0.391272,needs_support
+student_cbse_01,33,2026-03-02T01:03:00,c_basic_proportionality_theorem,Basic Proportionality Theorem,Triangles,2,0.3686,0.3526,needs_support
+student_cbse_01,33,2026-03-02T01:03:00,c_zero_coeff_relationship,Relationship Between Zeroes and Coefficients,Polynomials,3,0.2327,0.25686,needs_support
+student_cbse_01,33,2026-03-02T01:03:00,c_factorisation_remainder,Factorisation and Remainder Theorem,Polynomials,3,0.2272,0.2518,needs_support
+student_cbse_01,33,2026-03-02T01:03:00,c_similarity_area_ratio,Criteria for Similarity and Area Ratio,Triangles,3,0.2027,0.203292,needs_support
+student_cbse_01,33,2026-03-02T01:03:00,c_area_of_triangle,Area of a Triangle in Coordinates,Coordinate Geometry,2,0.1829,0.195948,needs_support
+student_cbse_01,33,2026-03-02T01:03:00,c_section_formula,Section Formula,Coordinate Geometry,1,0.1573,0.17342000000000002,needs_support
+student_cbse_01,33,2026-03-02T01:03:00,c_decimal_expansions,Decimal Expansions of Rational Numbers,Real Numbers,1,0.1358,0.1524,needs_support
+student_cbse_01,33,2026-03-02T01:03:00,c_similar_triangles,Similar Triangles,Triangles,1,0.1573,0.144716,needs_support
+student_cbse_01,33,2026-03-02T01:03:00,c_pythagoras_theorem,Pythagoras Theorem,Triangles,1,0.1573,0.144716,needs_support
+student_cbse_01,33,2026-03-02T01:03:00,c_irrational_numbers,Irrational Numbers,Real Numbers,1,0.116,0.11758400000000001,needs_support
+student_cbse_01,34,2026-03-02T01:28:00,c_hcf_lcm,HCF and LCM,Real Numbers,2,0.6541,0.6464440000000001,developing
+student_cbse_01,34,2026-03-02T01:28:00,c_euclid_division_lemma,Euclid Division Lemma,Real Numbers,3,0.6992,0.6432640000000001,developing
+student_cbse_01,34,2026-03-02T01:28:00,c_heights_distances,Heights and Distances,Introduction to Trigonometry,2,0.6175,0.612468,developing
+student_cbse_01,34,2026-03-02T01:28:00,c_standard_trig_values,Standard Trigonometric Values,Introduction to Trigonometry,2,0.6145,0.6097720000000001,developing
+student_cbse_01,34,2026-03-02T01:28:00,c_polynomial_degree_terms,Polynomial Degree and Terms,Polynomials,2,0.6145,0.5653400000000001,developing
+student_cbse_01,34,2026-03-02T01:28:00,c_zeroes_of_polynomial,Zeroes of a Polynomial,Polynomials,1,0.5347,0.541084,developing
+student_cbse_01,34,2026-03-02T01:28:00,c_distance_formula,Distance Formula,Coordinate Geometry,1,0.5347,0.505532,developing
+student_cbse_01,34,2026-03-02T01:28:00,c_trigonometric_ratios,Trigonometric Ratios,Introduction to Trigonometry,1,0.5347,0.504508,developing
+student_cbse_01,34,2026-03-02T01:28:00,c_trig_identities,Trigonometric Identities,Introduction to Trigonometry,2,0.3788,0.391272,needs_support
+student_cbse_01,34,2026-03-02T01:28:00,c_basic_proportionality_theorem,Basic Proportionality Theorem,Triangles,2,0.3686,0.3526,needs_support
+student_cbse_01,34,2026-03-02T01:28:00,c_zero_coeff_relationship,Relationship Between Zeroes and Coefficients,Polynomials,3,0.2327,0.25686,needs_support
+student_cbse_01,34,2026-03-02T01:28:00,c_factorisation_remainder,Factorisation and Remainder Theorem,Polynomials,3,0.2272,0.2518,needs_support
+student_cbse_01,34,2026-03-02T01:28:00,c_similarity_area_ratio,Criteria for Similarity and Area Ratio,Triangles,3,0.2027,0.203292,needs_support
+student_cbse_01,34,2026-03-02T01:28:00,c_area_of_triangle,Area of a Triangle in Coordinates,Coordinate Geometry,2,0.1829,0.195948,needs_support
+student_cbse_01,34,2026-03-02T01:28:00,c_section_formula,Section Formula,Coordinate Geometry,1,0.1573,0.17342000000000002,needs_support
+student_cbse_01,34,2026-03-02T01:28:00,c_decimal_expansions,Decimal Expansions of Rational Numbers,Real Numbers,1,0.1358,0.155744,needs_support
+student_cbse_01,34,2026-03-02T01:28:00,c_similar_triangles,Similar Triangles,Triangles,1,0.1573,0.144716,needs_support
+student_cbse_01,34,2026-03-02T01:28:00,c_pythagoras_theorem,Pythagoras Theorem,Triangles,1,0.1573,0.144716,needs_support
+student_cbse_01,34,2026-03-02T01:28:00,c_irrational_numbers,Irrational Numbers,Real Numbers,1,0.116,0.11758400000000001,needs_support
+student_cbse_01,35,2026-03-02T01:53:00,c_hcf_lcm,HCF and LCM,Real Numbers,2,0.6541,0.6464440000000001,developing
+student_cbse_01,35,2026-03-02T01:53:00,c_euclid_division_lemma,Euclid Division Lemma,Real Numbers,3,0.6992,0.6432640000000001,developing
+student_cbse_01,35,2026-03-02T01:53:00,c_heights_distances,Heights and Distances,Introduction to Trigonometry,2,0.6175,0.612468,developing
+student_cbse_01,35,2026-03-02T01:53:00,c_standard_trig_values,Standard Trigonometric Values,Introduction to Trigonometry,2,0.6145,0.6097720000000001,developing
+student_cbse_01,35,2026-03-02T01:53:00,c_polynomial_degree_terms,Polynomial Degree and Terms,Polynomials,2,0.6145,0.5653400000000001,developing
+student_cbse_01,35,2026-03-02T01:53:00,c_zeroes_of_polynomial,Zeroes of a Polynomial,Polynomials,1,0.5347,0.541084,developing
+student_cbse_01,35,2026-03-02T01:53:00,c_distance_formula,Distance Formula,Coordinate Geometry,1,0.5347,0.505532,developing
+student_cbse_01,35,2026-03-02T01:53:00,c_trigonometric_ratios,Trigonometric Ratios,Introduction to Trigonometry,1,0.5347,0.504508,developing
+student_cbse_01,35,2026-03-02T01:53:00,c_trig_identities,Trigonometric Identities,Introduction to Trigonometry,2,0.3788,0.391272,needs_support
+student_cbse_01,35,2026-03-02T01:53:00,c_basic_proportionality_theorem,Basic Proportionality Theorem,Triangles,2,0.3686,0.3526,needs_support
+student_cbse_01,35,2026-03-02T01:53:00,c_zero_coeff_relationship,Relationship Between Zeroes and Coefficients,Polynomials,3,0.2327,0.25686,needs_support
+student_cbse_01,35,2026-03-02T01:53:00,c_factorisation_remainder,Factorisation and Remainder Theorem,Polynomials,3,0.2272,0.2518,needs_support
+student_cbse_01,35,2026-03-02T01:53:00,c_similarity_area_ratio,Criteria for Similarity and Area Ratio,Triangles,3,0.2027,0.203292,needs_support
+student_cbse_01,35,2026-03-02T01:53:00,c_area_of_triangle,Area of a Triangle in Coordinates,Coordinate Geometry,2,0.1829,0.195948,needs_support
+student_cbse_01,35,2026-03-02T01:53:00,c_section_formula,Section Formula,Coordinate Geometry,1,0.1573,0.17342000000000002,needs_support
+student_cbse_01,35,2026-03-02T01:53:00,c_irrational_numbers,Irrational Numbers,Real Numbers,2,0.1635,0.16128400000000004,needs_support
+student_cbse_01,35,2026-03-02T01:53:00,c_decimal_expansions,Decimal Expansions of Rational Numbers,Real Numbers,1,0.1358,0.15764,needs_support
+student_cbse_01,35,2026-03-02T01:53:00,c_similar_triangles,Similar Triangles,Triangles,1,0.1573,0.144716,needs_support
+student_cbse_01,35,2026-03-02T01:53:00,c_pythagoras_theorem,Pythagoras Theorem,Triangles,1,0.1573,0.144716,needs_support
+student_cbse_01,36,2026-03-02T02:25:00,c_hcf_lcm,HCF and LCM,Real Numbers,2,0.6541,0.6464440000000001,developing
+student_cbse_01,36,2026-03-02T02:25:00,c_euclid_division_lemma,Euclid Division Lemma,Real Numbers,3,0.6992,0.6432640000000001,developing
+student_cbse_01,36,2026-03-02T02:25:00,c_heights_distances,Heights and Distances,Introduction to Trigonometry,2,0.6175,0.617788,developing
+student_cbse_01,36,2026-03-02T02:25:00,c_standard_trig_values,Standard Trigonometric Values,Introduction to Trigonometry,2,0.6145,0.6150920000000001,developing
+student_cbse_01,36,2026-03-02T02:25:00,c_trigonometric_ratios,Trigonometric Ratios,Introduction to Trigonometry,2,0.6233,0.58602,developing
+student_cbse_01,36,2026-03-02T02:25:00,c_polynomial_degree_terms,Polynomial Degree and Terms,Polynomials,2,0.6145,0.5653400000000001,developing
+student_cbse_01,36,2026-03-02T02:25:00,c_zeroes_of_polynomial,Zeroes of a Polynomial,Polynomials,1,0.5347,0.541084,developing
+student_cbse_01,36,2026-03-02T02:25:00,c_distance_formula,Distance Formula,Coordinate Geometry,1,0.5347,0.505532,developing
+student_cbse_01,36,2026-03-02T02:25:00,c_trig_identities,Trigonometric Identities,Introduction to Trigonometry,2,0.3788,0.39836000000000005,needs_support
+student_cbse_01,36,2026-03-02T02:25:00,c_basic_proportionality_theorem,Basic Proportionality Theorem,Triangles,2,0.3686,0.3526,needs_support
+student_cbse_01,36,2026-03-02T02:25:00,c_zero_coeff_relationship,Relationship Between Zeroes and Coefficients,Polynomials,3,0.2327,0.25686,needs_support
+student_cbse_01,36,2026-03-02T02:25:00,c_factorisation_remainder,Factorisation and Remainder Theorem,Polynomials,3,0.2272,0.2518,needs_support
+student_cbse_01,36,2026-03-02T02:25:00,c_similarity_area_ratio,Criteria for Similarity and Area Ratio,Triangles,3,0.2027,0.203292,needs_support
+student_cbse_01,36,2026-03-02T02:25:00,c_area_of_triangle,Area of a Triangle in Coordinates,Coordinate Geometry,2,0.1829,0.195948,needs_support
+student_cbse_01,36,2026-03-02T02:25:00,c_section_formula,Section Formula,Coordinate Geometry,1,0.1573,0.17342000000000002,needs_support
+student_cbse_01,36,2026-03-02T02:25:00,c_irrational_numbers,Irrational Numbers,Real Numbers,2,0.1635,0.16128400000000004,needs_support
+student_cbse_01,36,2026-03-02T02:25:00,c_decimal_expansions,Decimal Expansions of Rational Numbers,Real Numbers,1,0.1358,0.15764,needs_support
+student_cbse_01,36,2026-03-02T02:25:00,c_similar_triangles,Similar Triangles,Triangles,1,0.1573,0.144716,needs_support
+student_cbse_01,36,2026-03-02T02:25:00,c_pythagoras_theorem,Pythagoras Theorem,Triangles,1,0.1573,0.144716,needs_support
+student_cbse_01,37,2026-03-02T02:45:00,c_hcf_lcm,HCF and LCM,Real Numbers,2,0.6541,0.6464440000000001,developing
+student_cbse_01,37,2026-03-02T02:45:00,c_euclid_division_lemma,Euclid Division Lemma,Real Numbers,3,0.6992,0.6432640000000001,developing
+student_cbse_01,37,2026-03-02T02:45:00,c_heights_distances,Heights and Distances,Introduction to Trigonometry,2,0.6175,0.617788,developing
+student_cbse_01,37,2026-03-02T02:45:00,c_standard_trig_values,Standard Trigonometric Values,Introduction to Trigonometry,2,0.6145,0.6150920000000001,developing
+student_cbse_01,37,2026-03-02T02:45:00,c_trigonometric_ratios,Trigonometric Ratios,Introduction to Trigonometry,2,0.6233,0.58602,developing
+student_cbse_01,37,2026-03-02T02:45:00,c_polynomial_degree_terms,Polynomial Degree and Terms,Polynomials,2,0.6145,0.5653400000000001,developing
+student_cbse_01,37,2026-03-02T02:45:00,c_zeroes_of_polynomial,Zeroes of a Polynomial,Polynomials,1,0.5347,0.541084,developing
+student_cbse_01,37,2026-03-02T02:45:00,c_distance_formula,Distance Formula,Coordinate Geometry,1,0.5347,0.505532,developing
+student_cbse_01,37,2026-03-02T02:45:00,c_trig_identities,Trigonometric Identities,Introduction to Trigonometry,2,0.3788,0.39836000000000005,needs_support
+student_cbse_01,37,2026-03-02T02:45:00,c_basic_proportionality_theorem,Basic Proportionality Theorem,Triangles,2,0.3686,0.35372800000000004,needs_support
+student_cbse_01,37,2026-03-02T02:45:00,c_zero_coeff_relationship,Relationship Between Zeroes and Coefficients,Polynomials,3,0.2327,0.25686,needs_support
+student_cbse_01,37,2026-03-02T02:45:00,c_similarity_area_ratio,Criteria for Similarity and Area Ratio,Triangles,4,0.259,0.25508800000000004,needs_support
+student_cbse_01,37,2026-03-02T02:45:00,c_factorisation_remainder,Factorisation and Remainder Theorem,Polynomials,3,0.2272,0.2518,needs_support
+student_cbse_01,37,2026-03-02T02:45:00,c_area_of_triangle,Area of a Triangle in Coordinates,Coordinate Geometry,2,0.1829,0.195948,needs_support
+student_cbse_01,37,2026-03-02T02:45:00,c_section_formula,Section Formula,Coordinate Geometry,1,0.1573,0.17342000000000002,needs_support
+student_cbse_01,37,2026-03-02T02:45:00,c_irrational_numbers,Irrational Numbers,Real Numbers,2,0.1635,0.16128400000000004,needs_support
+student_cbse_01,37,2026-03-02T02:45:00,c_decimal_expansions,Decimal Expansions of Rational Numbers,Real Numbers,1,0.1358,0.15764,needs_support
+student_cbse_01,37,2026-03-02T02:45:00,c_similar_triangles,Similar Triangles,Triangles,1,0.1573,0.144716,needs_support
+student_cbse_01,37,2026-03-02T02:45:00,c_pythagoras_theorem,Pythagoras Theorem,Triangles,1,0.1573,0.144716,needs_support
+student_cbse_01,38,2026-03-02T03:21:00,c_hcf_lcm,HCF and LCM,Real Numbers,2,0.6541,0.6464440000000001,developing
+student_cbse_01,38,2026-03-02T03:21:00,c_euclid_division_lemma,Euclid Division Lemma,Real Numbers,3,0.6992,0.6432640000000001,developing
+student_cbse_01,38,2026-03-02T03:21:00,c_heights_distances,Heights and Distances,Introduction to Trigonometry,2,0.6175,0.617788,developing
+student_cbse_01,38,2026-03-02T03:21:00,c_standard_trig_values,Standard Trigonometric Values,Introduction to Trigonometry,2,0.6145,0.6150920000000001,developing
+student_cbse_01,38,2026-03-02T03:21:00,c_trigonometric_ratios,Trigonometric Ratios,Introduction to Trigonometry,2,0.6233,0.58602,developing
+student_cbse_01,38,2026-03-02T03:21:00,c_polynomial_degree_terms,Polynomial Degree and Terms,Polynomials,2,0.6145,0.5653400000000001,developing
+student_cbse_01,38,2026-03-02T03:21:00,c_zeroes_of_polynomial,Zeroes of a Polynomial,Polynomials,1,0.5347,0.541084,developing
+student_cbse_01,38,2026-03-02T03:21:00,c_distance_formula,Distance Formula,Coordinate Geometry,1,0.5347,0.505532,developing
+student_cbse_01,38,2026-03-02T03:21:00,c_trig_identities,Trigonometric Identities,Introduction to Trigonometry,2,0.3788,0.39836000000000005,needs_support
+student_cbse_01,38,2026-03-02T03:21:00,c_basic_proportionality_theorem,Basic Proportionality Theorem,Triangles,3,0.3557,0.34186000000000005,needs_support
+student_cbse_01,38,2026-03-02T03:21:00,c_zero_coeff_relationship,Relationship Between Zeroes and Coefficients,Polynomials,3,0.2327,0.25686,needs_support
+student_cbse_01,38,2026-03-02T03:21:00,c_similarity_area_ratio,Criteria for Similarity and Area Ratio,Triangles,4,0.259,0.254832,needs_support
+student_cbse_01,38,2026-03-02T03:21:00,c_factorisation_remainder,Factorisation and Remainder Theorem,Polynomials,3,0.2272,0.2518,needs_support
+student_cbse_01,38,2026-03-02T03:21:00,c_area_of_triangle,Area of a Triangle in Coordinates,Coordinate Geometry,2,0.1829,0.195948,needs_support
+student_cbse_01,38,2026-03-02T03:21:00,c_section_formula,Section Formula,Coordinate Geometry,1,0.1573,0.17342000000000002,needs_support
+student_cbse_01,38,2026-03-02T03:21:00,c_irrational_numbers,Irrational Numbers,Real Numbers,2,0.1635,0.16128400000000004,needs_support
+student_cbse_01,38,2026-03-02T03:21:00,c_decimal_expansions,Decimal Expansions of Rational Numbers,Real Numbers,1,0.1358,0.15764,needs_support
+student_cbse_01,38,2026-03-02T03:21:00,c_similar_triangles,Similar Triangles,Triangles,1,0.1573,0.144716,needs_support
+student_cbse_01,38,2026-03-02T03:21:00,c_pythagoras_theorem,Pythagoras Theorem,Triangles,1,0.1573,0.144716,needs_support
+student_cbse_01,39,2026-03-02T03:50:00,c_trigonometric_ratios,Trigonometric Ratios,Introduction to Trigonometry,3,0.712,0.667624,developing
+student_cbse_01,39,2026-03-02T03:50:00,c_hcf_lcm,HCF and LCM,Real Numbers,2,0.6541,0.6464440000000001,developing
+student_cbse_01,39,2026-03-02T03:50:00,c_euclid_division_lemma,Euclid Division Lemma,Real Numbers,3,0.6992,0.6432640000000001,developing
+student_cbse_01,39,2026-03-02T03:50:00,c_heights_distances,Heights and Distances,Introduction to Trigonometry,2,0.6175,0.623108,developing
+student_cbse_01,39,2026-03-02T03:50:00,c_standard_trig_values,Standard Trigonometric Values,Introduction to Trigonometry,2,0.6145,0.6204120000000001,developing
+student_cbse_01,39,2026-03-02T03:50:00,c_polynomial_degree_terms,Polynomial Degree and Terms,Polynomials,2,0.6145,0.5653400000000001,developing
+student_cbse_01,39,2026-03-02T03:50:00,c_zeroes_of_polynomial,Zeroes of a Polynomial,Polynomials,1,0.5347,0.541084,developing
+student_cbse_01,39,2026-03-02T03:50:00,c_distance_formula,Distance Formula,Coordinate Geometry,1,0.5347,0.505532,developing
+student_cbse_01,39,2026-03-02T03:50:00,c_trig_identities,Trigonometric Identities,Introduction to Trigonometry,2,0.3788,0.40545600000000004,needs_support
+student_cbse_01,39,2026-03-02T03:50:00,c_basic_proportionality_theorem,Basic Proportionality Theorem,Triangles,3,0.3557,0.34186000000000005,needs_support
+student_cbse_01,39,2026-03-02T03:50:00,c_zero_coeff_relationship,Relationship Between Zeroes and Coefficients,Polynomials,3,0.2327,0.25686,needs_support
+student_cbse_01,39,2026-03-02T03:50:00,c_similarity_area_ratio,Criteria for Similarity and Area Ratio,Triangles,4,0.259,0.254832,needs_support
+student_cbse_01,39,2026-03-02T03:50:00,c_factorisation_remainder,Factorisation and Remainder Theorem,Polynomials,3,0.2272,0.2518,needs_support
+student_cbse_01,39,2026-03-02T03:50:00,c_area_of_triangle,Area of a Triangle in Coordinates,Coordinate Geometry,2,0.1829,0.195948,needs_support
+student_cbse_01,39,2026-03-02T03:50:00,c_section_formula,Section Formula,Coordinate Geometry,1,0.1573,0.17342000000000002,needs_support
+student_cbse_01,39,2026-03-02T03:50:00,c_irrational_numbers,Irrational Numbers,Real Numbers,2,0.1635,0.16128400000000004,needs_support
+student_cbse_01,39,2026-03-02T03:50:00,c_decimal_expansions,Decimal Expansions of Rational Numbers,Real Numbers,1,0.1358,0.15764,needs_support
+student_cbse_01,39,2026-03-02T03:50:00,c_similar_triangles,Similar Triangles,Triangles,1,0.1573,0.144716,needs_support
+student_cbse_01,39,2026-03-02T03:50:00,c_pythagoras_theorem,Pythagoras Theorem,Triangles,1,0.1573,0.144716,needs_support
+student_cbse_01,40,2026-03-02T04:24:00,c_trigonometric_ratios,Trigonometric Ratios,Introduction to Trigonometry,3,0.712,0.667624,developing
+student_cbse_01,40,2026-03-02T04:24:00,c_hcf_lcm,HCF and LCM,Real Numbers,2,0.6541,0.6464440000000001,developing
+student_cbse_01,40,2026-03-02T04:24:00,c_euclid_division_lemma,Euclid Division Lemma,Real Numbers,3,0.6992,0.6432640000000001,developing
+student_cbse_01,40,2026-03-02T04:24:00,c_heights_distances,Heights and Distances,Introduction to Trigonometry,2,0.6175,0.623108,developing
+student_cbse_01,40,2026-03-02T04:24:00,c_standard_trig_values,Standard Trigonometric Values,Introduction to Trigonometry,2,0.6145,0.6204120000000001,developing
+student_cbse_01,40,2026-03-02T04:24:00,c_polynomial_degree_terms,Polynomial Degree and Terms,Polynomials,2,0.6145,0.5653400000000001,developing
+student_cbse_01,40,2026-03-02T04:24:00,c_zeroes_of_polynomial,Zeroes of a Polynomial,Polynomials,1,0.5347,0.541084,developing
+student_cbse_01,40,2026-03-02T04:24:00,c_distance_formula,Distance Formula,Coordinate Geometry,1,0.5347,0.505532,developing
+student_cbse_01,40,2026-03-02T04:24:00,c_trig_identities,Trigonometric Identities,Introduction to Trigonometry,2,0.3788,0.40545600000000004,needs_support
+student_cbse_01,40,2026-03-02T04:24:00,c_factorisation_remainder,Factorisation and Remainder Theorem,Polynomials,4,0.3767,0.38933999999999996,needs_support
+student_cbse_01,40,2026-03-02T04:24:00,c_basic_proportionality_theorem,Basic Proportionality Theorem,Triangles,3,0.3557,0.34186000000000005,needs_support
+student_cbse_01,40,2026-03-02T04:24:00,c_zero_coeff_relationship,Relationship Between Zeroes and Coefficients,Polynomials,3,0.2327,0.25686,needs_support
+student_cbse_01,40,2026-03-02T04:24:00,c_similarity_area_ratio,Criteria for Similarity and Area Ratio,Triangles,4,0.259,0.254832,needs_support
+student_cbse_01,40,2026-03-02T04:24:00,c_area_of_triangle,Area of a Triangle in Coordinates,Coordinate Geometry,2,0.1829,0.195948,needs_support
+student_cbse_01,40,2026-03-02T04:24:00,c_section_formula,Section Formula,Coordinate Geometry,1,0.1573,0.17342000000000002,needs_support
+student_cbse_01,40,2026-03-02T04:24:00,c_irrational_numbers,Irrational Numbers,Real Numbers,2,0.1635,0.16128400000000004,needs_support
+student_cbse_01,40,2026-03-02T04:24:00,c_decimal_expansions,Decimal Expansions of Rational Numbers,Real Numbers,1,0.1358,0.15764,needs_support
+student_cbse_01,40,2026-03-02T04:24:00,c_similar_triangles,Similar Triangles,Triangles,1,0.1573,0.144716,needs_support
+student_cbse_01,40,2026-03-02T04:24:00,c_pythagoras_theorem,Pythagoras Theorem,Triangles,1,0.1573,0.144716,needs_support
+student_cbse_01,41,2026-03-02T05:01:00,c_trigonometric_ratios,Trigonometric Ratios,Introduction to Trigonometry,3,0.712,0.667624,developing
+student_cbse_01,41,2026-03-02T05:01:00,c_hcf_lcm,HCF and LCM,Real Numbers,2,0.6541,0.6464440000000001,developing
+student_cbse_01,41,2026-03-02T05:01:00,c_euclid_division_lemma,Euclid Division Lemma,Real Numbers,3,0.6992,0.6432640000000001,developing
+student_cbse_01,41,2026-03-02T05:01:00,c_heights_distances,Heights and Distances,Introduction to Trigonometry,2,0.6175,0.623108,developing
+student_cbse_01,41,2026-03-02T05:01:00,c_standard_trig_values,Standard Trigonometric Values,Introduction to Trigonometry,2,0.6145,0.6204120000000001,developing
+student_cbse_01,41,2026-03-02T05:01:00,c_polynomial_degree_terms,Polynomial Degree and Terms,Polynomials,2,0.6145,0.5653400000000001,developing
+student_cbse_01,41,2026-03-02T05:01:00,c_zeroes_of_polynomial,Zeroes of a Polynomial,Polynomials,1,0.5347,0.541084,developing
+student_cbse_01,41,2026-03-02T05:01:00,c_distance_formula,Distance Formula,Coordinate Geometry,1,0.5347,0.50722,developing
+student_cbse_01,41,2026-03-02T05:01:00,c_trig_identities,Trigonometric Identities,Introduction to Trigonometry,2,0.3788,0.40545600000000004,needs_support
+student_cbse_01,41,2026-03-02T05:01:00,c_factorisation_remainder,Factorisation and Remainder Theorem,Polynomials,4,0.3767,0.38933999999999996,needs_support
+student_cbse_01,41,2026-03-02T05:01:00,c_basic_proportionality_theorem,Basic Proportionality Theorem,Triangles,3,0.3557,0.34186000000000005,needs_support
+student_cbse_01,41,2026-03-02T05:01:00,c_zero_coeff_relationship,Relationship Between Zeroes and Coefficients,Polynomials,3,0.2327,0.25686,needs_support
+student_cbse_01,41,2026-03-02T05:01:00,c_similarity_area_ratio,Criteria for Similarity and Area Ratio,Triangles,4,0.259,0.254832,needs_support
+student_cbse_01,41,2026-03-02T05:01:00,c_section_formula,Section Formula,Coordinate Geometry,2,0.1995,0.21224400000000002,needs_support
+student_cbse_01,41,2026-03-02T05:01:00,c_area_of_triangle,Area of a Triangle in Coordinates,Coordinate Geometry,2,0.1829,0.197636,needs_support
+student_cbse_01,41,2026-03-02T05:01:00,c_irrational_numbers,Irrational Numbers,Real Numbers,2,0.1635,0.16128400000000004,needs_support
+student_cbse_01,41,2026-03-02T05:01:00,c_decimal_expansions,Decimal Expansions of Rational Numbers,Real Numbers,1,0.1358,0.15764,needs_support
+student_cbse_01,41,2026-03-02T05:01:00,c_similar_triangles,Similar Triangles,Triangles,1,0.1573,0.144716,needs_support
+student_cbse_01,41,2026-03-02T05:01:00,c_pythagoras_theorem,Pythagoras Theorem,Triangles,1,0.1573,0.144716,needs_support
+student_cbse_01,42,2026-03-02T05:38:00,c_trigonometric_ratios,Trigonometric Ratios,Introduction to Trigonometry,3,0.712,0.667624,developing
+student_cbse_01,42,2026-03-02T05:38:00,c_hcf_lcm,HCF and LCM,Real Numbers,2,0.6541,0.6464440000000001,developing
+student_cbse_01,42,2026-03-02T05:38:00,c_euclid_division_lemma,Euclid Division Lemma,Real Numbers,3,0.6992,0.6432640000000001,developing
+student_cbse_01,42,2026-03-02T05:38:00,c_heights_distances,Heights and Distances,Introduction to Trigonometry,2,0.6175,0.623108,developing
+student_cbse_01,42,2026-03-02T05:38:00,c_standard_trig_values,Standard Trigonometric Values,Introduction to Trigonometry,2,0.6145,0.6204120000000001,developing
+student_cbse_01,42,2026-03-02T05:38:00,c_polynomial_degree_terms,Polynomial Degree and Terms,Polynomials,2,0.6145,0.5653400000000001,developing
+student_cbse_01,42,2026-03-02T05:38:00,c_zeroes_of_polynomial,Zeroes of a Polynomial,Polynomials,1,0.5347,0.541084,developing
+student_cbse_01,42,2026-03-02T05:38:00,c_distance_formula,Distance Formula,Coordinate Geometry,1,0.5347,0.50722,developing
+student_cbse_01,42,2026-03-02T05:38:00,c_basic_proportionality_theorem,Basic Proportionality Theorem,Triangles,4,0.5045,0.478756,needs_support
+student_cbse_01,42,2026-03-02T05:38:00,c_trig_identities,Trigonometric Identities,Introduction to Trigonometry,2,0.3788,0.40545600000000004,needs_support
+student_cbse_01,42,2026-03-02T05:38:00,c_factorisation_remainder,Factorisation and Remainder Theorem,Polynomials,4,0.3767,0.38933999999999996,needs_support
+student_cbse_01,42,2026-03-02T05:38:00,c_similarity_area_ratio,Criteria for Similarity and Area Ratio,Triangles,4,0.259,0.25780800000000004,needs_support
+student_cbse_01,42,2026-03-02T05:38:00,c_zero_coeff_relationship,Relationship Between Zeroes and Coefficients,Polynomials,3,0.2327,0.25686,needs_support
+student_cbse_01,42,2026-03-02T05:38:00,c_section_formula,Section Formula,Coordinate Geometry,2,0.1995,0.21224400000000002,needs_support
+student_cbse_01,42,2026-03-02T05:38:00,c_area_of_triangle,Area of a Triangle in Coordinates,Coordinate Geometry,2,0.1829,0.197636,needs_support
+student_cbse_01,42,2026-03-02T05:38:00,c_irrational_numbers,Irrational Numbers,Real Numbers,2,0.1635,0.16128400000000004,needs_support
+student_cbse_01,42,2026-03-02T05:38:00,c_decimal_expansions,Decimal Expansions of Rational Numbers,Real Numbers,1,0.1358,0.15764,needs_support
+student_cbse_01,42,2026-03-02T05:38:00,c_similar_triangles,Similar Triangles,Triangles,1,0.1573,0.144716,needs_support
+student_cbse_01,42,2026-03-02T05:38:00,c_pythagoras_theorem,Pythagoras Theorem,Triangles,1,0.1573,0.144716,needs_support
+student_cbse_01,43,2026-03-02T06:17:00,c_trigonometric_ratios,Trigonometric Ratios,Introduction to Trigonometry,3,0.712,0.667624,developing
+student_cbse_01,43,2026-03-02T06:17:00,c_hcf_lcm,HCF and LCM,Real Numbers,2,0.6541,0.6464440000000001,developing
+student_cbse_01,43,2026-03-02T06:17:00,c_euclid_division_lemma,Euclid Division Lemma,Real Numbers,3,0.6992,0.6432640000000001,developing
+student_cbse_01,43,2026-03-02T06:17:00,c_heights_distances,Heights and Distances,Introduction to Trigonometry,2,0.6175,0.623108,developing
+student_cbse_01,43,2026-03-02T06:17:00,c_standard_trig_values,Standard Trigonometric Values,Introduction to Trigonometry,2,0.6145,0.6204120000000001,developing
+student_cbse_01,43,2026-03-02T06:17:00,c_polynomial_degree_terms,Polynomial Degree and Terms,Polynomials,2,0.6145,0.5653400000000001,developing
+student_cbse_01,43,2026-03-02T06:17:00,c_zeroes_of_polynomial,Zeroes of a Polynomial,Polynomials,1,0.5347,0.541084,developing
+student_cbse_01,43,2026-03-02T06:17:00,c_distance_formula,Distance Formula,Coordinate Geometry,1,0.5347,0.514108,developing
+student_cbse_01,43,2026-03-02T06:17:00,c_basic_proportionality_theorem,Basic Proportionality Theorem,Triangles,4,0.5045,0.478756,needs_support
+student_cbse_01,43,2026-03-02T06:17:00,c_trig_identities,Trigonometric Identities,Introduction to Trigonometry,2,0.3788,0.40545600000000004,needs_support
+student_cbse_01,43,2026-03-02T06:17:00,c_factorisation_remainder,Factorisation and Remainder Theorem,Polynomials,4,0.3767,0.38933999999999996,needs_support
+student_cbse_01,43,2026-03-02T06:17:00,c_area_of_triangle,Area of a Triangle in Coordinates,Coordinate Geometry,3,0.3552,0.356152,needs_support
+student_cbse_01,43,2026-03-02T06:17:00,c_similarity_area_ratio,Criteria for Similarity and Area Ratio,Triangles,4,0.259,0.25780800000000004,needs_support
+student_cbse_01,43,2026-03-02T06:17:00,c_zero_coeff_relationship,Relationship Between Zeroes and Coefficients,Polynomials,3,0.2327,0.25686,needs_support
+student_cbse_01,43,2026-03-02T06:17:00,c_section_formula,Section Formula,Coordinate Geometry,2,0.1995,0.21913200000000002,needs_support
+student_cbse_01,43,2026-03-02T06:17:00,c_irrational_numbers,Irrational Numbers,Real Numbers,2,0.1635,0.16128400000000004,needs_support
+student_cbse_01,43,2026-03-02T06:17:00,c_decimal_expansions,Decimal Expansions of Rational Numbers,Real Numbers,1,0.1358,0.15764,needs_support
+student_cbse_01,43,2026-03-02T06:17:00,c_similar_triangles,Similar Triangles,Triangles,1,0.1573,0.144716,needs_support
+student_cbse_01,43,2026-03-02T06:17:00,c_pythagoras_theorem,Pythagoras Theorem,Triangles,1,0.1573,0.144716,needs_support
+student_cbse_01,44,2026-03-02T06:58:00,c_trigonometric_ratios,Trigonometric Ratios,Introduction to Trigonometry,3,0.712,0.667624,developing
+student_cbse_01,44,2026-03-02T06:58:00,c_hcf_lcm,HCF and LCM,Real Numbers,2,0.6541,0.6464440000000001,developing
+student_cbse_01,44,2026-03-02T06:58:00,c_euclid_division_lemma,Euclid Division Lemma,Real Numbers,3,0.6992,0.6432640000000001,developing
+student_cbse_01,44,2026-03-02T06:58:00,c_heights_distances,Heights and Distances,Introduction to Trigonometry,2,0.6175,0.623108,developing
+student_cbse_01,44,2026-03-02T06:58:00,c_standard_trig_values,Standard Trigonometric Values,Introduction to Trigonometry,2,0.6145,0.6204120000000001,developing
+student_cbse_01,44,2026-03-02T06:58:00,c_polynomial_degree_terms,Polynomial Degree and Terms,Polynomials,2,0.6145,0.5653400000000001,developing
+student_cbse_01,44,2026-03-02T06:58:00,c_zeroes_of_polynomial,Zeroes of a Polynomial,Polynomials,1,0.5347,0.541084,developing
+student_cbse_01,44,2026-03-02T06:58:00,c_distance_formula,Distance Formula,Coordinate Geometry,1,0.5347,0.514652,developing
+student_cbse_01,44,2026-03-02T06:58:00,c_basic_proportionality_theorem,Basic Proportionality Theorem,Triangles,4,0.5045,0.478756,needs_support
+student_cbse_01,44,2026-03-02T06:58:00,c_trig_identities,Trigonometric Identities,Introduction to Trigonometry,2,0.3788,0.40545600000000004,needs_support
+student_cbse_01,44,2026-03-02T06:58:00,c_factorisation_remainder,Factorisation and Remainder Theorem,Polynomials,4,0.3767,0.38933999999999996,needs_support
+student_cbse_01,44,2026-03-02T06:58:00,c_area_of_triangle,Area of a Triangle in Coordinates,Coordinate Geometry,4,0.3686,0.36848000000000003,needs_support
+student_cbse_01,44,2026-03-02T06:58:00,c_similarity_area_ratio,Criteria for Similarity and Area Ratio,Triangles,4,0.259,0.25780800000000004,needs_support
+student_cbse_01,44,2026-03-02T06:58:00,c_zero_coeff_relationship,Relationship Between Zeroes and Coefficients,Polynomials,3,0.2327,0.25686,needs_support
+student_cbse_01,44,2026-03-02T06:58:00,c_section_formula,Section Formula,Coordinate Geometry,2,0.1995,0.219668,needs_support
+student_cbse_01,44,2026-03-02T06:58:00,c_irrational_numbers,Irrational Numbers,Real Numbers,2,0.1635,0.16128400000000004,needs_support
+student_cbse_01,44,2026-03-02T06:58:00,c_decimal_expansions,Decimal Expansions of Rational Numbers,Real Numbers,1,0.1358,0.15764,needs_support
+student_cbse_01,44,2026-03-02T06:58:00,c_similar_triangles,Similar Triangles,Triangles,1,0.1573,0.144716,needs_support
+student_cbse_01,44,2026-03-02T06:58:00,c_pythagoras_theorem,Pythagoras Theorem,Triangles,1,0.1573,0.144716,needs_support
+student_cbse_01,45,2026-03-02T07:29:00,c_hcf_lcm,HCF and LCM,Real Numbers,3,0.7344,0.7203200000000001,developing
+student_cbse_01,45,2026-03-02T07:29:00,c_trigonometric_ratios,Trigonometric Ratios,Introduction to Trigonometry,3,0.712,0.667624,developing
+student_cbse_01,45,2026-03-02T07:29:00,c_euclid_division_lemma,Euclid Division Lemma,Real Numbers,3,0.6992,0.6432640000000001,developing
+student_cbse_01,45,2026-03-02T07:29:00,c_heights_distances,Heights and Distances,Introduction to Trigonometry,2,0.6175,0.623108,developing
+student_cbse_01,45,2026-03-02T07:29:00,c_standard_trig_values,Standard Trigonometric Values,Introduction to Trigonometry,2,0.6145,0.6204120000000001,developing
+student_cbse_01,45,2026-03-02T07:29:00,c_polynomial_degree_terms,Polynomial Degree and Terms,Polynomials,2,0.6145,0.5653400000000001,developing
+student_cbse_01,45,2026-03-02T07:29:00,c_zeroes_of_polynomial,Zeroes of a Polynomial,Polynomials,1,0.5347,0.541084,developing
+student_cbse_01,45,2026-03-02T07:29:00,c_distance_formula,Distance Formula,Coordinate Geometry,1,0.5347,0.514652,developing
+student_cbse_01,45,2026-03-02T07:29:00,c_basic_proportionality_theorem,Basic Proportionality Theorem,Triangles,4,0.5045,0.478756,needs_support
+student_cbse_01,45,2026-03-02T07:29:00,c_trig_identities,Trigonometric Identities,Introduction to Trigonometry,2,0.3788,0.40545600000000004,needs_support
+student_cbse_01,45,2026-03-02T07:29:00,c_factorisation_remainder,Factorisation and Remainder Theorem,Polynomials,4,0.3767,0.38933999999999996,needs_support
+student_cbse_01,45,2026-03-02T07:29:00,c_area_of_triangle,Area of a Triangle in Coordinates,Coordinate Geometry,4,0.3686,0.36848000000000003,needs_support
+student_cbse_01,45,2026-03-02T07:29:00,c_similarity_area_ratio,Criteria for Similarity and Area Ratio,Triangles,4,0.259,0.25780800000000004,needs_support
+student_cbse_01,45,2026-03-02T07:29:00,c_zero_coeff_relationship,Relationship Between Zeroes and Coefficients,Polynomials,3,0.2327,0.25686,needs_support
+student_cbse_01,45,2026-03-02T07:29:00,c_section_formula,Section Formula,Coordinate Geometry,2,0.1995,0.219668,needs_support
+student_cbse_01,45,2026-03-02T07:29:00,c_irrational_numbers,Irrational Numbers,Real Numbers,2,0.1635,0.16128400000000004,needs_support
+student_cbse_01,45,2026-03-02T07:29:00,c_decimal_expansions,Decimal Expansions of Rational Numbers,Real Numbers,1,0.1358,0.160856,needs_support
+student_cbse_01,45,2026-03-02T07:29:00,c_similar_triangles,Similar Triangles,Triangles,1,0.1573,0.144716,needs_support
+student_cbse_01,45,2026-03-02T07:29:00,c_pythagoras_theorem,Pythagoras Theorem,Triangles,1,0.1573,0.144716,needs_support
+student_cbse_01,46,2026-03-02T08:00:00,c_hcf_lcm,HCF and LCM,Real Numbers,3,0.7344,0.725688,developing
+student_cbse_01,46,2026-03-02T08:00:00,c_euclid_division_lemma,Euclid Division Lemma,Real Numbers,4,0.7887,0.725604,developing
+student_cbse_01,46,2026-03-02T08:00:00,c_trigonometric_ratios,Trigonometric Ratios,Introduction to Trigonometry,3,0.712,0.667624,developing
+student_cbse_01,46,2026-03-02T08:00:00,c_heights_distances,Heights and Distances,Introduction to Trigonometry,2,0.6175,0.623108,developing
+student_cbse_01,46,2026-03-02T08:00:00,c_standard_trig_values,Standard Trigonometric Values,Introduction to Trigonometry,2,0.6145,0.6204120000000001,developing
+student_cbse_01,46,2026-03-02T08:00:00,c_polynomial_degree_terms,Polynomial Degree and Terms,Polynomials,2,0.6145,0.5653400000000001,developing
+student_cbse_01,46,2026-03-02T08:00:00,c_zeroes_of_polynomial,Zeroes of a Polynomial,Polynomials,1,0.5347,0.541084,developing
+student_cbse_01,46,2026-03-02T08:00:00,c_distance_formula,Distance Formula,Coordinate Geometry,1,0.5347,0.514652,developing
+student_cbse_01,46,2026-03-02T08:00:00,c_basic_proportionality_theorem,Basic Proportionality Theorem,Triangles,4,0.5045,0.478756,needs_support
+student_cbse_01,46,2026-03-02T08:00:00,c_trig_identities,Trigonometric Identities,Introduction to Trigonometry,2,0.3788,0.40545600000000004,needs_support
+student_cbse_01,46,2026-03-02T08:00:00,c_factorisation_remainder,Factorisation and Remainder Theorem,Polynomials,4,0.3767,0.38933999999999996,needs_support
+student_cbse_01,46,2026-03-02T08:00:00,c_area_of_triangle,Area of a Triangle in Coordinates,Coordinate Geometry,4,0.3686,0.36848000000000003,needs_support
+student_cbse_01,46,2026-03-02T08:00:00,c_similarity_area_ratio,Criteria for Similarity and Area Ratio,Triangles,4,0.259,0.25780800000000004,needs_support
+student_cbse_01,46,2026-03-02T08:00:00,c_zero_coeff_relationship,Relationship Between Zeroes and Coefficients,Polynomials,3,0.2327,0.25686,needs_support
+student_cbse_01,46,2026-03-02T08:00:00,c_section_formula,Section Formula,Coordinate Geometry,2,0.1995,0.219668,needs_support
+student_cbse_01,46,2026-03-02T08:00:00,c_irrational_numbers,Irrational Numbers,Real Numbers,2,0.1635,0.16128400000000004,needs_support
+student_cbse_01,46,2026-03-02T08:00:00,c_decimal_expansions,Decimal Expansions of Rational Numbers,Real Numbers,1,0.1358,0.160856,needs_support
+student_cbse_01,46,2026-03-02T08:00:00,c_similar_triangles,Similar Triangles,Triangles,1,0.1573,0.144716,needs_support
+student_cbse_01,46,2026-03-02T08:00:00,c_pythagoras_theorem,Pythagoras Theorem,Triangles,1,0.1573,0.144716,needs_support
+student_cbse_01,47,2026-03-02T08:40:00,c_hcf_lcm,HCF and LCM,Real Numbers,3,0.7344,0.725688,developing
+student_cbse_01,47,2026-03-02T08:40:00,c_euclid_division_lemma,Euclid Division Lemma,Real Numbers,4,0.7887,0.725604,developing
+student_cbse_01,47,2026-03-02T08:40:00,c_trigonometric_ratios,Trigonometric Ratios,Introduction to Trigonometry,3,0.712,0.667624,developing
+student_cbse_01,47,2026-03-02T08:40:00,c_heights_distances,Heights and Distances,Introduction to Trigonometry,2,0.6175,0.623108,developing
+student_cbse_01,47,2026-03-02T08:40:00,c_standard_trig_values,Standard Trigonometric Values,Introduction to Trigonometry,2,0.6145,0.6204120000000001,developing
+student_cbse_01,47,2026-03-02T08:40:00,c_polynomial_degree_terms,Polynomial Degree and Terms,Polynomials,2,0.6145,0.5653400000000001,developing
+student_cbse_01,47,2026-03-02T08:40:00,c_zeroes_of_polynomial,Zeroes of a Polynomial,Polynomials,1,0.5347,0.541084,developing
+student_cbse_01,47,2026-03-02T08:40:00,c_trig_identities,Trigonometric Identities,Introduction to Trigonometry,3,0.5182,0.533704,developing
+student_cbse_01,47,2026-03-02T08:40:00,c_distance_formula,Distance Formula,Coordinate Geometry,1,0.5347,0.514652,developing
+student_cbse_01,47,2026-03-02T08:40:00,c_basic_proportionality_theorem,Basic Proportionality Theorem,Triangles,4,0.5045,0.478756,needs_support
+student_cbse_01,47,2026-03-02T08:40:00,c_factorisation_remainder,Factorisation and Remainder Theorem,Polynomials,4,0.3767,0.38933999999999996,needs_support
+student_cbse_01,47,2026-03-02T08:40:00,c_area_of_triangle,Area of a Triangle in Coordinates,Coordinate Geometry,4,0.3686,0.36848000000000003,needs_support
+student_cbse_01,47,2026-03-02T08:40:00,c_similarity_area_ratio,Criteria for Similarity and Area Ratio,Triangles,4,0.259,0.25780800000000004,needs_support
+student_cbse_01,47,2026-03-02T08:40:00,c_zero_coeff_relationship,Relationship Between Zeroes and Coefficients,Polynomials,3,0.2327,0.25686,needs_support
+student_cbse_01,47,2026-03-02T08:40:00,c_section_formula,Section Formula,Coordinate Geometry,2,0.1995,0.219668,needs_support
+student_cbse_01,47,2026-03-02T08:40:00,c_irrational_numbers,Irrational Numbers,Real Numbers,2,0.1635,0.16128400000000004,needs_support
+student_cbse_01,47,2026-03-02T08:40:00,c_decimal_expansions,Decimal Expansions of Rational Numbers,Real Numbers,1,0.1358,0.160856,needs_support
+student_cbse_01,47,2026-03-02T08:40:00,c_similar_triangles,Similar Triangles,Triangles,1,0.1573,0.144716,needs_support
+student_cbse_01,47,2026-03-02T08:40:00,c_pythagoras_theorem,Pythagoras Theorem,Triangles,1,0.1573,0.144716,needs_support
+student_cbse_01,48,2026-03-02T09:07:00,c_hcf_lcm,HCF and LCM,Real Numbers,3,0.7344,0.725688,developing
+student_cbse_01,48,2026-03-02T09:07:00,c_euclid_division_lemma,Euclid Division Lemma,Real Numbers,4,0.7887,0.725604,developing
+student_cbse_01,48,2026-03-02T09:07:00,c_trigonometric_ratios,Trigonometric Ratios,Introduction to Trigonometry,3,0.712,0.667624,developing
+student_cbse_01,48,2026-03-02T09:07:00,c_heights_distances,Heights and Distances,Introduction to Trigonometry,2,0.6175,0.623108,developing
+student_cbse_01,48,2026-03-02T09:07:00,c_standard_trig_values,Standard Trigonometric Values,Introduction to Trigonometry,2,0.6145,0.6204120000000001,developing
+student_cbse_01,48,2026-03-02T09:07:00,c_polynomial_degree_terms,Polynomial Degree and Terms,Polynomials,2,0.6145,0.5653400000000001,developing
+student_cbse_01,48,2026-03-02T09:07:00,c_zeroes_of_polynomial,Zeroes of a Polynomial,Polynomials,1,0.5347,0.541084,developing
+student_cbse_01,48,2026-03-02T09:07:00,c_trig_identities,Trigonometric Identities,Introduction to Trigonometry,3,0.5182,0.533704,developing
+student_cbse_01,48,2026-03-02T09:07:00,c_distance_formula,Distance Formula,Coordinate Geometry,1,0.5347,0.514652,developing
+student_cbse_01,48,2026-03-02T09:07:00,c_basic_proportionality_theorem,Basic Proportionality Theorem,Triangles,5,0.5149,0.48832400000000004,needs_support
+student_cbse_01,48,2026-03-02T09:07:00,c_factorisation_remainder,Factorisation and Remainder Theorem,Polynomials,4,0.3767,0.38933999999999996,needs_support
+student_cbse_01,48,2026-03-02T09:07:00,c_area_of_triangle,Area of a Triangle in Coordinates,Coordinate Geometry,4,0.3686,0.36848000000000003,needs_support
+student_cbse_01,48,2026-03-02T09:07:00,c_similarity_area_ratio,Criteria for Similarity and Area Ratio,Triangles,4,0.259,0.258016,needs_support
+student_cbse_01,48,2026-03-02T09:07:00,c_zero_coeff_relationship,Relationship Between Zeroes and Coefficients,Polynomials,3,0.2327,0.25686,needs_support
+student_cbse_01,48,2026-03-02T09:07:00,c_section_formula,Section Formula,Coordinate Geometry,2,0.1995,0.219668,needs_support
+student_cbse_01,48,2026-03-02T09:07:00,c_irrational_numbers,Irrational Numbers,Real Numbers,2,0.1635,0.16128400000000004,needs_support
+student_cbse_01,48,2026-03-02T09:07:00,c_decimal_expansions,Decimal Expansions of Rational Numbers,Real Numbers,1,0.1358,0.160856,needs_support
+student_cbse_01,48,2026-03-02T09:07:00,c_similar_triangles,Similar Triangles,Triangles,1,0.1573,0.144716,needs_support
+student_cbse_01,48,2026-03-02T09:07:00,c_pythagoras_theorem,Pythagoras Theorem,Triangles,1,0.1573,0.144716,needs_support
+student_cbse_01,49,2026-03-02T09:25:00,c_hcf_lcm,HCF and LCM,Real Numbers,4,0.8225,0.80674,mastered
+student_cbse_01,49,2026-03-02T09:25:00,c_euclid_division_lemma,Euclid Division Lemma,Real Numbers,4,0.7887,0.725604,developing
+student_cbse_01,49,2026-03-02T09:25:00,c_trigonometric_ratios,Trigonometric Ratios,Introduction to Trigonometry,3,0.712,0.667624,developing
+student_cbse_01,49,2026-03-02T09:25:00,c_heights_distances,Heights and Distances,Introduction to Trigonometry,2,0.6175,0.623108,developing
+student_cbse_01,49,2026-03-02T09:25:00,c_standard_trig_values,Standard Trigonometric Values,Introduction to Trigonometry,2,0.6145,0.6204120000000001,developing
+student_cbse_01,49,2026-03-02T09:25:00,c_polynomial_degree_terms,Polynomial Degree and Terms,Polynomials,2,0.6145,0.5653400000000001,developing
+student_cbse_01,49,2026-03-02T09:25:00,c_zeroes_of_polynomial,Zeroes of a Polynomial,Polynomials,1,0.5347,0.541084,developing
+student_cbse_01,49,2026-03-02T09:25:00,c_trig_identities,Trigonometric Identities,Introduction to Trigonometry,3,0.5182,0.533704,developing
+student_cbse_01,49,2026-03-02T09:25:00,c_distance_formula,Distance Formula,Coordinate Geometry,1,0.5347,0.514652,developing
+student_cbse_01,49,2026-03-02T09:25:00,c_basic_proportionality_theorem,Basic Proportionality Theorem,Triangles,5,0.5149,0.48832400000000004,needs_support
+student_cbse_01,49,2026-03-02T09:25:00,c_factorisation_remainder,Factorisation and Remainder Theorem,Polynomials,4,0.3767,0.38933999999999996,needs_support
+student_cbse_01,49,2026-03-02T09:25:00,c_area_of_triangle,Area of a Triangle in Coordinates,Coordinate Geometry,4,0.3686,0.36848000000000003,needs_support
+student_cbse_01,49,2026-03-02T09:25:00,c_similarity_area_ratio,Criteria for Similarity and Area Ratio,Triangles,4,0.259,0.258016,needs_support
+student_cbse_01,49,2026-03-02T09:25:00,c_zero_coeff_relationship,Relationship Between Zeroes and Coefficients,Polynomials,3,0.2327,0.25686,needs_support
+student_cbse_01,49,2026-03-02T09:25:00,c_section_formula,Section Formula,Coordinate Geometry,2,0.1995,0.219668,needs_support
+student_cbse_01,49,2026-03-02T09:25:00,c_decimal_expansions,Decimal Expansions of Rational Numbers,Real Numbers,1,0.1358,0.16437600000000002,needs_support
+student_cbse_01,49,2026-03-02T09:25:00,c_irrational_numbers,Irrational Numbers,Real Numbers,2,0.1635,0.16128400000000004,needs_support
+student_cbse_01,49,2026-03-02T09:25:00,c_similar_triangles,Similar Triangles,Triangles,1,0.1573,0.144716,needs_support
+student_cbse_01,49,2026-03-02T09:25:00,c_pythagoras_theorem,Pythagoras Theorem,Triangles,1,0.1573,0.144716,needs_support
+student_cbse_01,50,2026-03-02T09:46:00,c_hcf_lcm,HCF and LCM,Real Numbers,5,0.772,0.7602800000000001,mastered
+student_cbse_01,50,2026-03-02T09:46:00,c_euclid_division_lemma,Euclid Division Lemma,Real Numbers,4,0.7887,0.725604,developing
+student_cbse_01,50,2026-03-02T09:46:00,c_trigonometric_ratios,Trigonometric Ratios,Introduction to Trigonometry,3,0.712,0.667624,developing
+student_cbse_01,50,2026-03-02T09:46:00,c_heights_distances,Heights and Distances,Introduction to Trigonometry,2,0.6175,0.623108,developing
+student_cbse_01,50,2026-03-02T09:46:00,c_standard_trig_values,Standard Trigonometric Values,Introduction to Trigonometry,2,0.6145,0.6204120000000001,developing
+student_cbse_01,50,2026-03-02T09:46:00,c_polynomial_degree_terms,Polynomial Degree and Terms,Polynomials,2,0.6145,0.5653400000000001,developing
+student_cbse_01,50,2026-03-02T09:46:00,c_zeroes_of_polynomial,Zeroes of a Polynomial,Polynomials,1,0.5347,0.541084,developing
+student_cbse_01,50,2026-03-02T09:46:00,c_trig_identities,Trigonometric Identities,Introduction to Trigonometry,3,0.5182,0.533704,developing
+student_cbse_01,50,2026-03-02T09:46:00,c_distance_formula,Distance Formula,Coordinate Geometry,1,0.5347,0.514652,developing
+student_cbse_01,50,2026-03-02T09:46:00,c_basic_proportionality_theorem,Basic Proportionality Theorem,Triangles,5,0.5149,0.48832400000000004,needs_support
+student_cbse_01,50,2026-03-02T09:46:00,c_factorisation_remainder,Factorisation and Remainder Theorem,Polynomials,4,0.3767,0.38933999999999996,needs_support
+student_cbse_01,50,2026-03-02T09:46:00,c_area_of_triangle,Area of a Triangle in Coordinates,Coordinate Geometry,4,0.3686,0.36848000000000003,needs_support
+student_cbse_01,50,2026-03-02T09:46:00,c_similarity_area_ratio,Criteria for Similarity and Area Ratio,Triangles,4,0.259,0.258016,needs_support
+student_cbse_01,50,2026-03-02T09:46:00,c_zero_coeff_relationship,Relationship Between Zeroes and Coefficients,Polynomials,3,0.2327,0.25686,needs_support
+student_cbse_01,50,2026-03-02T09:46:00,c_section_formula,Section Formula,Coordinate Geometry,2,0.1995,0.219668,needs_support
+student_cbse_01,50,2026-03-02T09:46:00,c_decimal_expansions,Decimal Expansions of Rational Numbers,Real Numbers,1,0.1358,0.162352,needs_support
+student_cbse_01,50,2026-03-02T09:46:00,c_irrational_numbers,Irrational Numbers,Real Numbers,2,0.1635,0.16128400000000004,needs_support
+student_cbse_01,50,2026-03-02T09:46:00,c_similar_triangles,Similar Triangles,Triangles,1,0.1573,0.144716,needs_support
+student_cbse_01,50,2026-03-02T09:46:00,c_pythagoras_theorem,Pythagoras Theorem,Triangles,1,0.1573,0.144716,needs_support
+student_cbse_01,51,2026-03-02T10:06:00,c_hcf_lcm,HCF and LCM,Real Numbers,5,0.772,0.7602800000000001,mastered
+student_cbse_01,51,2026-03-02T10:06:00,c_euclid_division_lemma,Euclid Division Lemma,Real Numbers,4,0.7887,0.725604,developing
+student_cbse_01,51,2026-03-02T10:06:00,c_trigonometric_ratios,Trigonometric Ratios,Introduction to Trigonometry,3,0.712,0.667624,developing
+student_cbse_01,51,2026-03-02T10:06:00,c_heights_distances,Heights and Distances,Introduction to Trigonometry,2,0.6175,0.623108,developing
+student_cbse_01,51,2026-03-02T10:06:00,c_standard_trig_values,Standard Trigonometric Values,Introduction to Trigonometry,2,0.6145,0.6204120000000001,developing
+student_cbse_01,51,2026-03-02T10:06:00,c_polynomial_degree_terms,Polynomial Degree and Terms,Polynomials,2,0.6145,0.5653400000000001,developing
+student_cbse_01,51,2026-03-02T10:06:00,c_zeroes_of_polynomial,Zeroes of a Polynomial,Polynomials,1,0.5347,0.541084,developing
+student_cbse_01,51,2026-03-02T10:06:00,c_trig_identities,Trigonometric Identities,Introduction to Trigonometry,3,0.5182,0.533704,developing
+student_cbse_01,51,2026-03-02T10:06:00,c_distance_formula,Distance Formula,Coordinate Geometry,1,0.5347,0.514652,developing
+student_cbse_01,51,2026-03-02T10:06:00,c_basic_proportionality_theorem,Basic Proportionality Theorem,Triangles,5,0.5149,0.48832400000000004,needs_support
+student_cbse_01,51,2026-03-02T10:06:00,c_factorisation_remainder,Factorisation and Remainder Theorem,Polynomials,5,0.416,0.425496,needs_support
+student_cbse_01,51,2026-03-02T10:06:00,c_area_of_triangle,Area of a Triangle in Coordinates,Coordinate Geometry,4,0.3686,0.36848000000000003,needs_support
+student_cbse_01,51,2026-03-02T10:06:00,c_similarity_area_ratio,Criteria for Similarity and Area Ratio,Triangles,4,0.259,0.258016,needs_support
+student_cbse_01,51,2026-03-02T10:06:00,c_zero_coeff_relationship,Relationship Between Zeroes and Coefficients,Polynomials,3,0.2327,0.25686,needs_support
+student_cbse_01,51,2026-03-02T10:06:00,c_section_formula,Section Formula,Coordinate Geometry,2,0.1995,0.219668,needs_support
+student_cbse_01,51,2026-03-02T10:06:00,c_decimal_expansions,Decimal Expansions of Rational Numbers,Real Numbers,1,0.1358,0.162352,needs_support
+student_cbse_01,51,2026-03-02T10:06:00,c_irrational_numbers,Irrational Numbers,Real Numbers,2,0.1635,0.16128400000000004,needs_support
+student_cbse_01,51,2026-03-02T10:06:00,c_similar_triangles,Similar Triangles,Triangles,1,0.1573,0.144716,needs_support
+student_cbse_01,51,2026-03-02T10:06:00,c_pythagoras_theorem,Pythagoras Theorem,Triangles,1,0.1573,0.144716,needs_support
+student_cbse_01,52,2026-03-02T10:43:00,c_hcf_lcm,HCF and LCM,Real Numbers,5,0.772,0.7602800000000001,mastered
+student_cbse_01,52,2026-03-02T10:43:00,c_euclid_division_lemma,Euclid Division Lemma,Real Numbers,4,0.7887,0.725604,developing
+student_cbse_01,52,2026-03-02T10:43:00,c_trigonometric_ratios,Trigonometric Ratios,Introduction to Trigonometry,3,0.712,0.667624,developing
+student_cbse_01,52,2026-03-02T10:43:00,c_heights_distances,Heights and Distances,Introduction to Trigonometry,2,0.6175,0.623108,developing
+student_cbse_01,52,2026-03-02T10:43:00,c_standard_trig_values,Standard Trigonometric Values,Introduction to Trigonometry,2,0.6145,0.6204120000000001,developing
+student_cbse_01,52,2026-03-02T10:43:00,c_polynomial_degree_terms,Polynomial Degree and Terms,Polynomials,2,0.6145,0.5653400000000001,developing
+student_cbse_01,52,2026-03-02T10:43:00,c_zeroes_of_polynomial,Zeroes of a Polynomial,Polynomials,1,0.5347,0.541084,developing
+student_cbse_01,52,2026-03-02T10:43:00,c_trig_identities,Trigonometric Identities,Introduction to Trigonometry,3,0.5182,0.533704,developing
+student_cbse_01,52,2026-03-02T10:43:00,c_distance_formula,Distance Formula,Coordinate Geometry,1,0.5347,0.520636,developing
+student_cbse_01,52,2026-03-02T10:43:00,c_area_of_triangle,Area of a Triangle in Coordinates,Coordinate Geometry,5,0.5182,0.506112,developing
+student_cbse_01,52,2026-03-02T10:43:00,c_basic_proportionality_theorem,Basic Proportionality Theorem,Triangles,5,0.5149,0.48832400000000004,needs_support
+student_cbse_01,52,2026-03-02T10:43:00,c_factorisation_remainder,Factorisation and Remainder Theorem,Polynomials,5,0.416,0.425496,needs_support
+student_cbse_01,52,2026-03-02T10:43:00,c_similarity_area_ratio,Criteria for Similarity and Area Ratio,Triangles,4,0.259,0.258016,needs_support
+student_cbse_01,52,2026-03-02T10:43:00,c_zero_coeff_relationship,Relationship Between Zeroes and Coefficients,Polynomials,3,0.2327,0.25686,needs_support
+student_cbse_01,52,2026-03-02T10:43:00,c_section_formula,Section Formula,Coordinate Geometry,2,0.1995,0.22565200000000002,needs_support
+student_cbse_01,52,2026-03-02T10:43:00,c_decimal_expansions,Decimal Expansions of Rational Numbers,Real Numbers,1,0.1358,0.162352,needs_support
+student_cbse_01,52,2026-03-02T10:43:00,c_irrational_numbers,Irrational Numbers,Real Numbers,2,0.1635,0.16128400000000004,needs_support
+student_cbse_01,52,2026-03-02T10:43:00,c_similar_triangles,Similar Triangles,Triangles,1,0.1573,0.144716,needs_support
+student_cbse_01,52,2026-03-02T10:43:00,c_pythagoras_theorem,Pythagoras Theorem,Triangles,1,0.1573,0.144716,needs_support
+student_cbse_01,53,2026-03-02T11:19:00,c_hcf_lcm,HCF and LCM,Real Numbers,5,0.772,0.7602800000000001,mastered
+student_cbse_01,53,2026-03-02T11:19:00,c_euclid_division_lemma,Euclid Division Lemma,Real Numbers,4,0.7887,0.725604,developing
+student_cbse_01,53,2026-03-02T11:19:00,c_trigonometric_ratios,Trigonometric Ratios,Introduction to Trigonometry,3,0.712,0.667624,developing
+student_cbse_01,53,2026-03-02T11:19:00,c_heights_distances,Heights and Distances,Introduction to Trigonometry,2,0.6175,0.623108,developing
+student_cbse_01,53,2026-03-02T11:19:00,c_standard_trig_values,Standard Trigonometric Values,Introduction to Trigonometry,2,0.6145,0.6204120000000001,developing
+student_cbse_01,53,2026-03-02T11:19:00,c_polynomial_degree_terms,Polynomial Degree and Terms,Polynomials,2,0.6145,0.5653400000000001,developing
+student_cbse_01,53,2026-03-02T11:19:00,c_zeroes_of_polynomial,Zeroes of a Polynomial,Polynomials,1,0.5347,0.541084,developing
+student_cbse_01,53,2026-03-02T11:19:00,c_trig_identities,Trigonometric Identities,Introduction to Trigonometry,3,0.5182,0.533704,developing
+student_cbse_01,53,2026-03-02T11:19:00,c_distance_formula,Distance Formula,Coordinate Geometry,1,0.5347,0.520636,developing
+student_cbse_01,53,2026-03-02T11:19:00,c_area_of_triangle,Area of a Triangle in Coordinates,Coordinate Geometry,5,0.5182,0.506112,developing
+student_cbse_01,53,2026-03-02T11:19:00,c_basic_proportionality_theorem,Basic Proportionality Theorem,Triangles,5,0.5149,0.48832400000000004,needs_support
+student_cbse_01,53,2026-03-02T11:19:00,c_factorisation_remainder,Factorisation and Remainder Theorem,Polynomials,6,0.4262,0.43488000000000004,needs_support
+student_cbse_01,53,2026-03-02T11:19:00,c_similarity_area_ratio,Criteria for Similarity and Area Ratio,Triangles,4,0.259,0.258016,needs_support
+student_cbse_01,53,2026-03-02T11:19:00,c_zero_coeff_relationship,Relationship Between Zeroes and Coefficients,Polynomials,3,0.2327,0.25686,needs_support
+student_cbse_01,53,2026-03-02T11:19:00,c_section_formula,Section Formula,Coordinate Geometry,2,0.1995,0.22565200000000002,needs_support
+student_cbse_01,53,2026-03-02T11:19:00,c_decimal_expansions,Decimal Expansions of Rational Numbers,Real Numbers,1,0.1358,0.162352,needs_support
+student_cbse_01,53,2026-03-02T11:19:00,c_irrational_numbers,Irrational Numbers,Real Numbers,2,0.1635,0.16128400000000004,needs_support
+student_cbse_01,53,2026-03-02T11:19:00,c_similar_triangles,Similar Triangles,Triangles,1,0.1573,0.144716,needs_support
+student_cbse_01,53,2026-03-02T11:19:00,c_pythagoras_theorem,Pythagoras Theorem,Triangles,1,0.1573,0.144716,needs_support
+student_cbse_01,54,2026-03-02T11:47:00,c_hcf_lcm,HCF and LCM,Real Numbers,5,0.772,0.7602800000000001,mastered
+student_cbse_01,54,2026-03-02T11:47:00,c_euclid_division_lemma,Euclid Division Lemma,Real Numbers,4,0.7887,0.725604,developing
+student_cbse_01,54,2026-03-02T11:47:00,c_trigonometric_ratios,Trigonometric Ratios,Introduction to Trigonometry,3,0.712,0.6709999999999999,developing
+student_cbse_01,54,2026-03-02T11:47:00,c_heights_distances,Heights and Distances,Introduction to Trigonometry,2,0.6175,0.623108,developing
+student_cbse_01,54,2026-03-02T11:47:00,c_standard_trig_values,Standard Trigonometric Values,Introduction to Trigonometry,2,0.6145,0.6204120000000001,developing
+student_cbse_01,54,2026-03-02T11:47:00,c_polynomial_degree_terms,Polynomial Degree and Terms,Polynomials,2,0.6145,0.5653400000000001,developing
+student_cbse_01,54,2026-03-02T11:47:00,c_zeroes_of_polynomial,Zeroes of a Polynomial,Polynomials,1,0.5347,0.541084,developing
+student_cbse_01,54,2026-03-02T11:47:00,c_trig_identities,Trigonometric Identities,Introduction to Trigonometry,3,0.5182,0.533704,developing
+student_cbse_01,54,2026-03-02T11:47:00,c_distance_formula,Distance Formula,Coordinate Geometry,1,0.5347,0.520636,developing
+student_cbse_01,54,2026-03-02T11:47:00,c_area_of_triangle,Area of a Triangle in Coordinates,Coordinate Geometry,5,0.5182,0.506112,developing
+student_cbse_01,54,2026-03-02T11:47:00,c_basic_proportionality_theorem,Basic Proportionality Theorem,Triangles,5,0.5149,0.48832400000000004,needs_support
+student_cbse_01,54,2026-03-02T11:47:00,c_factorisation_remainder,Factorisation and Remainder Theorem,Polynomials,6,0.4262,0.43488000000000004,needs_support
+student_cbse_01,54,2026-03-02T11:47:00,c_similarity_area_ratio,Criteria for Similarity and Area Ratio,Triangles,4,0.259,0.258016,needs_support
+student_cbse_01,54,2026-03-02T11:47:00,c_zero_coeff_relationship,Relationship Between Zeroes and Coefficients,Polynomials,3,0.2327,0.25686,needs_support
+student_cbse_01,54,2026-03-02T11:47:00,c_section_formula,Section Formula,Coordinate Geometry,2,0.1995,0.22565200000000002,needs_support
+student_cbse_01,54,2026-03-02T11:47:00,c_pythagoras_theorem,Pythagoras Theorem,Triangles,2,0.1995,0.18354,needs_support
+student_cbse_01,54,2026-03-02T11:47:00,c_decimal_expansions,Decimal Expansions of Rational Numbers,Real Numbers,1,0.1358,0.162352,needs_support
+student_cbse_01,54,2026-03-02T11:47:00,c_irrational_numbers,Irrational Numbers,Real Numbers,2,0.1635,0.16128400000000004,needs_support
+student_cbse_01,54,2026-03-02T11:47:00,c_similar_triangles,Similar Triangles,Triangles,1,0.1573,0.144716,needs_support
+student_cbse_01,55,2026-03-02T12:20:00,c_hcf_lcm,HCF and LCM,Real Numbers,5,0.772,0.7602800000000001,mastered
+student_cbse_01,55,2026-03-02T12:20:00,c_euclid_division_lemma,Euclid Division Lemma,Real Numbers,4,0.7887,0.725604,developing
+student_cbse_01,55,2026-03-02T12:20:00,c_trigonometric_ratios,Trigonometric Ratios,Introduction to Trigonometry,3,0.712,0.6709999999999999,developing
+student_cbse_01,55,2026-03-02T12:20:00,c_heights_distances,Heights and Distances,Introduction to Trigonometry,2,0.6175,0.623108,developing
+student_cbse_01,55,2026-03-02T12:20:00,c_standard_trig_values,Standard Trigonometric Values,Introduction to Trigonometry,2,0.6145,0.6204120000000001,developing
+student_cbse_01,55,2026-03-02T12:20:00,c_polynomial_degree_terms,Polynomial Degree and Terms,Polynomials,2,0.6145,0.5653400000000001,developing
+student_cbse_01,55,2026-03-02T12:20:00,c_zeroes_of_polynomial,Zeroes of a Polynomial,Polynomials,1,0.5347,0.541084,developing
+student_cbse_01,55,2026-03-02T12:20:00,c_trig_identities,Trigonometric Identities,Introduction to Trigonometry,3,0.5182,0.533704,developing
+student_cbse_01,55,2026-03-02T12:20:00,c_distance_formula,Distance Formula,Coordinate Geometry,1,0.5347,0.520636,developing
+student_cbse_01,55,2026-03-02T12:20:00,c_area_of_triangle,Area of a Triangle in Coordinates,Coordinate Geometry,5,0.5182,0.506112,developing
+student_cbse_01,55,2026-03-02T12:20:00,c_basic_proportionality_theorem,Basic Proportionality Theorem,Triangles,5,0.5149,0.48832400000000004,needs_support
+student_cbse_01,55,2026-03-02T12:20:00,c_factorisation_remainder,Factorisation and Remainder Theorem,Polynomials,7,0.4102,0.42016,needs_support
+student_cbse_01,55,2026-03-02T12:20:00,c_similarity_area_ratio,Criteria for Similarity and Area Ratio,Triangles,4,0.259,0.258016,needs_support
+student_cbse_01,55,2026-03-02T12:20:00,c_zero_coeff_relationship,Relationship Between Zeroes and Coefficients,Polynomials,3,0.2327,0.25686,needs_support
+student_cbse_01,55,2026-03-02T12:20:00,c_section_formula,Section Formula,Coordinate Geometry,2,0.1995,0.22565200000000002,needs_support
+student_cbse_01,55,2026-03-02T12:20:00,c_pythagoras_theorem,Pythagoras Theorem,Triangles,2,0.1995,0.18354,needs_support
+student_cbse_01,55,2026-03-02T12:20:00,c_decimal_expansions,Decimal Expansions of Rational Numbers,Real Numbers,1,0.1358,0.162352,needs_support
+student_cbse_01,55,2026-03-02T12:20:00,c_irrational_numbers,Irrational Numbers,Real Numbers,2,0.1635,0.16128400000000004,needs_support
+student_cbse_01,55,2026-03-02T12:20:00,c_similar_triangles,Similar Triangles,Triangles,1,0.1573,0.144716,needs_support
+student_cbse_01,56,2026-03-02T12:49:00,c_hcf_lcm,HCF and LCM,Real Numbers,5,0.772,0.7602800000000001,mastered
+student_cbse_01,56,2026-03-02T12:49:00,c_euclid_division_lemma,Euclid Division Lemma,Real Numbers,4,0.7887,0.725604,developing
+student_cbse_01,56,2026-03-02T12:49:00,c_trigonometric_ratios,Trigonometric Ratios,Introduction to Trigonometry,3,0.712,0.6709999999999999,developing
+student_cbse_01,56,2026-03-02T12:49:00,c_heights_distances,Heights and Distances,Introduction to Trigonometry,2,0.6175,0.623108,developing
+student_cbse_01,56,2026-03-02T12:49:00,c_standard_trig_values,Standard Trigonometric Values,Introduction to Trigonometry,2,0.6145,0.6204120000000001,developing
+student_cbse_01,56,2026-03-02T12:49:00,c_polynomial_degree_terms,Polynomial Degree and Terms,Polynomials,2,0.6145,0.5653400000000001,developing
+student_cbse_01,56,2026-03-02T12:49:00,c_zeroes_of_polynomial,Zeroes of a Polynomial,Polynomials,1,0.5347,0.541084,developing
+student_cbse_01,56,2026-03-02T12:49:00,c_trig_identities,Trigonometric Identities,Introduction to Trigonometry,3,0.5182,0.533704,developing
+student_cbse_01,56,2026-03-02T12:49:00,c_distance_formula,Distance Formula,Coordinate Geometry,1,0.5347,0.520636,developing
+student_cbse_01,56,2026-03-02T12:49:00,c_area_of_triangle,Area of a Triangle in Coordinates,Coordinate Geometry,5,0.5182,0.506112,developing
+student_cbse_01,56,2026-03-02T12:49:00,c_basic_proportionality_theorem,Basic Proportionality Theorem,Triangles,5,0.5149,0.48832400000000004,needs_support
+student_cbse_01,56,2026-03-02T12:49:00,c_factorisation_remainder,Factorisation and Remainder Theorem,Polynomials,7,0.4102,0.42016,needs_support
+student_cbse_01,56,2026-03-02T12:49:00,c_zero_coeff_relationship,Relationship Between Zeroes and Coefficients,Polynomials,4,0.3743,0.38713200000000003,needs_support
+student_cbse_01,56,2026-03-02T12:49:00,c_similarity_area_ratio,Criteria for Similarity and Area Ratio,Triangles,4,0.259,0.258016,needs_support
+student_cbse_01,56,2026-03-02T12:49:00,c_section_formula,Section Formula,Coordinate Geometry,2,0.1995,0.22565200000000002,needs_support
+student_cbse_01,56,2026-03-02T12:49:00,c_pythagoras_theorem,Pythagoras Theorem,Triangles,2,0.1995,0.18354,needs_support
+student_cbse_01,56,2026-03-02T12:49:00,c_decimal_expansions,Decimal Expansions of Rational Numbers,Real Numbers,1,0.1358,0.162352,needs_support
+student_cbse_01,56,2026-03-02T12:49:00,c_irrational_numbers,Irrational Numbers,Real Numbers,2,0.1635,0.16128400000000004,needs_support
+student_cbse_01,56,2026-03-02T12:49:00,c_similar_triangles,Similar Triangles,Triangles,1,0.1573,0.144716,needs_support
+student_cbse_01,57,2026-03-02T13:28:00,c_hcf_lcm,HCF and LCM,Real Numbers,5,0.772,0.7602800000000001,mastered
+student_cbse_01,57,2026-03-02T13:28:00,c_euclid_division_lemma,Euclid Division Lemma,Real Numbers,4,0.7887,0.725604,developing
+student_cbse_01,57,2026-03-02T13:28:00,c_trigonometric_ratios,Trigonometric Ratios,Introduction to Trigonometry,3,0.712,0.6709999999999999,developing
+student_cbse_01,57,2026-03-02T13:28:00,c_heights_distances,Heights and Distances,Introduction to Trigonometry,2,0.6175,0.623108,developing
+student_cbse_01,57,2026-03-02T13:28:00,c_standard_trig_values,Standard Trigonometric Values,Introduction to Trigonometry,2,0.6145,0.6204120000000001,developing
+student_cbse_01,57,2026-03-02T13:28:00,c_polynomial_degree_terms,Polynomial Degree and Terms,Polynomials,2,0.6145,0.5653400000000001,developing
+student_cbse_01,57,2026-03-02T13:28:00,c_zeroes_of_polynomial,Zeroes of a Polynomial,Polynomials,1,0.5347,0.541084,developing
+student_cbse_01,57,2026-03-02T13:28:00,c_trig_identities,Trigonometric Identities,Introduction to Trigonometry,3,0.5182,0.533704,developing
+student_cbse_01,57,2026-03-02T13:28:00,c_distance_formula,Distance Formula,Coordinate Geometry,1,0.5347,0.520308,developing
+student_cbse_01,57,2026-03-02T13:28:00,c_area_of_triangle,Area of a Triangle in Coordinates,Coordinate Geometry,6,0.5102,0.49875200000000003,needs_support
+student_cbse_01,57,2026-03-02T13:28:00,c_basic_proportionality_theorem,Basic Proportionality Theorem,Triangles,5,0.5149,0.48832400000000004,needs_support
+student_cbse_01,57,2026-03-02T13:28:00,c_factorisation_remainder,Factorisation and Remainder Theorem,Polynomials,7,0.4102,0.42016,needs_support
+student_cbse_01,57,2026-03-02T13:28:00,c_zero_coeff_relationship,Relationship Between Zeroes and Coefficients,Polynomials,4,0.3743,0.38713200000000003,needs_support
+student_cbse_01,57,2026-03-02T13:28:00,c_similarity_area_ratio,Criteria for Similarity and Area Ratio,Triangles,4,0.259,0.258016,needs_support
+student_cbse_01,57,2026-03-02T13:28:00,c_section_formula,Section Formula,Coordinate Geometry,2,0.1995,0.225332,needs_support
+student_cbse_01,57,2026-03-02T13:28:00,c_pythagoras_theorem,Pythagoras Theorem,Triangles,2,0.1995,0.18354,needs_support
+student_cbse_01,57,2026-03-02T13:28:00,c_decimal_expansions,Decimal Expansions of Rational Numbers,Real Numbers,1,0.1358,0.162352,needs_support
+student_cbse_01,57,2026-03-02T13:28:00,c_irrational_numbers,Irrational Numbers,Real Numbers,2,0.1635,0.16128400000000004,needs_support
+student_cbse_01,57,2026-03-02T13:28:00,c_similar_triangles,Similar Triangles,Triangles,1,0.1573,0.144716,needs_support
+student_cbse_01,58,2026-03-02T14:07:00,c_hcf_lcm,HCF and LCM,Real Numbers,5,0.772,0.7602800000000001,mastered
+student_cbse_01,58,2026-03-02T14:07:00,c_euclid_division_lemma,Euclid Division Lemma,Real Numbers,4,0.7887,0.725604,developing
+student_cbse_01,58,2026-03-02T14:07:00,c_trigonometric_ratios,Trigonometric Ratios,Introduction to Trigonometry,3,0.712,0.6709999999999999,developing
+student_cbse_01,58,2026-03-02T14:07:00,c_standard_trig_values,Standard Trigonometric Values,Introduction to Trigonometry,2,0.6145,0.6182040000000001,developing
+student_cbse_01,58,2026-03-02T14:07:00,c_polynomial_degree_terms,Polynomial Degree and Terms,Polynomials,2,0.6145,0.5653400000000001,developing
+student_cbse_01,58,2026-03-02T14:07:00,c_zeroes_of_polynomial,Zeroes of a Polynomial,Polynomials,1,0.5347,0.541084,developing
+student_cbse_01,58,2026-03-02T14:07:00,c_trig_identities,Trigonometric Identities,Introduction to Trigonometry,3,0.5182,0.533704,developing
+student_cbse_01,58,2026-03-02T14:07:00,c_heights_distances,Heights and Distances,Introduction to Trigonometry,3,0.5072,0.521632,developing
+student_cbse_01,58,2026-03-02T14:07:00,c_distance_formula,Distance Formula,Coordinate Geometry,1,0.5347,0.520308,developing
+student_cbse_01,58,2026-03-02T14:07:00,c_area_of_triangle,Area of a Triangle in Coordinates,Coordinate Geometry,6,0.5102,0.49875200000000003,needs_support
+student_cbse_01,58,2026-03-02T14:07:00,c_basic_proportionality_theorem,Basic Proportionality Theorem,Triangles,5,0.5149,0.48832400000000004,needs_support
+student_cbse_01,58,2026-03-02T14:07:00,c_factorisation_remainder,Factorisation and Remainder Theorem,Polynomials,7,0.4102,0.42016,needs_support
+student_cbse_01,58,2026-03-02T14:07:00,c_zero_coeff_relationship,Relationship Between Zeroes and Coefficients,Polynomials,4,0.3743,0.38713200000000003,needs_support
+student_cbse_01,58,2026-03-02T14:07:00,c_similarity_area_ratio,Criteria for Similarity and Area Ratio,Triangles,4,0.259,0.258016,needs_support
+student_cbse_01,58,2026-03-02T14:07:00,c_section_formula,Section Formula,Coordinate Geometry,2,0.1995,0.225332,needs_support
+student_cbse_01,58,2026-03-02T14:07:00,c_pythagoras_theorem,Pythagoras Theorem,Triangles,2,0.1995,0.18354,needs_support
+student_cbse_01,58,2026-03-02T14:07:00,c_decimal_expansions,Decimal Expansions of Rational Numbers,Real Numbers,1,0.1358,0.162352,needs_support
+student_cbse_01,58,2026-03-02T14:07:00,c_irrational_numbers,Irrational Numbers,Real Numbers,2,0.1635,0.16128400000000004,needs_support
+student_cbse_01,58,2026-03-02T14:07:00,c_similar_triangles,Similar Triangles,Triangles,1,0.1573,0.144716,needs_support
+student_cbse_01,59,2026-03-02T14:34:00,c_hcf_lcm,HCF and LCM,Real Numbers,5,0.772,0.7602800000000001,mastered
+student_cbse_01,59,2026-03-02T14:34:00,c_euclid_division_lemma,Euclid Division Lemma,Real Numbers,4,0.7887,0.725604,developing
+student_cbse_01,59,2026-03-02T14:34:00,c_trigonometric_ratios,Trigonometric Ratios,Introduction to Trigonometry,3,0.712,0.6709999999999999,developing
+student_cbse_01,59,2026-03-02T14:34:00,c_standard_trig_values,Standard Trigonometric Values,Introduction to Trigonometry,2,0.6145,0.6182040000000001,developing
+student_cbse_01,59,2026-03-02T14:34:00,c_polynomial_degree_terms,Polynomial Degree and Terms,Polynomials,2,0.6145,0.5653400000000001,developing
+student_cbse_01,59,2026-03-02T14:34:00,c_zeroes_of_polynomial,Zeroes of a Polynomial,Polynomials,1,0.5347,0.541084,developing
+student_cbse_01,59,2026-03-02T14:34:00,c_trig_identities,Trigonometric Identities,Introduction to Trigonometry,3,0.5182,0.533704,developing
+student_cbse_01,59,2026-03-02T14:34:00,c_distance_formula,Distance Formula,Coordinate Geometry,1,0.5347,0.527276,developing
+student_cbse_01,59,2026-03-02T14:34:00,c_heights_distances,Heights and Distances,Introduction to Trigonometry,3,0.5072,0.521632,developing
+student_cbse_01,59,2026-03-02T14:34:00,c_area_of_triangle,Area of a Triangle in Coordinates,Coordinate Geometry,6,0.5102,0.505712,developing
+student_cbse_01,59,2026-03-02T14:34:00,c_basic_proportionality_theorem,Basic Proportionality Theorem,Triangles,5,0.5149,0.48832400000000004,needs_support
+student_cbse_01,59,2026-03-02T14:34:00,c_factorisation_remainder,Factorisation and Remainder Theorem,Polynomials,7,0.4102,0.42016,needs_support
+student_cbse_01,59,2026-03-02T14:34:00,c_zero_coeff_relationship,Relationship Between Zeroes and Coefficients,Polynomials,4,0.3743,0.38713200000000003,needs_support
+student_cbse_01,59,2026-03-02T14:34:00,c_section_formula,Section Formula,Coordinate Geometry,3,0.3736,0.385504,needs_support
+student_cbse_01,59,2026-03-02T14:34:00,c_similarity_area_ratio,Criteria for Similarity and Area Ratio,Triangles,4,0.259,0.258016,needs_support
+student_cbse_01,59,2026-03-02T14:34:00,c_pythagoras_theorem,Pythagoras Theorem,Triangles,2,0.1995,0.18354,needs_support
+student_cbse_01,59,2026-03-02T14:34:00,c_decimal_expansions,Decimal Expansions of Rational Numbers,Real Numbers,1,0.1358,0.162352,needs_support
+student_cbse_01,59,2026-03-02T14:34:00,c_irrational_numbers,Irrational Numbers,Real Numbers,2,0.1635,0.16128400000000004,needs_support
+student_cbse_01,59,2026-03-02T14:34:00,c_similar_triangles,Similar Triangles,Triangles,1,0.1573,0.144716,needs_support
+student_cbse_01,60,2026-03-02T14:56:00,c_hcf_lcm,HCF and LCM,Real Numbers,5,0.772,0.7602800000000001,mastered
+student_cbse_01,60,2026-03-02T14:56:00,c_euclid_division_lemma,Euclid Division Lemma,Real Numbers,4,0.7887,0.725604,developing
+student_cbse_01,60,2026-03-02T14:56:00,c_trigonometric_ratios,Trigonometric Ratios,Introduction to Trigonometry,3,0.712,0.6709999999999999,developing
+student_cbse_01,60,2026-03-02T14:56:00,c_polynomial_degree_terms,Polynomial Degree and Terms,Polynomials,3,0.6992,0.6432640000000001,developing
+student_cbse_01,60,2026-03-02T14:56:00,c_standard_trig_values,Standard Trigonometric Values,Introduction to Trigonometry,2,0.6145,0.6182040000000001,developing
+student_cbse_01,60,2026-03-02T14:56:00,c_zeroes_of_polynomial,Zeroes of a Polynomial,Polynomials,1,0.5347,0.54786,developing
+student_cbse_01,60,2026-03-02T14:56:00,c_trig_identities,Trigonometric Identities,Introduction to Trigonometry,3,0.5182,0.533704,developing
+student_cbse_01,60,2026-03-02T14:56:00,c_distance_formula,Distance Formula,Coordinate Geometry,1,0.5347,0.527276,developing
+student_cbse_01,60,2026-03-02T14:56:00,c_heights_distances,Heights and Distances,Introduction to Trigonometry,3,0.5072,0.521632,developing
+student_cbse_01,60,2026-03-02T14:56:00,c_area_of_triangle,Area of a Triangle in Coordinates,Coordinate Geometry,6,0.5102,0.505712,developing
+student_cbse_01,60,2026-03-02T14:56:00,c_basic_proportionality_theorem,Basic Proportionality Theorem,Triangles,5,0.5149,0.48832400000000004,needs_support
+student_cbse_01,60,2026-03-02T14:56:00,c_factorisation_remainder,Factorisation and Remainder Theorem,Polynomials,7,0.4102,0.42016,needs_support
+student_cbse_01,60,2026-03-02T14:56:00,c_zero_coeff_relationship,Relationship Between Zeroes and Coefficients,Polynomials,4,0.3743,0.38713200000000003,needs_support
+student_cbse_01,60,2026-03-02T14:56:00,c_section_formula,Section Formula,Coordinate Geometry,3,0.3736,0.385504,needs_support
+student_cbse_01,60,2026-03-02T14:56:00,c_similarity_area_ratio,Criteria for Similarity and Area Ratio,Triangles,4,0.259,0.258016,needs_support
+student_cbse_01,60,2026-03-02T14:56:00,c_pythagoras_theorem,Pythagoras Theorem,Triangles,2,0.1995,0.18354,needs_support
+student_cbse_01,60,2026-03-02T14:56:00,c_decimal_expansions,Decimal Expansions of Rational Numbers,Real Numbers,1,0.1358,0.162352,needs_support
+student_cbse_01,60,2026-03-02T14:56:00,c_irrational_numbers,Irrational Numbers,Real Numbers,2,0.1635,0.16128400000000004,needs_support
+student_cbse_01,60,2026-03-02T14:56:00,c_similar_triangles,Similar Triangles,Triangles,1,0.1573,0.144716,needs_support

@@ -1,0 +1,61 @@
+attempt_id,user_id,simulation_step,timestamp,question_id,concept_id,concept_name,chapter_name,difficulty,correct,response_time_sec,expected_time_sec,source
+student_cbse_01_attempt_001,student_cbse_01,1,2026-03-01T09:00:00,q_cg_004,c_area_of_triangle,Area of a Triangle in Coordinates,Coordinate Geometry,hard,0,133,150,simulated
+student_cbse_01_attempt_002,student_cbse_01,2,2026-03-01T09:34:00,q_tri_005,c_basic_proportionality_theorem,Basic Proportionality Theorem,Triangles,hard,1,227,210,simulated
+student_cbse_01_attempt_003,student_cbse_01,3,2026-03-01T10:07:00,q_rn_003,c_decimal_expansions,Decimal Expansions of Rational Numbers,Real Numbers,medium,0,116,120,simulated
+student_cbse_01_attempt_004,student_cbse_01,4,2026-03-01T10:40:00,q_cg_001,c_distance_formula,Distance Formula,Coordinate Geometry,easy,1,58,90,simulated
+student_cbse_01_attempt_005,student_cbse_01,5,2026-03-01T11:12:00,q_rn_001,c_euclid_division_lemma,Euclid Division Lemma,Real Numbers,easy,1,50,90,simulated
+student_cbse_01_attempt_006,student_cbse_01,6,2026-03-01T11:43:00,q_poly_005,c_factorisation_remainder,Factorisation and Remainder Theorem,Polynomials,hard,0,128,120,simulated
+student_cbse_01_attempt_007,student_cbse_01,7,2026-03-01T12:24:00,q_rn_005,c_hcf_lcm,HCF and LCM,Real Numbers,hard,1,109,150,simulated
+student_cbse_01_attempt_008,student_cbse_01,8,2026-03-01T12:50:00,q_trig_004,c_heights_distances,Heights and Distances,Introduction to Trigonometry,hard,1,268,210,simulated
+student_cbse_01_attempt_009,student_cbse_01,9,2026-03-01T13:13:00,q_rn_004,c_irrational_numbers,Irrational Numbers,Real Numbers,hard,0,251,210,simulated
+student_cbse_01_attempt_010,student_cbse_01,10,2026-03-01T13:42:00,q_poly_001,c_polynomial_degree_terms,Polynomial Degree and Terms,Polynomials,easy,1,50,75,simulated
+student_cbse_01_attempt_011,student_cbse_01,11,2026-03-01T14:20:00,q_tri_003,c_pythagoras_theorem,Pythagoras Theorem,Triangles,medium,0,73,120,simulated
+student_cbse_01_attempt_012,student_cbse_01,12,2026-03-01T14:44:00,q_cg_002,c_section_formula,Section Formula,Coordinate Geometry,medium,0,132,180,simulated
+student_cbse_01_attempt_013,student_cbse_01,13,2026-03-01T15:05:00,q_tri_001,c_similar_triangles,Similar Triangles,Triangles,easy,0,54,90,simulated
+student_cbse_01_attempt_014,student_cbse_01,14,2026-03-01T15:37:00,q_tri_004,c_similarity_area_ratio,Criteria for Similarity and Area Ratio,Triangles,hard,0,221,180,simulated
+student_cbse_01_attempt_015,student_cbse_01,15,2026-03-01T16:08:00,q_trig_002,c_standard_trig_values,Standard Trigonometric Values,Introduction to Trigonometry,easy,1,36,60,simulated
+student_cbse_01_attempt_016,student_cbse_01,16,2026-03-01T16:44:00,q_trig_003,c_trig_identities,Trigonometric Identities,Introduction to Trigonometry,medium,0,162,180,simulated
+student_cbse_01_attempt_017,student_cbse_01,17,2026-03-01T17:15:00,q_trig_001,c_trigonometric_ratios,Trigonometric Ratios,Introduction to Trigonometry,easy,1,82,150,simulated
+student_cbse_01_attempt_018,student_cbse_01,18,2026-03-01T17:42:00,q_poly_006,c_zero_coeff_relationship,Relationship Between Zeroes and Coefficients,Polynomials,hard,0,117,120,simulated
+student_cbse_01_attempt_019,student_cbse_01,19,2026-03-01T18:23:00,q_poly_002,c_zeroes_of_polynomial,Zeroes of a Polynomial,Polynomials,easy,1,49,90,simulated
+student_cbse_01_attempt_020,student_cbse_01,20,2026-03-01T18:47:00,q_tri_005,c_basic_proportionality_theorem,Basic Proportionality Theorem,Triangles,hard,0,200,210,simulated
+student_cbse_01_attempt_021,student_cbse_01,21,2026-03-01T19:21:00,q_trig_003,c_trig_identities,Trigonometric Identities,Introduction to Trigonometry,medium,1,127,180,simulated
+student_cbse_01_attempt_022,student_cbse_01,22,2026-03-01T19:46:00,q_tri_004,c_similarity_area_ratio,Criteria for Similarity and Area Ratio,Triangles,hard,0,201,180,simulated
+student_cbse_01_attempt_023,student_cbse_01,23,2026-03-01T20:04:00,q_poly_004,c_factorisation_remainder,Factorisation and Remainder Theorem,Polynomials,medium,0,160,180,simulated
+student_cbse_01_attempt_024,student_cbse_01,24,2026-03-01T20:42:00,q_poly_006,c_zero_coeff_relationship,Relationship Between Zeroes and Coefficients,Polynomials,hard,0,86,120,simulated
+student_cbse_01_attempt_025,student_cbse_01,25,2026-03-01T21:15:00,q_trig_002,c_standard_trig_values,Standard Trigonometric Values,Introduction to Trigonometry,easy,1,33,60,simulated
+student_cbse_01_attempt_026,student_cbse_01,26,2026-03-01T21:35:00,q_cg_004,c_area_of_triangle,Area of a Triangle in Coordinates,Coordinate Geometry,hard,0,140,150,simulated
+student_cbse_01_attempt_027,student_cbse_01,27,2026-03-01T21:57:00,q_trig_004,c_heights_distances,Heights and Distances,Introduction to Trigonometry,hard,1,200,210,simulated
+student_cbse_01_attempt_028,student_cbse_01,28,2026-03-01T22:20:00,q_tri_004,c_similarity_area_ratio,Criteria for Similarity and Area Ratio,Triangles,hard,0,190,180,simulated
+student_cbse_01_attempt_029,student_cbse_01,29,2026-03-01T22:48:00,q_rn_001,c_euclid_division_lemma,Euclid Division Lemma,Real Numbers,easy,1,63,90,simulated
+student_cbse_01_attempt_030,student_cbse_01,30,2026-03-01T23:25:00,q_poly_006,c_zero_coeff_relationship,Relationship Between Zeroes and Coefficients,Polynomials,hard,0,106,120,simulated
+student_cbse_01_attempt_031,student_cbse_01,31,2026-03-01T23:53:00,q_poly_001,c_polynomial_degree_terms,Polynomial Degree and Terms,Polynomials,easy,1,41,75,simulated
+student_cbse_01_attempt_032,student_cbse_01,32,2026-03-02T00:23:00,q_poly_004,c_factorisation_remainder,Factorisation and Remainder Theorem,Polynomials,medium,0,149,180,simulated
+student_cbse_01_attempt_033,student_cbse_01,33,2026-03-02T01:03:00,q_rn_001,c_euclid_division_lemma,Euclid Division Lemma,Real Numbers,easy,1,67,90,simulated
+student_cbse_01_attempt_034,student_cbse_01,34,2026-03-02T01:28:00,q_rn_005,c_hcf_lcm,HCF and LCM,Real Numbers,hard,1,115,150,simulated
+student_cbse_01_attempt_035,student_cbse_01,35,2026-03-02T01:53:00,q_rn_004,c_irrational_numbers,Irrational Numbers,Real Numbers,hard,0,208,210,simulated
+student_cbse_01_attempt_036,student_cbse_01,36,2026-03-02T02:25:00,q_trig_005,c_trigonometric_ratios,Trigonometric Ratios,Introduction to Trigonometry,medium,1,66,120,simulated
+student_cbse_01_attempt_037,student_cbse_01,37,2026-03-02T02:45:00,q_tri_004,c_similarity_area_ratio,Criteria for Similarity and Area Ratio,Triangles,hard,0,158,180,simulated
+student_cbse_01_attempt_038,student_cbse_01,38,2026-03-02T03:21:00,q_tri_005,c_basic_proportionality_theorem,Basic Proportionality Theorem,Triangles,hard,0,186,210,simulated
+student_cbse_01_attempt_039,student_cbse_01,39,2026-03-02T03:50:00,q_trig_005,c_trigonometric_ratios,Trigonometric Ratios,Introduction to Trigonometry,medium,1,83,120,simulated
+student_cbse_01_attempt_040,student_cbse_01,40,2026-03-02T04:24:00,q_poly_004,c_factorisation_remainder,Factorisation and Remainder Theorem,Polynomials,medium,1,145,180,simulated
+student_cbse_01_attempt_041,student_cbse_01,41,2026-03-02T05:01:00,q_cg_002,c_section_formula,Section Formula,Coordinate Geometry,medium,0,129,180,simulated
+student_cbse_01_attempt_042,student_cbse_01,42,2026-03-02T05:38:00,q_tri_005,c_basic_proportionality_theorem,Basic Proportionality Theorem,Triangles,hard,1,201,210,simulated
+student_cbse_01_attempt_043,student_cbse_01,43,2026-03-02T06:17:00,q_cg_004,c_area_of_triangle,Area of a Triangle in Coordinates,Coordinate Geometry,hard,1,168,150,simulated
+student_cbse_01_attempt_044,student_cbse_01,44,2026-03-02T06:58:00,q_cg_004,c_area_of_triangle,Area of a Triangle in Coordinates,Coordinate Geometry,hard,0,173,150,simulated
+student_cbse_01_attempt_045,student_cbse_01,45,2026-03-02T07:29:00,q_rn_002,c_hcf_lcm,HCF and LCM,Real Numbers,medium,1,113,150,simulated
+student_cbse_01_attempt_046,student_cbse_01,46,2026-03-02T08:00:00,q_rn_001,c_euclid_division_lemma,Euclid Division Lemma,Real Numbers,easy,1,49,90,simulated
+student_cbse_01_attempt_047,student_cbse_01,47,2026-03-02T08:40:00,q_trig_003,c_trig_identities,Trigonometric Identities,Introduction to Trigonometry,medium,1,168,180,simulated
+student_cbse_01_attempt_048,student_cbse_01,48,2026-03-02T09:07:00,q_tri_005,c_basic_proportionality_theorem,Basic Proportionality Theorem,Triangles,hard,0,243,210,simulated
+student_cbse_01_attempt_049,student_cbse_01,49,2026-03-02T09:25:00,q_rn_002,c_hcf_lcm,HCF and LCM,Real Numbers,medium,1,118,150,simulated
+student_cbse_01_attempt_050,student_cbse_01,50,2026-03-02T09:46:00,q_rn_005,c_hcf_lcm,HCF and LCM,Real Numbers,hard,0,100,150,simulated
+student_cbse_01_attempt_051,student_cbse_01,51,2026-03-02T10:06:00,q_poly_004,c_factorisation_remainder,Factorisation and Remainder Theorem,Polynomials,medium,0,157,180,simulated
+student_cbse_01_attempt_052,student_cbse_01,52,2026-03-02T10:43:00,q_cg_004,c_area_of_triangle,Area of a Triangle in Coordinates,Coordinate Geometry,hard,1,128,150,simulated
+student_cbse_01_attempt_053,student_cbse_01,53,2026-03-02T11:19:00,q_poly_005,c_factorisation_remainder,Factorisation and Remainder Theorem,Polynomials,hard,0,102,120,simulated
+student_cbse_01_attempt_054,student_cbse_01,54,2026-03-02T11:47:00,q_tri_003,c_pythagoras_theorem,Pythagoras Theorem,Triangles,medium,0,66,120,simulated
+student_cbse_01_attempt_055,student_cbse_01,55,2026-03-02T12:20:00,q_poly_005,c_factorisation_remainder,Factorisation and Remainder Theorem,Polynomials,hard,0,113,120,simulated
+student_cbse_01_attempt_056,student_cbse_01,56,2026-03-02T12:49:00,q_poly_003,c_zero_coeff_relationship,Relationship Between Zeroes and Coefficients,Polynomials,medium,1,98,120,simulated
+student_cbse_01_attempt_057,student_cbse_01,57,2026-03-02T13:28:00,q_cg_004,c_area_of_triangle,Area of a Triangle in Coordinates,Coordinate Geometry,hard,0,171,150,simulated
+student_cbse_01_attempt_058,student_cbse_01,58,2026-03-02T14:07:00,q_trig_004,c_heights_distances,Heights and Distances,Introduction to Trigonometry,hard,0,227,210,simulated
+student_cbse_01_attempt_059,student_cbse_01,59,2026-03-02T14:34:00,q_cg_002,c_section_formula,Section Formula,Coordinate Geometry,medium,1,140,180,simulated
+student_cbse_01_attempt_060,student_cbse_01,60,2026-03-02T14:56:00,q_poly_001,c_polynomial_degree_terms,Polynomial Degree and Terms,Polynomials,easy,1,41,75,simulated

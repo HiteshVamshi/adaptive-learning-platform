@@ -1,0 +1,35 @@
+{
+  "user_id": "student_cbse_01",
+  "display_name": "Aarav",
+  "attempt_count": 60,
+  "mastered_concepts": 1,
+  "developing_concepts": 9,
+  "needs_support_concepts": 9,
+  "lowest_mastery_concepts": [
+    {
+      "concept_id": "c_similar_triangles",
+      "concept_name": "Similar Triangles",
+      "graph_adjusted_mastery": 0.144716
+    },
+    {
+      "concept_id": "c_irrational_numbers",
+      "concept_name": "Irrational Numbers",
+      "graph_adjusted_mastery": 0.16128400000000004
+    },
+    {
+      "concept_id": "c_decimal_expansions",
+      "concept_name": "Decimal Expansions of Rational Numbers",
+      "graph_adjusted_mastery": 0.162352
+    },
+    {
+      "concept_id": "c_pythagoras_theorem",
+      "concept_name": "Pythagoras Theorem",
+      "graph_adjusted_mastery": 0.18354
+    },
+    {
+      "concept_id": "c_similarity_area_ratio",
+      "concept_name": "Criteria for Similarity and Area Ratio",
+      "graph_adjusted_mastery": 0.258016
+    }
+  ]
+}

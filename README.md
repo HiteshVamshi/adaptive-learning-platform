@@ -64,3 +64,25 @@ Run a RAG demo:
 ```powershell
 .\.venv\Scripts\python.exe scripts\rag_demo.py "Why is 5 + sqrt(3) irrational?" --top-k 4 --generator-backend grounded
 ```
+
+## Step 4
+
+Step 4 adds the explainable concept mastery engine:
+
+- simulated student attempts with correctness and response time
+- deterministic concept scoring from accuracy, completion, speed, and challenge
+- graph-aware mastery propagation from prerequisite and related concepts
+- per-concept mastery snapshot plus mastery-over-time history
+- artifact generation for later recommendations and dashboard views
+
+Build mastery artifacts:
+
+```powershell
+.\.venv\Scripts\python.exe scripts\build_mastery.py
+```
+
+Inspect the mastery outputs:
+
+```powershell
+.\.venv\Scripts\python.exe scripts\mastery_demo.py --top-k 5
+```
