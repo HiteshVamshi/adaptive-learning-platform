@@ -1,0 +1,635 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "graph": {
+    "name": "cbse_class_10_math_concepts"
+  },
+  "nodes": [
+    {
+      "name": "Real Numbers",
+      "node_type": "chapter",
+      "chapter_id": "ch_real_numbers",
+      "chapter_name": "Real Numbers",
+      "parent_concept_id": NaN,
+      "class_level": "CBSE_10",
+      "description": "Properties of integers, rational numbers, irrational numbers, and decimal expansions.",
+      "learning_objective": "Understand number-system structure and algorithmic divisibility reasoning.",
+      "tags": "numbers|foundations",
+      "difficulty_band": "core",
+      "order_index": 1,
+      "id": "ch_real_numbers"
+    },
+    {
+      "name": "Polynomials",
+      "node_type": "chapter",
+      "chapter_id": "ch_polynomials",
+      "chapter_name": "Polynomials",
+      "parent_concept_id": NaN,
+      "class_level": "CBSE_10",
+      "description": "Structure, zeroes, algebraic identities, and theorems for polynomial expressions.",
+      "learning_objective": "Analyse polynomial form, roots, and factorisation behaviour.",
+      "tags": "algebra|expressions",
+      "difficulty_band": "core",
+      "order_index": 2,
+      "id": "ch_polynomials"
+    },
+    {
+      "name": "Triangles",
+      "node_type": "chapter",
+      "chapter_id": "ch_triangles",
+      "chapter_name": "Triangles",
+      "parent_concept_id": NaN,
+      "class_level": "CBSE_10",
+      "description": "Similarity, proportionality, and geometric reasoning in triangles.",
+      "learning_objective": "Apply triangle similarity and proportionality to solve geometric problems.",
+      "tags": "geometry|proof",
+      "difficulty_band": "core",
+      "order_index": 3,
+      "id": "ch_triangles"
+    },
+    {
+      "name": "Introduction to Trigonometry",
+      "node_type": "chapter",
+      "chapter_id": "ch_trigonometry",
+      "chapter_name": "Introduction to Trigonometry",
+      "parent_concept_id": NaN,
+      "class_level": "CBSE_10",
+      "description": "Right-triangle ratios, standard values, identities, and height-distance applications.",
+      "learning_objective": "Represent geometry numerically using trigonometric ratios and identities.",
+      "tags": "trigonometry|applications",
+      "difficulty_band": "core",
+      "order_index": 4,
+      "id": "ch_trigonometry"
+    },
+    {
+      "name": "Coordinate Geometry",
+      "node_type": "chapter",
+      "chapter_id": "ch_coordinate_geometry",
+      "chapter_name": "Coordinate Geometry",
+      "parent_concept_id": NaN,
+      "class_level": "CBSE_10",
+      "description": "Distance, section formula, and area of triangle on the Cartesian plane.",
+      "learning_objective": "Use coordinates to compute geometric properties algebraically.",
+      "tags": "geometry|coordinates",
+      "difficulty_band": "core",
+      "order_index": 5,
+      "id": "ch_coordinate_geometry"
+    },
+    {
+      "name": "Euclid Division Lemma",
+      "node_type": "concept",
+      "chapter_id": "ch_real_numbers",
+      "chapter_name": "Real Numbers",
+      "parent_concept_id": "ch_real_numbers",
+      "class_level": "CBSE_10",
+      "description": "Express integers in the form a = bq + r with 0 <= r < b.",
+      "learning_objective": "Use the division algorithm to derive quotients and remainders.",
+      "tags": "division|algorithm|foundations",
+      "difficulty_band": "easy",
+      "order_index": 11,
+      "id": "c_euclid_division_lemma"
+    },
+    {
+      "name": "HCF and LCM",
+      "node_type": "concept",
+      "chapter_id": "ch_real_numbers",
+      "chapter_name": "Real Numbers",
+      "parent_concept_id": "ch_real_numbers",
+      "class_level": "CBSE_10",
+      "description": "Find highest common factor and least common multiple using Euclid's algorithm and prime factorization.",
+      "learning_objective": "Compute HCF and LCM and connect them to product relationships.",
+      "tags": "factorization|divisibility|algorithm",
+      "difficulty_band": "medium",
+      "order_index": 12,
+      "id": "c_hcf_lcm"
+    },
+    {
+      "name": "Irrational Numbers",
+      "node_type": "concept",
+      "chapter_id": "ch_real_numbers",
+      "chapter_name": "Real Numbers",
+      "parent_concept_id": "ch_real_numbers",
+      "class_level": "CBSE_10",
+      "description": "Recognize and reason about numbers that cannot be written as p/q.",
+      "learning_objective": "Distinguish rational and irrational expressions with proof-based arguments.",
+      "tags": "proof|number_system",
+      "difficulty_band": "hard",
+      "order_index": 13,
+      "id": "c_irrational_numbers"
+    },
+    {
+      "name": "Decimal Expansions of Rational Numbers",
+      "node_type": "concept",
+      "chapter_id": "ch_real_numbers",
+      "chapter_name": "Real Numbers",
+      "parent_concept_id": "ch_real_numbers",
+      "class_level": "CBSE_10",
+      "description": "Classify rational numbers by terminating and recurring decimal forms.",
+      "learning_objective": "Use prime-factor denominators to classify decimal behaviour.",
+      "tags": "decimals|fractions|classification",
+      "difficulty_band": "medium",
+      "order_index": 14,
+      "id": "c_decimal_expansions"
+    },
+    {
+      "name": "Polynomial Degree and Terms",
+      "node_type": "concept",
+      "chapter_id": "ch_polynomials",
+      "chapter_name": "Polynomials",
+      "parent_concept_id": "ch_polynomials",
+      "class_level": "CBSE_10",
+      "description": "Identify coefficients, terms, and degree of a polynomial.",
+      "learning_objective": "Read algebraic structure before applying root-based methods.",
+      "tags": "algebra|terminology",
+      "difficulty_band": "easy",
+      "order_index": 21,
+      "id": "c_polynomial_degree_terms"
+    },
+    {
+      "name": "Zeroes of a Polynomial",
+      "node_type": "concept",
+      "chapter_id": "ch_polynomials",
+      "chapter_name": "Polynomials",
+      "parent_concept_id": "ch_polynomials",
+      "class_level": "CBSE_10",
+      "description": "Find values of x that make a polynomial equal to zero.",
+      "learning_objective": "Solve polynomial equations by factorization and inspection.",
+      "tags": "roots|equations",
+      "difficulty_band": "medium",
+      "order_index": 22,
+      "id": "c_zeroes_of_polynomial"
+    },
+    {
+      "name": "Relationship Between Zeroes and Coefficients",
+      "node_type": "concept",
+      "chapter_id": "ch_polynomials",
+      "chapter_name": "Polynomials",
+      "parent_concept_id": "ch_polynomials",
+      "class_level": "CBSE_10",
+      "description": "Connect sums and products of roots to polynomial coefficients.",
+      "learning_objective": "Construct and analyse quadratics from root information.",
+      "tags": "roots|coefficients|quadratic",
+      "difficulty_band": "medium",
+      "order_index": 23,
+      "id": "c_zero_coeff_relationship"
+    },
+    {
+      "name": "Factorisation and Remainder Theorem",
+      "node_type": "concept",
+      "chapter_id": "ch_polynomials",
+      "chapter_name": "Polynomials",
+      "parent_concept_id": "ch_polynomials",
+      "class_level": "CBSE_10",
+      "description": "Use polynomial evaluation to test factors and compute remainders.",
+      "learning_objective": "Verify factors efficiently and connect division to evaluation.",
+      "tags": "factorization|theorem|evaluation",
+      "difficulty_band": "hard",
+      "order_index": 24,
+      "id": "c_factorisation_remainder"
+    },
+    {
+      "name": "Similar Triangles",
+      "node_type": "concept",
+      "chapter_id": "ch_triangles",
+      "chapter_name": "Triangles",
+      "parent_concept_id": "ch_triangles",
+      "class_level": "CBSE_10",
+      "description": "Use proportional corresponding sides and angle equality to establish similarity.",
+      "learning_objective": "Identify when two triangles are similar from side or angle conditions.",
+      "tags": "similarity|ratios",
+      "difficulty_band": "easy",
+      "order_index": 31,
+      "id": "c_similar_triangles"
+    },
+    {
+      "name": "Basic Proportionality Theorem",
+      "node_type": "concept",
+      "chapter_id": "ch_triangles",
+      "chapter_name": "Triangles",
+      "parent_concept_id": "ch_triangles",
+      "class_level": "CBSE_10",
+      "description": "A line parallel to one side of a triangle divides the other two sides proportionally.",
+      "learning_objective": "Solve segment-length problems produced by parallel-line triangles.",
+      "tags": "parallel_lines|ratios|similarity",
+      "difficulty_band": "medium",
+      "order_index": 32,
+      "id": "c_basic_proportionality_theorem"
+    },
+    {
+      "name": "Pythagoras Theorem",
+      "node_type": "concept",
+      "chapter_id": "ch_triangles",
+      "chapter_name": "Triangles",
+      "parent_concept_id": "ch_triangles",
+      "class_level": "CBSE_10",
+      "description": "Relate the sides of a right triangle using a^2 + b^2 = c^2.",
+      "learning_objective": "Compute unknown sides and verify right-angled triangles.",
+      "tags": "right_triangle|lengths",
+      "difficulty_band": "medium",
+      "order_index": 33,
+      "id": "c_pythagoras_theorem"
+    },
+    {
+      "name": "Criteria for Similarity and Area Ratio",
+      "node_type": "concept",
+      "chapter_id": "ch_triangles",
+      "chapter_name": "Triangles",
+      "parent_concept_id": "ch_triangles",
+      "class_level": "CBSE_10",
+      "description": "Use similarity criteria and the squared side-ratio rule for triangle areas.",
+      "learning_objective": "Connect similarity to area scaling and proof-oriented reasoning.",
+      "tags": "similarity|area|proof",
+      "difficulty_band": "hard",
+      "order_index": 34,
+      "id": "c_similarity_area_ratio"
+    },
+    {
+      "name": "Trigonometric Ratios",
+      "node_type": "concept",
+      "chapter_id": "ch_trigonometry",
+      "chapter_name": "Introduction to Trigonometry",
+      "parent_concept_id": "ch_trigonometry",
+      "class_level": "CBSE_10",
+      "description": "Define sine, cosine, and tangent using right triangles.",
+      "learning_objective": "Translate triangle side lengths into trigonometric ratios.",
+      "tags": "sin|cos|tan",
+      "difficulty_band": "easy",
+      "order_index": 41,
+      "id": "c_trigonometric_ratios"
+    },
+    {
+      "name": "Standard Trigonometric Values",
+      "node_type": "concept",
+      "chapter_id": "ch_trigonometry",
+      "chapter_name": "Introduction to Trigonometry",
+      "parent_concept_id": "ch_trigonometry",
+      "class_level": "CBSE_10",
+      "description": "Recall exact values for 0, 30, 45, 60, and 90 degrees.",
+      "learning_objective": "Use standard values to evaluate expressions quickly.",
+      "tags": "angles|exact_values",
+      "difficulty_band": "easy",
+      "order_index": 42,
+      "id": "c_standard_trig_values"
+    },
+    {
+      "name": "Trigonometric Identities",
+      "node_type": "concept",
+      "chapter_id": "ch_trigonometry",
+      "chapter_name": "Introduction to Trigonometry",
+      "parent_concept_id": "ch_trigonometry",
+      "class_level": "CBSE_10",
+      "description": "Apply identities such as sin^2(theta) + cos^2(theta) = 1 and 1 + tan^2(theta) = sec^2(theta).",
+      "learning_objective": "Verify and simplify expressions using core identities.",
+      "tags": "identity|simplification",
+      "difficulty_band": "medium",
+      "order_index": 43,
+      "id": "c_trig_identities"
+    },
+    {
+      "name": "Heights and Distances",
+      "node_type": "concept",
+      "chapter_id": "ch_trigonometry",
+      "chapter_name": "Introduction to Trigonometry",
+      "parent_concept_id": "ch_trigonometry",
+      "class_level": "CBSE_10",
+      "description": "Model real-world height and distance problems using angles of elevation or depression.",
+      "learning_objective": "Solve contextual trigonometry problems from diagrams or text.",
+      "tags": "application|elevation",
+      "difficulty_band": "hard",
+      "order_index": 44,
+      "id": "c_heights_distances"
+    },
+    {
+      "name": "Distance Formula",
+      "node_type": "concept",
+      "chapter_id": "ch_coordinate_geometry",
+      "chapter_name": "Coordinate Geometry",
+      "parent_concept_id": "ch_coordinate_geometry",
+      "class_level": "CBSE_10",
+      "description": "Find the distance between two points using the Euclidean formula.",
+      "learning_objective": "Compute lengths between coordinates accurately.",
+      "tags": "distance|coordinates",
+      "difficulty_band": "easy",
+      "order_index": 51,
+      "id": "c_distance_formula"
+    },
+    {
+      "name": "Section Formula",
+      "node_type": "concept",
+      "chapter_id": "ch_coordinate_geometry",
+      "chapter_name": "Coordinate Geometry",
+      "parent_concept_id": "ch_coordinate_geometry",
+      "class_level": "CBSE_10",
+      "description": "Find the point dividing a segment internally in a given ratio.",
+      "learning_objective": "Interpolate points on a line segment using weighted averages.",
+      "tags": "ratio|interpolation",
+      "difficulty_band": "medium",
+      "order_index": 52,
+      "id": "c_section_formula"
+    },
+    {
+      "name": "Area of a Triangle in Coordinates",
+      "node_type": "concept",
+      "chapter_id": "ch_coordinate_geometry",
+      "chapter_name": "Coordinate Geometry",
+      "parent_concept_id": "ch_coordinate_geometry",
+      "class_level": "CBSE_10",
+      "description": "Compute triangle area from coordinate pairs and detect collinearity.",
+      "learning_objective": "Use determinant-style formulas for area-based reasoning.",
+      "tags": "area|determinant|collinearity",
+      "difficulty_band": "medium",
+      "order_index": 53,
+      "id": "c_area_of_triangle"
+    }
+  ],
+  "edges": [
+    {
+      "relation_type": "contains",
+      "weight": 1.0,
+      "rationale": "Chapter-to-concept hierarchy.",
+      "source": "ch_real_numbers",
+      "target": "c_euclid_division_lemma",
+      "key": "contains::ch_real_numbers::c_euclid_division_lemma"
+    },
+    {
+      "relation_type": "contains",
+      "weight": 1.0,
+      "rationale": "Chapter-to-concept hierarchy.",
+      "source": "ch_real_numbers",
+      "target": "c_hcf_lcm",
+      "key": "contains::ch_real_numbers::c_hcf_lcm"
+    },
+    {
+      "relation_type": "contains",
+      "weight": 1.0,
+      "rationale": "Chapter-to-concept hierarchy.",
+      "source": "ch_real_numbers",
+      "target": "c_irrational_numbers",
+      "key": "contains::ch_real_numbers::c_irrational_numbers"
+    },
+    {
+      "relation_type": "contains",
+      "weight": 1.0,
+      "rationale": "Chapter-to-concept hierarchy.",
+      "source": "ch_real_numbers",
+      "target": "c_decimal_expansions",
+      "key": "contains::ch_real_numbers::c_decimal_expansions"
+    },
+    {
+      "relation_type": "contains",
+      "weight": 1.0,
+      "rationale": "Chapter-to-concept hierarchy.",
+      "source": "ch_polynomials",
+      "target": "c_polynomial_degree_terms",
+      "key": "contains::ch_polynomials::c_polynomial_degree_terms"
+    },
+    {
+      "relation_type": "contains",
+      "weight": 1.0,
+      "rationale": "Chapter-to-concept hierarchy.",
+      "source": "ch_polynomials",
+      "target": "c_zeroes_of_polynomial",
+      "key": "contains::ch_polynomials::c_zeroes_of_polynomial"
+    },
+    {
+      "relation_type": "contains",
+      "weight": 1.0,
+      "rationale": "Chapter-to-concept hierarchy.",
+      "source": "ch_polynomials",
+      "target": "c_zero_coeff_relationship",
+      "key": "contains::ch_polynomials::c_zero_coeff_relationship"
+    },
+    {
+      "relation_type": "contains",
+      "weight": 1.0,
+      "rationale": "Chapter-to-concept hierarchy.",
+      "source": "ch_polynomials",
+      "target": "c_factorisation_remainder",
+      "key": "contains::ch_polynomials::c_factorisation_remainder"
+    },
+    {
+      "relation_type": "contains",
+      "weight": 1.0,
+      "rationale": "Chapter-to-concept hierarchy.",
+      "source": "ch_triangles",
+      "target": "c_similar_triangles",
+      "key": "contains::ch_triangles::c_similar_triangles"
+    },
+    {
+      "relation_type": "contains",
+      "weight": 1.0,
+      "rationale": "Chapter-to-concept hierarchy.",
+      "source": "ch_triangles",
+      "target": "c_basic_proportionality_theorem",
+      "key": "contains::ch_triangles::c_basic_proportionality_theorem"
+    },
+    {
+      "relation_type": "contains",
+      "weight": 1.0,
+      "rationale": "Chapter-to-concept hierarchy.",
+      "source": "ch_triangles",
+      "target": "c_pythagoras_theorem",
+      "key": "contains::ch_triangles::c_pythagoras_theorem"
+    },
+    {
+      "relation_type": "contains",
+      "weight": 1.0,
+      "rationale": "Chapter-to-concept hierarchy.",
+      "source": "ch_triangles",
+      "target": "c_similarity_area_ratio",
+      "key": "contains::ch_triangles::c_similarity_area_ratio"
+    },
+    {
+      "relation_type": "contains",
+      "weight": 1.0,
+      "rationale": "Chapter-to-concept hierarchy.",
+      "source": "ch_trigonometry",
+      "target": "c_trigonometric_ratios",
+      "key": "contains::ch_trigonometry::c_trigonometric_ratios"
+    },
+    {
+      "relation_type": "contains",
+      "weight": 1.0,
+      "rationale": "Chapter-to-concept hierarchy.",
+      "source": "ch_trigonometry",
+      "target": "c_standard_trig_values",
+      "key": "contains::ch_trigonometry::c_standard_trig_values"
+    },
+    {
+      "relation_type": "contains",
+      "weight": 1.0,
+      "rationale": "Chapter-to-concept hierarchy.",
+      "source": "ch_trigonometry",
+      "target": "c_trig_identities",
+      "key": "contains::ch_trigonometry::c_trig_identities"
+    },
+    {
+      "relation_type": "contains",
+      "weight": 1.0,
+      "rationale": "Chapter-to-concept hierarchy.",
+      "source": "ch_trigonometry",
+      "target": "c_heights_distances",
+      "key": "contains::ch_trigonometry::c_heights_distances"
+    },
+    {
+      "relation_type": "contains",
+      "weight": 1.0,
+      "rationale": "Chapter-to-concept hierarchy.",
+      "source": "ch_coordinate_geometry",
+      "target": "c_distance_formula",
+      "key": "contains::ch_coordinate_geometry::c_distance_formula"
+    },
+    {
+      "relation_type": "contains",
+      "weight": 1.0,
+      "rationale": "Chapter-to-concept hierarchy.",
+      "source": "ch_coordinate_geometry",
+      "target": "c_section_formula",
+      "key": "contains::ch_coordinate_geometry::c_section_formula"
+    },
+    {
+      "relation_type": "contains",
+      "weight": 1.0,
+      "rationale": "Chapter-to-concept hierarchy.",
+      "source": "ch_coordinate_geometry",
+      "target": "c_area_of_triangle",
+      "key": "contains::ch_coordinate_geometry::c_area_of_triangle"
+    },
+    {
+      "relation_type": "prerequisite",
+      "weight": 1.0,
+      "rationale": "Euclid's division lemma underpins Euclid's algorithm for HCF computation.",
+      "source": "c_euclid_division_lemma",
+      "target": "c_hcf_lcm",
+      "key": "prerequisite::c_euclid_division_lemma::c_hcf_lcm"
+    },
+    {
+      "relation_type": "related",
+      "weight": 0.55,
+      "rationale": "Prime factor reasoning used in HCF/LCM supports denominator analysis for decimal expansions.",
+      "source": "c_hcf_lcm",
+      "target": "c_decimal_expansions",
+      "key": "related::c_hcf_lcm::c_decimal_expansions"
+    },
+    {
+      "relation_type": "related",
+      "weight": 0.5,
+      "rationale": "Both concepts reason about rational versus irrational behaviour of number representations.",
+      "source": "c_irrational_numbers",
+      "target": "c_decimal_expansions",
+      "key": "related::c_irrational_numbers::c_decimal_expansions"
+    },
+    {
+      "relation_type": "prerequisite",
+      "weight": 1.0,
+      "rationale": "Students must recognize polynomial structure before solving for zeroes.",
+      "source": "c_polynomial_degree_terms",
+      "target": "c_zeroes_of_polynomial",
+      "key": "prerequisite::c_polynomial_degree_terms::c_zeroes_of_polynomial"
+    },
+    {
+      "relation_type": "prerequisite",
+      "weight": 0.9,
+      "rationale": "Factor and remainder theorems extend the idea of polynomial zeroes.",
+      "source": "c_zeroes_of_polynomial",
+      "target": "c_factorisation_remainder",
+      "key": "prerequisite::c_zeroes_of_polynomial::c_factorisation_remainder"
+    },
+    {
+      "relation_type": "prerequisite",
+      "weight": 0.9,
+      "rationale": "Understanding roots supports reasoning about coefficient relationships.",
+      "source": "c_zeroes_of_polynomial",
+      "target": "c_zero_coeff_relationship",
+      "key": "prerequisite::c_zeroes_of_polynomial::c_zero_coeff_relationship"
+    },
+    {
+      "relation_type": "prerequisite",
+      "weight": 1.0,
+      "rationale": "BPT is proved and applied using triangle similarity.",
+      "source": "c_similar_triangles",
+      "target": "c_basic_proportionality_theorem",
+      "key": "prerequisite::c_similar_triangles::c_basic_proportionality_theorem"
+    },
+    {
+      "relation_type": "prerequisite",
+      "weight": 1.0,
+      "rationale": "Area ratios for similar triangles depend directly on triangle similarity.",
+      "source": "c_similar_triangles",
+      "target": "c_similarity_area_ratio",
+      "key": "prerequisite::c_similar_triangles::c_similarity_area_ratio"
+    },
+    {
+      "relation_type": "related",
+      "weight": 0.65,
+      "rationale": "Both topics rely on proportional side relationships in triangles.",
+      "source": "c_basic_proportionality_theorem",
+      "target": "c_similarity_area_ratio",
+      "key": "related::c_basic_proportionality_theorem::c_similarity_area_ratio"
+    },
+    {
+      "relation_type": "prerequisite",
+      "weight": 0.7,
+      "rationale": "Right-triangle side relationships help learners derive trigonometric ratios.",
+      "source": "c_pythagoras_theorem",
+      "target": "c_trigonometric_ratios",
+      "key": "prerequisite::c_pythagoras_theorem::c_trigonometric_ratios"
+    },
+    {
+      "relation_type": "prerequisite",
+      "weight": 1.0,
+      "rationale": "Heights and distances problems are direct applications of trigonometric ratios.",
+      "source": "c_trigonometric_ratios",
+      "target": "c_heights_distances",
+      "key": "prerequisite::c_trigonometric_ratios::c_heights_distances"
+    },
+    {
+      "relation_type": "prerequisite",
+      "weight": 1.0,
+      "rationale": "Students use ratio definitions before memorizing standard values.",
+      "source": "c_trigonometric_ratios",
+      "target": "c_standard_trig_values",
+      "key": "prerequisite::c_trigonometric_ratios::c_standard_trig_values"
+    },
+    {
+      "relation_type": "prerequisite",
+      "weight": 0.9,
+      "rationale": "Identities are manipulated using core trigonometric ratios.",
+      "source": "c_trigonometric_ratios",
+      "target": "c_trig_identities",
+      "key": "prerequisite::c_trigonometric_ratios::c_trig_identities"
+    },
+    {
+      "relation_type": "related",
+      "weight": 0.6,
+      "rationale": "Standard values accelerate solving applied height-distance problems.",
+      "source": "c_standard_trig_values",
+      "target": "c_heights_distances",
+      "key": "related::c_standard_trig_values::c_heights_distances"
+    },
+    {
+      "relation_type": "related",
+      "weight": 0.6,
+      "rationale": "Coordinate geometry tasks often combine distance and area reasoning.",
+      "source": "c_distance_formula",
+      "target": "c_area_of_triangle",
+      "key": "related::c_distance_formula::c_area_of_triangle"
+    },
+    {
+      "relation_type": "related",
+      "weight": 0.55,
+      "rationale": "Both rely on coordinate-plane reasoning with ordered pairs.",
+      "source": "c_distance_formula",
+      "target": "c_section_formula",
+      "key": "related::c_distance_formula::c_section_formula"
+    },
+    {
+      "relation_type": "related",
+      "weight": 0.5,
+      "rationale": "Interpolated points are frequently used in coordinate-area constructions.",
+      "source": "c_section_formula",
+      "target": "c_area_of_triangle",
+      "key": "related::c_section_formula::c_area_of_triangle"
+    }
+  ]
+}

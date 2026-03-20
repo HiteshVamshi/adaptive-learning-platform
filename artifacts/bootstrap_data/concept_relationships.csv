@@ -1,0 +1,18 @@
+source_concept_id,target_concept_id,relation_type,weight,rationale
+c_euclid_division_lemma,c_hcf_lcm,prerequisite,1.0,Euclid's division lemma underpins Euclid's algorithm for HCF computation.
+c_polynomial_degree_terms,c_zeroes_of_polynomial,prerequisite,1.0,Students must recognize polynomial structure before solving for zeroes.
+c_pythagoras_theorem,c_trigonometric_ratios,prerequisite,0.7,Right-triangle side relationships help learners derive trigonometric ratios.
+c_similar_triangles,c_basic_proportionality_theorem,prerequisite,1.0,BPT is proved and applied using triangle similarity.
+c_similar_triangles,c_similarity_area_ratio,prerequisite,1.0,Area ratios for similar triangles depend directly on triangle similarity.
+c_trigonometric_ratios,c_heights_distances,prerequisite,1.0,Heights and distances problems are direct applications of trigonometric ratios.
+c_trigonometric_ratios,c_standard_trig_values,prerequisite,1.0,Students use ratio definitions before memorizing standard values.
+c_trigonometric_ratios,c_trig_identities,prerequisite,0.9,Identities are manipulated using core trigonometric ratios.
+c_zeroes_of_polynomial,c_factorisation_remainder,prerequisite,0.9,Factor and remainder theorems extend the idea of polynomial zeroes.
+c_zeroes_of_polynomial,c_zero_coeff_relationship,prerequisite,0.9,Understanding roots supports reasoning about coefficient relationships.
+c_basic_proportionality_theorem,c_similarity_area_ratio,related,0.65,Both topics rely on proportional side relationships in triangles.
+c_distance_formula,c_area_of_triangle,related,0.6,Coordinate geometry tasks often combine distance and area reasoning.
+c_distance_formula,c_section_formula,related,0.55,Both rely on coordinate-plane reasoning with ordered pairs.
+c_hcf_lcm,c_decimal_expansions,related,0.55,Prime factor reasoning used in HCF/LCM supports denominator analysis for decimal expansions.
+c_irrational_numbers,c_decimal_expansions,related,0.5,Both concepts reason about rational versus irrational behaviour of number representations.
+c_section_formula,c_area_of_triangle,related,0.5,Interpolated points are frequently used in coordinate-area constructions.
+c_standard_trig_values,c_heights_distances,related,0.6,Standard values accelerate solving applied height-distance problems.

@@ -1,0 +1,26 @@
+question_id,final_answer,worked_solution,explanation_style
+q_cg_001,10,"Using the distance formula, distance = sqrt((8 - 2)^2 + (11 - 3)^2) = sqrt(6^2 + 8^2) = sqrt(36 + 64) = sqrt(100) = 10.",stepwise
+q_cg_002,"(3, 4)","If P divides A(x1, y1) and B(x2, y2) in the ratio m:n, then P = ((mx2 + nx1)/(m + n), (my2 + ny1)/(m + n)). With m = 1, n = 2, A = (1, 2), and B = (7, 8), P = ((1 x 7 + 2 x 1)/3, (1 x 8 + 2 x 2)/3) = (9/3, 12/3) = (3, 4).",stepwise
+q_cg_003,6 square units,"Using the coordinate area formula, area = 1/2 |x1(y2 - y3) + x2(y3 - y1) + x3(y1 - y2)|. Substituting the points gives area = 1/2 |0(0 - 3) + 4(3 - 0) + 1(0 - 0)| = 1/2 x 12 = 6 square units.",stepwise
+q_cg_004,"Yes, the points are collinear.","Use the area test. Area = 1/2 |1(3 - 5) + 2(5 - 1) + 3(1 - 3)| = 1/2 |-2 + 8 - 6| = 0. Since the area is zero, the points are collinear.",stepwise
+q_poly_001,"Degree = 4, leading coefficient = 5","The highest power of x is 4, so the degree is 4. The coefficient of x^4 is 5, so the leading coefficient is 5.",stepwise
+q_poly_002,2 and 3,Factor the quadratic: x^2 - 5x + 6 = (x - 2)(x - 3). Setting each factor to zero gives x = 2 and x = 3.,stepwise
+q_poly_003,x^2 + x - 6,"If the zeroes are alpha = 2 and beta = -3, a monic quadratic is x^2 - (alpha + beta)x + alpha beta. Here alpha + beta = -1 and alpha beta = -6, so the polynomial is x^2 + x - 6.",stepwise
+q_poly_004,Yes; p(x) = (x - 2)(x - 3)(x + 1),"By the factor theorem, x - 2 is a factor if p(2) = 0. Compute p(2) = 8 - 16 + 2 + 6 = 0, so x - 2 is a factor. Dividing p(x) by x - 2 gives x^2 - 2x - 3, which factors as (x - 3)(x + 1). Therefore p(x) = (x - 2)(x - 3)(x + 1).",stepwise
+q_poly_005,16,"By the remainder theorem, the remainder on dividing by x - 3 is p(3). Compute p(3) = 27 - 18 + 12 - 5 = 16. Therefore the remainder is 16.",stepwise
+q_poly_006,x^2 - 7x + 10,"For a monic quadratic with zeroes alpha and beta, the polynomial is x^2 - (alpha + beta)x + alpha beta. With sum 7 and product 10, we get x^2 - 7x + 10.",stepwise
+q_rn_001,"q = 10, r = 35","Divide 455 by 42. Since 42 x 10 = 420 and 455 - 420 = 35, we get 455 = 42 x 10 + 35. The remainder 35 is smaller than 42, so q = 10 and r = 35.",stepwise
+q_rn_002,51,"Apply repeated division: 867 = 255 x 3 + 102, 255 = 102 x 2 + 51, and 102 = 51 x 2 + 0. The last non-zero remainder is 51, so the HCF is 51.",stepwise
+q_rn_003,Terminating,Factor the denominator: 160 = 2^5 x 5. A rational number has a terminating decimal if the denominator in lowest form has only 2s and 5s as prime factors. Therefore 13/160 has a terminating decimal expansion.,stepwise
+q_rn_004,5 + sqrt(3) is irrational.,"Assume 5 + sqrt(3) is rational. Then subtracting 5, which is rational, would imply sqrt(3) is rational. But sqrt(3) is irrational. This contradiction shows that 5 + sqrt(3) must be irrational.",proof
+q_rn_005,9696,"For two positive integers, HCF x LCM = product of the numbers. So LCM = (96 x 404) / 4 = 38784 / 4 = 9696.",stepwise
+q_tri_001,"Yes, the triangles are similar.","Compare corresponding sides: 9/6 = 12/8 = 15/10 = 3/2. Since all three side ratios are equal, the triangles are similar by the SSS similarity criterion.",stepwise
+q_tri_002,7.5 cm,"Since DE || BC, triangle ADE is similar to triangle ABC. Therefore AD/AB = AE/AC. Here AB = AD + DB = 5 cm. So 3/5 = 4.5/AC, giving AC = (4.5 x 5)/3 = 7.5 cm.",stepwise
+q_tri_003,15 cm,"Using Pythagoras theorem, hypotenuse^2 = 9^2 + 12^2 = 81 + 144 = 225. So the hypotenuse is sqrt(225) = 15 cm.",stepwise
+q_tri_004,75 cm^2,"For similar triangles, the ratio of areas equals the square of the ratio of corresponding sides. So smaller:larger area = 3^2:5^2 = 9:25. If 9 parts correspond to 27 cm^2, then 1 part is 3 cm^2, and 25 parts correspond to 75 cm^2.",stepwise
+q_tri_005,6,"Since DE || BC, the intercepted sides are proportional, so AD/DB = AE/EC. Substitute the given values: 3/x = 4/(x + 2). Cross-multiplying gives 3x + 6 = 4x, hence x = 6.",stepwise
+q_trig_001,"sin(theta) = 7/25, cos(theta) = 24/25, tan(theta) = 7/24","First find the hypotenuse using Pythagoras theorem: sqrt(7^2 + 24^2) = sqrt(49 + 576) = sqrt(625) = 25. Then sin(theta) = opposite/hypotenuse = 7/25, cos(theta) = adjacent/hypotenuse = 24/25, and tan(theta) = opposite/adjacent = 7/24.",stepwise
+q_trig_002,"sin 30 degrees = 1/2, cos 60 degrees = 1/2, tan 45 degrees = 1","These are standard trigonometric values: sin 30 degrees = 1/2, cos 60 degrees = 1/2, and tan 45 degrees = 1.",stepwise
+q_trig_003,Both sides equal 25/16,"Compute tan(theta) = sin(theta)/cos(theta) = (3/5)/(4/5) = 3/4. Then 1 + tan^2(theta) = 1 + 9/16 = 25/16. Also sec(theta) = 1/cos(theta) = 5/4, so sec^2(theta) = 25/16. Hence the identity is verified.",stepwise
+q_trig_004,20*sqrt(3) m (approximately 34.64 m),"Let the height of the tower be h. Using tan 60 degrees = h/20 and tan 60 degrees = sqrt(3), we get h = 20*sqrt(3) m, which is approximately 34.64 m.",stepwise
+q_trig_005,"sin(theta) = 3/5, cos(theta) = 4/5",Take the opposite and adjacent sides as 3 and 4. Then the hypotenuse is 5 by the Pythagorean triple 3-4-5. Therefore sin(theta) = 3/5 and cos(theta) = 4/5.,stepwise
