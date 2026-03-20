@@ -86,3 +86,24 @@ Inspect the mastery outputs:
 ```powershell
 .\.venv\Scripts\python.exe scripts\mastery_demo.py --top-k 5
 ```
+
+## Step 5
+
+Step 5 adds adaptive practice recommendations:
+
+- ranks questions from learner mastery, graph structure, novelty, and difficulty alignment
+- explains each recommendation with weakness and progression rationale
+- limits over-concentration on a single concept
+- writes recommendation artifacts for the future dashboard and practice UI
+
+Build recommendations:
+
+```powershell
+.\.venv\Scripts\python.exe scripts\build_recommendations.py --top-k 10
+```
+
+Inspect recommendation outputs:
+
+```powershell
+.\.venv\Scripts\python.exe scripts\recommendation_demo.py --top-k 5
+```
