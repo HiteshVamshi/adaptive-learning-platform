@@ -1,30 +1,43 @@
 {
   "recommendation_count": 10,
   "chapters": {
+    "Introduction to Trigonometry": 3,
     "Arithmetic Progressions": 3,
-    "Introduction to Trigonometry": 2,
-    "Statistics": 2,
-    "Quadratic Equations": 1,
-    "Circles": 1,
-    "Polynomials": 1
+    "Real Numbers": 2,
+    "Statistics": 1,
+    "Areas Related to Circles": 1
   },
   "difficulties": {
-    "medium": 6,
-    "easy": 4
+    "medium": 7,
+    "easy": 3
   },
   "top_recommendations": [
+    {
+      "question_id": "q_tb_standard_trig_values_001",
+      "concept_name": "Standard Trigonometric Values",
+      "difficulty": "easy",
+      "recommendation_score": 0.8443,
+      "rationale": "Standard Trigonometric Values is currently needs_support (mastery=0.17); recommended difficulty is easy and this question is easy; new question; high graph priority."
+    },
     {
       "question_id": "q_trig_002",
       "concept_name": "Standard Trigonometric Values",
       "difficulty": "easy",
-      "recommendation_score": 0.7927,
-      "rationale": "Standard Trigonometric Values is currently needs_support (mastery=0.17); recommended difficulty is easy and this question is easy; lightly repeated practice; local concept practice."
+      "recommendation_score": 0.8023,
+      "rationale": "Standard Trigonometric Values is currently needs_support (mastery=0.17); recommended difficulty is easy and this question is easy; lightly repeated practice; high graph priority."
+    },
+    {
+      "question_id": "q_tb_ap_applications_001",
+      "concept_name": "Applications of Arithmetic Progressions",
+      "difficulty": "medium",
+      "recommendation_score": 0.7651,
+      "rationale": "Applications of Arithmetic Progressions is currently needs_support (mastery=0.13); recommended difficulty is easy and this question is medium; new question; local concept practice."
     },
     {
       "question_id": "q_tb_ap_sum_002",
       "concept_name": "Sum of First n Terms of an Arithmetic Progression",
       "difficulty": "medium",
-      "recommendation_score": 0.7552,
+      "recommendation_score": 0.7563,
       "rationale": "Sum of First n Terms of an Arithmetic Progression is currently needs_support (mastery=0.19); recommended difficulty is easy and this question is medium; new question; high graph priority."
     },
     {
@@ -33,20 +46,6 @@
       "difficulty": "easy",
       "recommendation_score": 0.7422,
       "rationale": "Mean of Grouped Data is currently needs_support (mastery=0.14); recommended difficulty is easy and this question is easy; lightly repeated practice; local concept practice."
-    },
-    {
-      "question_id": "q_tb_ap_applications_001",
-      "concept_name": "Applications of Arithmetic Progressions",
-      "difficulty": "medium",
-      "recommendation_score": 0.7144,
-      "rationale": "Applications of Arithmetic Progressions is currently needs_support (mastery=0.15); recommended difficulty is easy and this question is medium; lightly repeated practice; local concept practice."
-    },
-    {
-      "question_id": "q_tb_ap_sum_001",
-      "concept_name": "Sum of First n Terms of an Arithmetic Progression",
-      "difficulty": "medium",
-      "recommendation_score": 0.7132,
-      "rationale": "Sum of First n Terms of an Arithmetic Progression is currently needs_support (mastery=0.19); recommended difficulty is easy and this question is medium; lightly repeated practice; high graph priority."
     }
   ]
 }

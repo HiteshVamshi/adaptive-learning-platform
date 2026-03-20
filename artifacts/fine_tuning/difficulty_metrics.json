@@ -1,38 +1,38 @@
 {
-  "train_size": 225,
-  "test_size": 75,
+  "train_size": 239,
+  "test_size": 80,
   "accuracy": 1.0,
   "classification_report": {
     "easy": {
       "precision": 1.0,
       "recall": 1.0,
       "f1-score": 1.0,
-      "support": 23.0
+      "support": 25.0
     },
     "hard": {
       "precision": 1.0,
       "recall": 1.0,
       "f1-score": 1.0,
-      "support": 24.0
+      "support": 25.0
     },
     "medium": {
       "precision": 1.0,
       "recall": 1.0,
       "f1-score": 1.0,
-      "support": 28.0
+      "support": 30.0
     },
     "accuracy": 1.0,
     "macro avg": {
       "precision": 1.0,
       "recall": 1.0,
       "f1-score": 1.0,
-      "support": 75.0
+      "support": 80.0
     },
     "weighted avg": {
       "precision": 1.0,
       "recall": 1.0,
       "f1-score": 1.0,
-      "support": 75.0
+      "support": 80.0
     }
   },
   "label_order": [

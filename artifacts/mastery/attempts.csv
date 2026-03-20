@@ -17,45 +17,45 @@ student_cbse_01_attempt_015,student_cbse_01,15,2026-03-01T15:03:00,q_tb_fundamen
 student_cbse_01_attempt_016,student_cbse_01,16,2026-03-01T15:23:00,q_tb_grouped_data_mean_001,c_grouped_data_mean,Mean of Grouped Data,Statistics,easy,0,167,180,simulated
 student_cbse_01_attempt_017,student_cbse_01,17,2026-03-01T15:56:00,q_tb_grouped_data_median_mode_001,c_grouped_data_median_mode,Median and Mode of Grouped Data,Statistics,medium,0,172,210,simulated
 student_cbse_01_attempt_018,student_cbse_01,18,2026-03-01T16:27:00,q_rn_005,c_hcf_lcm,HCF and LCM,Real Numbers,hard,0,136,150,simulated
-student_cbse_01_attempt_019,student_cbse_01,19,2026-03-01T16:49:00,q_trig_004,c_heights_distances,Heights and Distances,Introduction to Trigonometry,hard,0,211,210,simulated
-student_cbse_01_attempt_020,student_cbse_01,20,2026-03-01T17:08:00,q_rn_004,c_irrational_numbers,Irrational Numbers,Real Numbers,hard,0,251,210,simulated
+student_cbse_01_attempt_019,student_cbse_01,19,2026-03-01T16:49:00,q_tb_heights_distances_001,c_heights_distances,Heights and Distances,Introduction to Trigonometry,hard,0,181,180,simulated
+student_cbse_01_attempt_020,student_cbse_01,20,2026-03-01T17:08:00,q_tb_irrational_numbers_001,c_irrational_numbers,Irrational Numbers,Real Numbers,hard,0,215,180,simulated
 student_cbse_01_attempt_021,student_cbse_01,21,2026-03-01T17:35:00,q_tb_pair_linear_equations_algebraic_002,c_pair_linear_equations_algebraic,Algebraic Methods for Pair of Linear Equations,Pair of Linear Equations in Two Variables,hard,0,207,210,simulated
 student_cbse_01_attempt_022,student_cbse_01,22,2026-03-01T18:04:00,q_tb_pair_linear_equations_consistency_001,c_pair_linear_equations_consistency,Consistency and Number of Solutions,Pair of Linear Equations in Two Variables,medium,1,104,150,simulated
 student_cbse_01_attempt_023,student_cbse_01,23,2026-03-01T18:29:00,q_tb_pair_linear_equations_graphical_001,c_pair_linear_equations_graphical,Graphical Solution of Pair of Linear Equations,Pair of Linear Equations in Two Variables,easy,1,109,180,simulated
 student_cbse_01_attempt_024,student_cbse_01,24,2026-03-01T18:49:00,q_poly_001,c_polynomial_degree_terms,Polynomial Degree and Terms,Polynomials,easy,1,59,75,simulated
-student_cbse_01_attempt_025,student_cbse_01,25,2026-03-01T19:22:00,q_tri_003,c_pythagoras_theorem,Pythagoras Theorem,Triangles,medium,1,82,120,simulated
+student_cbse_01_attempt_025,student_cbse_01,25,2026-03-01T19:22:00,q_tb_pythagoras_theorem_001,c_pythagoras_theorem,Pythagoras Theorem,Triangles,medium,1,82,120,simulated
 student_cbse_01_attempt_026,student_cbse_01,26,2026-03-01T20:00:00,q_tb_quadratic_applications_001,c_quadratic_applications,Situational Problems on Quadratic Equations,Quadratic Equations,hard,0,234,210,simulated
 student_cbse_01_attempt_027,student_cbse_01,27,2026-03-01T20:26:00,q_tb_quadratic_factorization_001,c_quadratic_factorization,Quadratic Equations by Factorization,Quadratic Equations,easy,0,100,120,simulated
 student_cbse_01_attempt_028,student_cbse_01,28,2026-03-01T20:57:00,q_tb_quadratic_formula_002,c_quadratic_formula,Quadratic Formula,Quadratic Equations,hard,1,194,210,simulated
-student_cbse_01_attempt_029,student_cbse_01,29,2026-03-01T21:33:00,q_cg_002,c_section_formula,Section Formula,Coordinate Geometry,medium,1,140,180,simulated
+student_cbse_01_attempt_029,student_cbse_01,29,2026-03-01T21:33:00,q_tb_section_formula_001,c_section_formula,Section Formula,Coordinate Geometry,medium,1,117,150,simulated
 student_cbse_01_attempt_030,student_cbse_01,30,2026-03-01T22:02:00,q_tb_sectors_segments_002,c_sectors_segments,Sectors and Segments of a Circle,Areas Related to Circles,hard,0,134,150,simulated
 student_cbse_01_attempt_031,student_cbse_01,31,2026-03-01T22:39:00,q_tri_001,c_similar_triangles,Similar Triangles,Triangles,easy,1,65,90,simulated
-student_cbse_01_attempt_032,student_cbse_01,32,2026-03-01T23:06:00,q_tri_004,c_similarity_area_ratio,Criteria for Similarity and Area Ratio,Triangles,hard,0,213,180,simulated
+student_cbse_01_attempt_032,student_cbse_01,32,2026-03-01T23:06:00,q_tb_similarity_area_ratio_001,c_similarity_area_ratio,Criteria for Similarity and Area Ratio,Triangles,hard,0,213,180,simulated
 student_cbse_01_attempt_033,student_cbse_01,33,2026-03-01T23:32:00,q_trig_002,c_standard_trig_values,Standard Trigonometric Values,Introduction to Trigonometry,easy,0,40,60,simulated
 student_cbse_01_attempt_034,student_cbse_01,34,2026-03-01T23:54:00,q_tb_tangent_radius_perpendicular_001,c_tangent_radius_perpendicular,Tangent Perpendicular to Radius,Circles,easy,1,49,60,simulated
 student_cbse_01_attempt_035,student_cbse_01,35,2026-03-02T00:35:00,q_tb_tangents_from_external_point_001,c_tangents_from_external_point,Tangents from an External Point,Circles,medium,0,47,60,simulated
-student_cbse_01_attempt_036,student_cbse_01,36,2026-03-02T01:15:00,q_trig_003,c_trig_identities,Trigonometric Identities,Introduction to Trigonometry,medium,0,121,180,simulated
-student_cbse_01_attempt_037,student_cbse_01,37,2026-03-02T01:54:00,q_trig_001,c_trigonometric_ratios,Trigonometric Ratios,Introduction to Trigonometry,easy,1,123,150,simulated
+student_cbse_01_attempt_036,student_cbse_01,36,2026-03-02T01:15:00,q_tb_trig_identities_001,c_trig_identities,Trigonometric Identities,Introduction to Trigonometry,medium,0,101,150,simulated
+student_cbse_01_attempt_037,student_cbse_01,37,2026-03-02T01:54:00,q_tb_trigonometric_ratios_001,c_trigonometric_ratios,Trigonometric Ratios,Introduction to Trigonometry,easy,1,123,150,simulated
 student_cbse_01_attempt_038,student_cbse_01,38,2026-03-02T02:29:00,q_poly_006,c_zero_coeff_relationship,Relationship Between Zeroes and Coefficients,Polynomials,hard,0,107,120,simulated
 student_cbse_01_attempt_039,student_cbse_01,39,2026-03-02T02:53:00,q_poly_002,c_zeroes_of_polynomial,Zeroes of a Polynomial,Polynomials,easy,1,51,90,simulated
-student_cbse_01_attempt_040,student_cbse_01,40,2026-03-02T03:28:00,q_tb_quadratic_formula_001,c_quadratic_formula,Quadratic Formula,Quadratic Equations,medium,1,138,180,simulated
-student_cbse_01_attempt_041,student_cbse_01,41,2026-03-02T03:50:00,q_tri_003,c_pythagoras_theorem,Pythagoras Theorem,Triangles,medium,1,68,120,simulated
-student_cbse_01_attempt_042,student_cbse_01,42,2026-03-02T04:29:00,q_tb_grouped_data_median_mode_001,c_grouped_data_median_mode,Median and Mode of Grouped Data,Statistics,medium,0,162,210,simulated
-student_cbse_01_attempt_043,student_cbse_01,43,2026-03-02T04:58:00,q_cg_004,c_area_of_triangle,Area of a Triangle in Coordinates,Coordinate Geometry,hard,0,155,150,simulated
-student_cbse_01_attempt_044,student_cbse_01,44,2026-03-02T05:25:00,q_tb_pair_linear_equations_algebraic_001,c_pair_linear_equations_algebraic,Algebraic Methods for Pair of Linear Equations,Pair of Linear Equations in Two Variables,medium,1,117,150,simulated
-student_cbse_01_attempt_045,student_cbse_01,45,2026-03-02T05:58:00,q_tri_005,c_basic_proportionality_theorem,Basic Proportionality Theorem,Triangles,hard,0,175,210,simulated
+student_cbse_01_attempt_040,student_cbse_01,40,2026-03-02T03:28:00,q_tb_fundamental_theorem_arithmetic_001,c_fundamental_theorem_arithmetic,Fundamental Theorem of Arithmetic,Real Numbers,medium,1,138,180,simulated
+student_cbse_01_attempt_041,student_cbse_01,41,2026-03-02T03:50:00,q_tri_004,c_similarity_area_ratio,Criteria for Similarity and Area Ratio,Triangles,hard,1,179,180,simulated
+student_cbse_01_attempt_042,student_cbse_01,42,2026-03-02T04:29:00,q_tb_combination_solids_volume_002,c_combination_solids_volume,Volume of Combined Solids,Surface Areas and Volumes,hard,0,200,210,simulated
+student_cbse_01_attempt_043,student_cbse_01,43,2026-03-02T04:58:00,q_tb_distance_formula_001,c_distance_formula,Distance Formula,Coordinate Geometry,easy,1,51,90,simulated
+student_cbse_01_attempt_044,student_cbse_01,44,2026-03-02T05:25:00,q_tb_pair_linear_equations_consistency_002,c_pair_linear_equations_consistency,Consistency and Number of Solutions,Pair of Linear Equations in Two Variables,medium,1,117,150,simulated
+student_cbse_01_attempt_045,student_cbse_01,45,2026-03-02T05:58:00,q_tb_similarity_area_ratio_001,c_similarity_area_ratio,Criteria for Similarity and Area Ratio,Triangles,hard,0,169,180,simulated
 student_cbse_01_attempt_046,student_cbse_01,46,2026-03-02T06:36:00,q_tb_circle_perimeter_area_applications_001,c_circle_perimeter_area_applications,Perimeter and Area Applications on Circle Figures,Areas Related to Circles,hard,0,153,150,simulated
-student_cbse_01_attempt_047,student_cbse_01,47,2026-03-02T06:56:00,q_tb_combination_solids_surface_area_001,c_combination_solids_surface_area,Surface Area of Combined Solids,Surface Areas and Volumes,medium,0,166,180,simulated
-student_cbse_01_attempt_048,student_cbse_01,48,2026-03-02T07:18:00,q_tb_combination_solids_surface_area_002,c_combination_solids_surface_area,Surface Area of Combined Solids,Surface Areas and Volumes,hard,1,245,210,simulated
-student_cbse_01_attempt_049,student_cbse_01,49,2026-03-02T07:36:00,q_tb_classical_probability_001,c_classical_probability,Classical Probability,Probability,easy,1,70,90,simulated
-student_cbse_01_attempt_050,student_cbse_01,50,2026-03-02T08:01:00,q_tb_pair_linear_equations_algebraic_001,c_pair_linear_equations_algebraic,Algebraic Methods for Pair of Linear Equations,Pair of Linear Equations in Two Variables,medium,0,124,150,simulated
-student_cbse_01_attempt_051,student_cbse_01,51,2026-03-02T08:33:00,q_cg_002,c_section_formula,Section Formula,Coordinate Geometry,medium,0,156,180,simulated
-student_cbse_01_attempt_052,student_cbse_01,52,2026-03-02T09:06:00,q_cg_001,c_distance_formula,Distance Formula,Coordinate Geometry,easy,1,49,90,simulated
-student_cbse_01_attempt_053,student_cbse_01,53,2026-03-02T09:43:00,q_poly_003,c_zero_coeff_relationship,Relationship Between Zeroes and Coefficients,Polynomials,medium,1,106,120,simulated
-student_cbse_01_attempt_054,student_cbse_01,54,2026-03-02T10:12:00,q_tb_discriminant_nature_roots_001,c_discriminant_nature_roots,Discriminant and Nature of Roots,Quadratic Equations,medium,1,77,120,simulated
-student_cbse_01_attempt_055,student_cbse_01,55,2026-03-02T10:53:00,q_tb_quadratic_applications_002,c_quadratic_applications,Situational Problems on Quadratic Equations,Quadratic Equations,hard,1,246,240,simulated
+student_cbse_01_attempt_047,student_cbse_01,47,2026-03-02T06:56:00,q_tb_basic_proportionality_theorem_001,c_basic_proportionality_theorem,Basic Proportionality Theorem,Triangles,medium,0,157,180,simulated
+student_cbse_01_attempt_048,student_cbse_01,48,2026-03-02T07:18:00,q_tb_combination_solids_volume_001,c_combination_solids_volume,Volume of Combined Solids,Surface Areas and Volumes,medium,1,178,180,simulated
+student_cbse_01_attempt_049,student_cbse_01,49,2026-03-02T07:36:00,q_tb_classical_probability_003,c_classical_probability,Classical Probability,Probability,medium,0,117,150,simulated
+student_cbse_01_attempt_050,student_cbse_01,50,2026-03-02T08:01:00,q_tb_pair_linear_equations_consistency_002,c_pair_linear_equations_consistency,Consistency and Number of Solutions,Pair of Linear Equations in Two Variables,medium,0,124,150,simulated
+student_cbse_01_attempt_051,student_cbse_01,51,2026-03-02T08:33:00,q_tb_pair_linear_equations_algebraic_001,c_pair_linear_equations_algebraic,Algebraic Methods for Pair of Linear Equations,Pair of Linear Equations in Two Variables,medium,0,142,150,simulated
+student_cbse_01_attempt_052,student_cbse_01,52,2026-03-02T09:06:00,q_tb_pair_linear_equations_algebraic_002,c_pair_linear_equations_algebraic,Algebraic Methods for Pair of Linear Equations,Pair of Linear Equations in Two Variables,hard,0,184,210,simulated
+student_cbse_01_attempt_053,student_cbse_01,53,2026-03-02T09:43:00,q_tb_classical_probability_001,c_classical_probability,Classical Probability,Probability,easy,1,85,90,simulated
+student_cbse_01_attempt_054,student_cbse_01,54,2026-03-02T10:12:00,q_tb_quadratic_applications_001,c_quadratic_applications,Situational Problems on Quadratic Equations,Quadratic Equations,hard,1,173,210,simulated
+student_cbse_01_attempt_055,student_cbse_01,55,2026-03-02T10:53:00,q_tb_quadratic_formula_002,c_quadratic_formula,Quadratic Formula,Quadratic Equations,hard,1,215,210,simulated
 student_cbse_01_attempt_056,student_cbse_01,56,2026-03-02T11:14:00,q_trig_005,c_trigonometric_ratios,Trigonometric Ratios,Introduction to Trigonometry,medium,0,88,120,simulated
-student_cbse_01_attempt_057,student_cbse_01,57,2026-03-02T11:51:00,q_tb_grouped_data_median_mode_002,c_grouped_data_median_mode,Median and Mode of Grouped Data,Statistics,medium,0,179,210,simulated
-student_cbse_01_attempt_058,student_cbse_01,58,2026-03-02T12:20:00,q_tb_quadratic_formula_001,c_quadratic_formula,Quadratic Formula,Quadratic Equations,medium,0,132,180,simulated
-student_cbse_01_attempt_059,student_cbse_01,59,2026-03-02T12:42:00,q_trig_005,c_trigonometric_ratios,Trigonometric Ratios,Introduction to Trigonometry,medium,0,84,120,simulated
-student_cbse_01_attempt_060,student_cbse_01,60,2026-03-02T13:21:00,q_tb_tangents_from_external_point_002,c_tangents_from_external_point,Tangents from an External Point,Circles,medium,1,131,180,simulated
+student_cbse_01_attempt_057,student_cbse_01,57,2026-03-02T11:51:00,q_tb_combination_solids_volume_001,c_combination_solids_volume,Volume of Combined Solids,Surface Areas and Volumes,medium,0,153,180,simulated
+student_cbse_01_attempt_058,student_cbse_01,58,2026-03-02T12:20:00,q_tb_fundamental_theorem_arithmetic_002,c_fundamental_theorem_arithmetic,Fundamental Theorem of Arithmetic,Real Numbers,hard,0,191,210,simulated
+student_cbse_01_attempt_059,student_cbse_01,59,2026-03-02T12:42:00,q_trig_001,c_trigonometric_ratios,Trigonometric Ratios,Introduction to Trigonometry,easy,0,105,150,simulated
+student_cbse_01_attempt_060,student_cbse_01,60,2026-03-02T13:21:00,q_cg_001,c_distance_formula,Distance Formula,Coordinate Geometry,easy,1,49,90,simulated

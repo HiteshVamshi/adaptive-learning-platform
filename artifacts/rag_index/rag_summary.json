@@ -1,10 +1,10 @@
 {
-  "chunk_count": 210,
+  "chunk_count": 248,
   "embedding_backend": "hash",
   "embedding_model_name": null,
   "chunk_types": {
-    "solution": 66,
-    "question": 66,
+    "solution": 85,
+    "question": 85,
     "syllabus_textbook_grounded": 39,
     "theory": 39
   }

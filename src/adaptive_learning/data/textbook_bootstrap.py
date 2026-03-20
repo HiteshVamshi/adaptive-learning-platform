@@ -1,6 +1,8 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
+import hashlib
+import math
 
 import pandas as pd
 
@@ -25,6 +27,29 @@ class QuestionSpec:
     estimated_time_sec: int
 
 
+AUGMENT_EXISTING_CONCEPTS = {
+    "c_euclid_division_lemma",
+    "c_hcf_lcm",
+    "c_irrational_numbers",
+    "c_decimal_expansions",
+    "c_polynomial_degree_terms",
+    "c_zeroes_of_polynomial",
+    "c_zero_coeff_relationship",
+    "c_factorisation_remainder",
+    "c_similar_triangles",
+    "c_basic_proportionality_theorem",
+    "c_pythagoras_theorem",
+    "c_similarity_area_ratio",
+    "c_trigonometric_ratios",
+    "c_standard_trig_values",
+    "c_trig_identities",
+    "c_heights_distances",
+    "c_distance_formula",
+    "c_section_formula",
+    "c_area_of_triangle",
+}
+
+
 def generate_textbook_bootstrap_questions(
     *,
     concepts: pd.DataFrame,
@@ -36,14 +61,18 @@ def generate_textbook_bootstrap_questions(
         existing_questions=existing_questions.copy(),
         theory_content=theory_content.copy(),
     )
-    covered_concepts = set(context.existing_questions["concept_id"].astype(str).tolist())
-
     question_records: list[QuestionRecord] = []
     solution_records: list[SolutionRecord] = []
 
     for concept in context.concepts.to_dict(orient="records"):
         concept_id = str(concept["concept_id"])
-        if concept_id in covered_concepts:
+        concept_existing = context.existing_questions[
+            context.existing_questions["concept_id"].astype(str) == concept_id
+        ]
+        has_existing_questions = not concept_existing.empty
+        should_augment = concept_id in AUGMENT_EXISTING_CONCEPTS
+
+        if has_existing_questions and not should_augment:
             continue
 
         generator = QUESTION_GENERATORS.get(concept_id, _generic_question_specs)
@@ -616,6 +645,423 @@ def _probability(*, concept: dict, context: TextbookBootstrapContext) -> list[Qu
     ]
 
 
+
+def _stable_index(*parts: str, modulo: int) -> int:
+    joined = '::'.join(parts)
+    digest = hashlib.md5(joined.encode('utf-8')).hexdigest()
+    return int(digest[:8], 16) % modulo
+
+
+def _stable_choice(options: list, *parts: str):
+    return options[_stable_index(*parts, modulo=len(options))]
+
+
+def _stable_int(low: int, high: int, *parts: str) -> int:
+    return low + _stable_index(*parts, modulo=(high - low + 1))
+
+
+def _section_prefix(*, concept: dict, context: TextbookBootstrapContext) -> str:
+    section_text = _concept_section_text(concept_id=str(concept["concept_id"]), context=context)
+    if not section_text:
+        return ''
+    return f"Based on the NCERT section {section_text}, "
+
+
+def _real_numbers_euclid_variant(*, concept: dict, context: TextbookBootstrapContext) -> list[QuestionSpec]:
+    divisor = _stable_choice([18, 21, 24, 27, 31, 35], str(concept['concept_id']), 'divisor')
+    quotient = _stable_int(7, 14, str(concept['concept_id']), 'quotient')
+    remainder = _stable_int(1, divisor - 1, str(concept['concept_id']), 'remainder')
+    dividend = divisor * quotient + remainder
+    prefix = _section_prefix(concept=concept, context=context)
+    return [
+        _spec(
+            difficulty='easy',
+            question_type='short_answer',
+            prompt=(
+                f"{prefix}use Euclid's division lemma to express {dividend} in the form {divisor}q + r, "
+                f"where 0 <= r < {divisor}. Find q and r."
+            ),
+            answer=f"q = {quotient}, r = {remainder}",
+            worked_solution=(
+                f"Divide {dividend} by {divisor}. Since {divisor} x {quotient} = {divisor * quotient} and "
+                f"{dividend} - {divisor * quotient} = {remainder}, we get {dividend} = {divisor} x {quotient} + {remainder}."
+            ),
+            tags=['real_numbers', 'division_lemma', 'textbook_variant'],
+            estimated_time_sec=120,
+        )
+    ]
+
+
+def _real_numbers_hcf_variant(*, concept: dict, context: TextbookBootstrapContext) -> list[QuestionSpec]:
+    gcd = _stable_choice([6, 8, 9, 12], str(concept['concept_id']), 'gcd')
+    pair = _stable_choice([(5, 7), (7, 11), (8, 15), (9, 14)], str(concept['concept_id']), 'pair')
+    a, b = gcd * pair[0], gcd * pair[1]
+    lcm = (a * b) // gcd
+    prefix = _section_prefix(concept=concept, context=context)
+    return [
+        _spec(
+            difficulty='medium',
+            question_type='numerical',
+            prompt=(
+                f"{prefix}the HCF of {a} and {b} is {gcd}. Use HCF x LCM = product of the numbers to find the LCM."
+            ),
+            answer=str(lcm),
+            worked_solution=f"LCM = ({a} x {b}) / {gcd} = {lcm}.",
+            tags=['real_numbers', 'hcf_lcm', 'product_relationship'],
+            estimated_time_sec=120,
+        )
+    ]
+
+
+def _real_numbers_irrational_variant(*, concept: dict, context: TextbookBootstrapContext) -> list[QuestionSpec]:
+    a = _stable_choice([2, 3, 4, 6], str(concept['concept_id']), 'constant')
+    n = _stable_choice([2, 5, 7, 11, 13], str(concept['concept_id']), 'surd')
+    prefix = _section_prefix(concept=concept, context=context)
+    return [
+        _spec(
+            difficulty='hard',
+            question_type='proof',
+            prompt=f"{prefix}show that {a} + sqrt({n}) is irrational.",
+            answer=f"{a} + sqrt({n}) is irrational.",
+            worked_solution=(
+                f"Assume {a} + sqrt({n}) is rational. Then subtracting {a} would make sqrt({n}) rational, "
+                f"which is impossible because {n} is not a perfect square. Hence {a} + sqrt({n}) is irrational."
+            ),
+            tags=['real_numbers', 'irrational', 'proof'],
+            estimated_time_sec=180,
+        )
+    ]
+
+
+def _real_numbers_decimal_variant(*, concept: dict, context: TextbookBootstrapContext) -> list[QuestionSpec]:
+    fraction = _stable_choice([(17, 160, 'terminating'), (11, 75, 'terminating'), (13, 96, 'non-terminating recurring')], str(concept['concept_id']), 'fraction')
+    num, den, label = fraction
+    reason = 'only 2s and 5s as prime factors' if label == 'terminating' else 'a prime factor other than 2 or 5 in the denominator'
+    prefix = _section_prefix(concept=concept, context=context)
+    return [
+        _spec(
+            difficulty='medium',
+            question_type='classification',
+            prompt=(
+                f"{prefix}without long division, determine whether the decimal expansion of {num}/{den} is "
+                f"terminating or non-terminating recurring."
+            ),
+            answer=label,
+            worked_solution=(
+                f"Write the denominator in lowest form. Since {den} has {reason}, the decimal expansion is {label}."
+            ),
+            tags=['real_numbers', 'decimal_expansion', 'classification'],
+            estimated_time_sec=120,
+        )
+    ]
+
+
+def _polynomial_degree_variant(*, concept: dict, context: TextbookBootstrapContext) -> list[QuestionSpec]:
+    lead = _stable_choice([3, 5, 7, 9], str(concept['concept_id']), 'lead')
+    power = _stable_choice([4, 5, 6], str(concept['concept_id']), 'power')
+    mid_coeff = _stable_choice([2, 4, 6], str(concept['concept_id']), 'mid')
+    prompt = f"Identify the degree and leading coefficient of p(x) = {lead}x^{power} - {mid_coeff}x^2 + 11."
+    return [
+        _spec(
+            difficulty='easy',
+            question_type='short_answer',
+            prompt=prompt,
+            answer=f"Degree = {power}, leading coefficient = {lead}",
+            worked_solution=(
+                f"The highest power of x in the polynomial is {power}, so the degree is {power}. "
+                f"The coefficient of x^{power} is {lead}, so that is the leading coefficient."
+            ),
+            tags=['polynomials', 'degree', 'leading_coefficient'],
+            estimated_time_sec=90,
+        )
+    ]
+
+
+def _zeroes_variant(*, concept: dict, context: TextbookBootstrapContext) -> list[QuestionSpec]:
+    roots = _stable_choice([(2, -5), (3, 4), (-2, 5), (1, -6)], str(concept['concept_id']), 'roots')
+    r1, r2 = roots
+    sum_roots = r1 + r2
+    product = r1 * r2
+    sign = '-' if sum_roots >= 0 else '+'
+    middle = abs(sum_roots)
+    if product >= 0:
+        tail = f'+ {product}'
+    else:
+        tail = f'- {abs(product)}'
+    polynomial = f"x^2 {sign} {middle}x {tail}"
+    return [
+        _spec(
+            difficulty='medium',
+            question_type='algebraic',
+            prompt=f"Find the zeroes of {polynomial}.",
+            answer=f"{r1} and {r2}",
+            worked_solution=(
+                f"The quadratic factors as (x - ({r1}))(x - ({r2})) = 0. Therefore the zeroes are {r1} and {r2}."
+            ),
+            tags=['polynomials', 'zeroes', 'factorisation'],
+            estimated_time_sec=150,
+        )
+    ]
+
+
+def _zero_coeff_variant(*, concept: dict, context: TextbookBootstrapContext) -> list[QuestionSpec]:
+    sum_roots, product = _stable_choice([(6, 8), (5, 6), (7, 10), (9, 14)], str(concept['concept_id']), 'sum_product')
+    return [
+        _spec(
+            difficulty='medium',
+            question_type='construction',
+            prompt=(
+                f"Construct a monic quadratic polynomial whose sum of zeroes is {sum_roots} and product of zeroes is {product}."
+            ),
+            answer=f"x^2 - {sum_roots}x + {product}",
+            worked_solution=(
+                f"For a monic quadratic, p(x) = x^2 - (sum of zeroes)x + product of zeroes. "
+                f"Hence p(x) = x^2 - {sum_roots}x + {product}."
+            ),
+            tags=['polynomials', 'coefficients', 'construction'],
+            estimated_time_sec=120,
+        )
+    ]
+
+
+def _remainder_variant(*, concept: dict, context: TextbookBootstrapContext) -> list[QuestionSpec]:
+    root = _stable_choice([2, 3, -1, -2], str(concept['concept_id']), 'root')
+    other1, other2 = _stable_choice([(1, -3), (4, -1), (2, -5), (5, -2)], str(concept['concept_id']), 'others')
+    value = root
+    remainder = (value - root) * (value - other1) * (value - other2)
+    polynomial = f"(x - {root})(x - {other1})(x - {other2})"
+    divisor_text = f"x - {value}" if value >= 0 else f"x + {abs(value)}"
+    return [
+        _spec(
+            difficulty='hard',
+            question_type='verification',
+            prompt=(
+                f"If p(x) = {polynomial}, find the remainder when p(x) is divided by {divisor_text}."
+            ),
+            answer=str(remainder),
+            worked_solution=(
+                f"By the remainder theorem, the remainder on division by {divisor_text} is p({value}). "
+                f"Since p({value}) = ({value} - {root})({value} - {other1})({value} - {other2}) = {remainder}, the remainder is {remainder}."
+            ),
+            tags=['polynomials', 'remainder_theorem', 'textbook_variant'],
+            estimated_time_sec=180,
+        )
+    ]
+
+
+def _triangles_similarity_variant(*, concept: dict, context: TextbookBootstrapContext) -> list[QuestionSpec]:
+    base = _stable_choice([(4, 6, 8, 2), (5, 12, 13, 3), (6, 8, 10, 4)], str(concept['concept_id']), 'similarity')
+    a, b, c, scale = base
+    return [
+        _spec(
+            difficulty='easy',
+            question_type='reasoning',
+            prompt=(
+                f"The sides of one triangle are {a} cm, {b} cm, {c} cm. Another triangle has sides {a * scale} cm, {b * scale} cm, {c * scale} cm. Are the triangles similar?"
+            ),
+            answer='Yes, the triangles are similar.',
+            worked_solution=(
+                f"The corresponding side ratios are all {scale}:1. Since the three pairs of corresponding sides are proportional, the triangles are similar by SSS similarity."
+            ),
+            tags=['triangles', 'similarity', 'sss'],
+            estimated_time_sec=120,
+        )
+    ]
+
+
+def _triangles_bpt_variant(*, concept: dict, context: TextbookBootstrapContext) -> list[QuestionSpec]:
+    ad = _stable_choice([3, 4, 5], str(concept['concept_id']), 'ad')
+    db = _stable_choice([2, 3, 5], str(concept['concept_id']), 'db')
+    ae = _stable_choice([4, 6, 7.5], str(concept['concept_id']), 'ae')
+    ac = ae * (ad + db) / ad
+    return [
+        _spec(
+            difficulty='medium',
+            question_type='numerical',
+            prompt=(
+                f"In triangle ABC, D lies on AB and E lies on AC. If DE is parallel to BC, AD = {ad} cm, DB = {db} cm, and AE = {ae} cm, find AC."
+            ),
+            answer=f"{ac:g} cm",
+            worked_solution=(
+                f"Since DE is parallel to BC, triangles ADE and ABC are similar. Therefore AD/AB = AE/AC. Here AB = {ad + db}. So {ad}/{ad + db} = {ae}/AC, giving AC = {ac:g} cm."
+            ),
+            tags=['triangles', 'bpt', 'parallel_lines'],
+            estimated_time_sec=180,
+        )
+    ]
+
+
+def _triangles_pythagoras_variant(*, concept: dict, context: TextbookBootstrapContext) -> list[QuestionSpec]:
+    a, b, c = _stable_choice([(8, 15, 17), (5, 12, 13), (7, 24, 25)], str(concept['concept_id']), 'pythagoras')
+    return [
+        _spec(
+            difficulty='medium',
+            question_type='numerical',
+            prompt=f"A right triangle has legs {a} cm and {b} cm. Find the hypotenuse.",
+            answer=f"{c} cm",
+            worked_solution=(
+                f"By Pythagoras theorem, hypotenuse = sqrt({a}^2 + {b}^2) = sqrt({a*a} + {b*b}) = sqrt({c*c}) = {c} cm."
+            ),
+            tags=['triangles', 'pythagoras', 'right_triangle'],
+            estimated_time_sec=120,
+        )
+    ]
+
+
+def _triangles_area_ratio_variant(*, concept: dict, context: TextbookBootstrapContext) -> list[QuestionSpec]:
+    small, large, area_small = _stable_choice([(2, 5, 18), (3, 4, 27), (4, 7, 32)], str(concept['concept_id']), 'area_ratio')
+    area_large = area_small * (large * large) / (small * small)
+    return [
+        _spec(
+            difficulty='hard',
+            question_type='application',
+            prompt=(
+                f"Two similar triangles have corresponding sides in the ratio {small}:{large}. If the area of the smaller triangle is {area_small} cm^2, find the area of the larger triangle."
+            ),
+            answer=f"{area_large:g} cm^2",
+            worked_solution=(
+                f"For similar triangles, the ratio of areas equals the square of the ratio of corresponding sides. So smaller:larger area = {small*small}:{large*large}. Therefore the larger area is {area_large:g} cm^2."
+            ),
+            tags=['triangles', 'similarity', 'area_ratio'],
+            estimated_time_sec=180,
+        )
+    ]
+
+
+def _trig_ratios_variant(*, concept: dict, context: TextbookBootstrapContext) -> list[QuestionSpec]:
+    opp, adj, hyp = _stable_choice([(5, 12, 13), (7, 24, 25), (8, 15, 17)], str(concept['concept_id']), 'ratios')
+    return [
+        _spec(
+            difficulty='easy',
+            question_type='numerical',
+            prompt=(
+                f"In a right triangle, the side opposite theta is {opp} cm and the adjacent side is {adj} cm. Find sin(theta), cos(theta), and tan(theta)."
+            ),
+            answer=f"sin(theta) = {opp}/{hyp}, cos(theta) = {adj}/{hyp}, tan(theta) = {opp}/{adj}",
+            worked_solution=(
+                f"The hypotenuse is {hyp}. Therefore sin(theta) = opposite/hypotenuse = {opp}/{hyp}, cos(theta) = {adj}/{hyp}, and tan(theta) = {opp}/{adj}."
+            ),
+            tags=['trigonometry', 'ratios', 'right_triangle'],
+            estimated_time_sec=150,
+        )
+    ]
+
+
+def _trig_standard_values_variant(*, concept: dict, context: TextbookBootstrapContext) -> list[QuestionSpec]:
+    expr, answer, explanation = _stable_choice([
+        ('2 sin 30 degrees + cos 60 degrees', '3/2', '2 x 1/2 + 1/2 = 3/2.'),
+        ('sin 45 degrees + cos 45 degrees', 'sqrt(2)', 'Each value is 1/sqrt(2), so the sum is 2/sqrt(2) = sqrt(2).'),
+        ('tan 45 degrees + sin 30 degrees', '3/2', 'tan 45 degrees = 1 and sin 30 degrees = 1/2, so the sum is 3/2.'),
+    ], str(concept['concept_id']), 'std_values')
+    return [
+        _spec(
+            difficulty='easy',
+            question_type='short_answer',
+            prompt=f"Evaluate {expr}.",
+            answer=answer,
+            worked_solution=explanation,
+            tags=['trigonometry', 'standard_values', 'evaluation'],
+            estimated_time_sec=90,
+        )
+    ]
+
+
+def _trig_identity_variant(*, concept: dict, context: TextbookBootstrapContext) -> list[QuestionSpec]:
+    num, den = _stable_choice([(3, 4), (5, 12), (8, 15)], str(concept['concept_id']), 'identity')
+    sec_sq = 1 + (num * num) / (den * den)
+    return [
+        _spec(
+            difficulty='medium',
+            question_type='verification',
+            prompt=f"If tan(theta) = {num}/{den}, verify that 1 + tan^2(theta) = sec^2(theta).",
+            answer=f"Both sides equal {(den*den + num*num)}/{den*den}",
+            worked_solution=(
+                f"tan^2(theta) = {num*num}/{den*den}. Hence 1 + tan^2(theta) = ({den*den} + {num*num})/{den*den} = {(den*den + num*num)}/{den*den}. Therefore sec^2(theta) has the same value."
+            ),
+            tags=['trigonometry', 'identity', 'verification'],
+            estimated_time_sec=150,
+        )
+    ]
+
+
+def _trig_heights_variant(*, concept: dict, context: TextbookBootstrapContext) -> list[QuestionSpec]:
+    distance, angle, height = _stable_choice([(20, 45, '20 m'), (15, 45, '15 m'), (10, 60, '10*sqrt(3) m')], str(concept['concept_id']), 'height')
+    return [
+        _spec(
+            difficulty='hard',
+            question_type='application',
+            prompt=(
+                f"From a point on the ground {distance} m away from the base of a tower, the angle of elevation of the top is {angle} degrees. Find the height of the tower."
+            ),
+            answer=height,
+            worked_solution=(
+                f"Using tan {angle} degrees = height/{distance}, we solve for the height. This gives {height}."
+            ),
+            tags=['trigonometry', 'heights_distances', 'application'],
+            estimated_time_sec=180,
+        )
+    ]
+
+
+def _coord_distance_variant(*, concept: dict, context: TextbookBootstrapContext) -> list[QuestionSpec]:
+    x1, y1, dx, dy = _stable_choice([(1, 2, 6, 8), (-2, 1, 5, 12), (3, -1, 8, 15)], str(concept['concept_id']), 'distance')
+    x2, y2 = x1 + dx, y1 + dy
+    dist = int(math.sqrt(dx * dx + dy * dy))
+    return [
+        _spec(
+            difficulty='easy',
+            question_type='numerical',
+            prompt=f"Find the distance between ({x1}, {y1}) and ({x2}, {y2}).",
+            answer=str(dist),
+            worked_solution=(
+                f"Distance = sqrt(({x2} - {x1})^2 + ({y2} - {y1})^2) = sqrt({dx}^2 + {dy}^2) = {dist}."
+            ),
+            tags=['coordinate_geometry', 'distance_formula'],
+            estimated_time_sec=90,
+        )
+    ]
+
+
+def _coord_section_variant(*, concept: dict, context: TextbookBootstrapContext) -> list[QuestionSpec]:
+    x1, y1, x2, y2, m, n = _stable_choice([(1, 2, 10, 8, 1, 2), (2, 3, 8, 9, 2, 1), (-1, 4, 5, 10, 1, 1)], str(concept['concept_id']), 'section')
+    px = (m * x2 + n * x1) / (m + n)
+    py = (m * y2 + n * y1) / (m + n)
+    return [
+        _spec(
+            difficulty='medium',
+            question_type='numerical',
+            prompt=(
+                f"Find the point dividing the line segment joining ({x1}, {y1}) and ({x2}, {y2}) internally in the ratio {m}:{n}."
+            ),
+            answer=f"({px:g}, {py:g})",
+            worked_solution=(
+                f"Using the section formula, P = (({m} x {x2} + {n} x {x1})/{m+n}, ({m} x {y2} + {n} x {y1})/{m+n}) = ({px:g}, {py:g})."
+            ),
+            tags=['coordinate_geometry', 'section_formula', 'ratio'],
+            estimated_time_sec=150,
+        )
+    ]
+
+
+def _coord_area_variant(*, concept: dict, context: TextbookBootstrapContext) -> list[QuestionSpec]:
+    base_start, base_end, apex_x, apex_y = _stable_choice([(0, 6, 2, 4), (1, 7, 3, 5), (-2, 4, 1, 3)], str(concept['concept_id']), 'area')
+    area = abs(base_end - base_start) * abs(apex_y) / 2
+    return [
+        _spec(
+            difficulty='medium',
+            question_type='numerical',
+            prompt=(
+                f"Find the area of the triangle with vertices ({base_start}, 0), ({base_end}, 0), and ({apex_x}, {apex_y})."
+            ),
+            answer=f"{area:g} square units",
+            worked_solution=(
+                f"Take the base on the x-axis. Base length = {abs(base_end - base_start)} and height = {abs(apex_y)}. So area = 1/2 x {abs(base_end - base_start)} x {abs(apex_y)} = {area:g} square units."
+            ),
+            tags=['coordinate_geometry', 'triangle_area'],
+            estimated_time_sec=150,
+        )
+    ]
+
 QUESTION_GENERATORS = {
     "c_fundamental_theorem_arithmetic": _fundamental_theorem_arithmetic,
     "c_pair_linear_equations_graphical": _pair_linear_graphical,
@@ -638,3 +1084,28 @@ QUESTION_GENERATORS = {
     "c_grouped_data_median_mode": _grouped_median_mode,
     "c_classical_probability": _probability,
 }
+
+
+QUESTION_GENERATORS.update(
+    {
+        "c_euclid_division_lemma": _real_numbers_euclid_variant,
+        "c_hcf_lcm": _real_numbers_hcf_variant,
+        "c_irrational_numbers": _real_numbers_irrational_variant,
+        "c_decimal_expansions": _real_numbers_decimal_variant,
+        "c_polynomial_degree_terms": _polynomial_degree_variant,
+        "c_zeroes_of_polynomial": _zeroes_variant,
+        "c_zero_coeff_relationship": _zero_coeff_variant,
+        "c_factorisation_remainder": _remainder_variant,
+        "c_similar_triangles": _triangles_similarity_variant,
+        "c_basic_proportionality_theorem": _triangles_bpt_variant,
+        "c_pythagoras_theorem": _triangles_pythagoras_variant,
+        "c_similarity_area_ratio": _triangles_area_ratio_variant,
+        "c_trigonometric_ratios": _trig_ratios_variant,
+        "c_standard_trig_values": _trig_standard_values_variant,
+        "c_trig_identities": _trig_identity_variant,
+        "c_heights_distances": _trig_heights_variant,
+        "c_distance_formula": _coord_distance_variant,
+        "c_section_formula": _coord_section_variant,
+        "c_area_of_triangle": _coord_area_variant,
+    }
+)

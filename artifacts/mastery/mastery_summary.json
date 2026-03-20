@@ -3,8 +3,8 @@
   "display_name": "Aarav",
   "attempt_count": 60,
   "mastered_concepts": 0,
-  "developing_concepts": 7,
-  "needs_support_concepts": 32,
+  "developing_concepts": 9,
+  "needs_support_concepts": 30,
   "lowest_mastery_concepts": [
     {
       "concept_id": "c_ap_applications",
@@ -17,19 +17,19 @@
       "graph_adjusted_mastery": 0.132756
     },
     {
-      "concept_id": "c_combination_solids_volume",
-      "concept_name": "Volume of Combined Solids",
-      "graph_adjusted_mastery": 0.14019600000000002
+      "concept_id": "c_grouped_data_mean",
+      "concept_name": "Mean of Grouped Data",
+      "graph_adjusted_mastery": 0.141244
     },
     {
-      "concept_id": "c_similarity_area_ratio",
-      "concept_name": "Criteria for Similarity and Area Ratio",
-      "graph_adjusted_mastery": 0.142624
+      "concept_id": "c_heights_distances",
+      "concept_name": "Heights and Distances",
+      "graph_adjusted_mastery": 0.145976
     },
     {
-      "concept_id": "c_fundamental_theorem_arithmetic",
-      "concept_name": "Fundamental Theorem of Arithmetic",
-      "graph_adjusted_mastery": 0.144716
+      "concept_id": "c_combination_solids_surface_area",
+      "concept_name": "Surface Area of Combined Solids",
+      "graph_adjusted_mastery": 0.14683200000000002
     }
   ]
 }

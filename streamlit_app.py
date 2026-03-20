@@ -12,6 +12,7 @@ SRC = ROOT / "src"
 if str(SRC) not in sys.path:
     sys.path.insert(0, str(SRC))
 
+from adaptive_learning.deployment.runtime import ensure_platform_ready
 from adaptive_learning.ui.data_access import (
     build_platform_services,
     compute_live_mastery_snapshot,
@@ -31,8 +32,15 @@ from adaptive_learning.ui.pages import (
 
 
 @st.cache_resource
+def get_deployment_status():
+    paths = default_paths(ROOT)
+    return ensure_platform_ready(paths=paths)
+
+
+@st.cache_resource
 def get_artifacts():
     paths = default_paths(ROOT)
+    get_deployment_status()
     return load_platform_artifacts(paths=paths)
 
 
@@ -50,6 +58,13 @@ def main() -> None:
         layout="wide",
         initial_sidebar_state="expanded",
     )
+
+    deployment_status = get_deployment_status()
+    if not deployment_status.artifacts_ready:
+        st.error("Required build artifacts are missing and automatic bootstrap is disabled.")
+        if deployment_status.missing_paths:
+            st.code("\n".join(deployment_status.missing_paths))
+        return
 
     artifacts = get_artifacts()
     services = get_services()
@@ -86,6 +101,10 @@ def main() -> None:
     st.sidebar.metric("Questions", int(len(artifacts.questions)))
     st.sidebar.metric("Theory Notes", int(len(artifacts.theory_content)))
     st.sidebar.metric("Manual Attempts This Session", int(len(st.session_state["manual_attempts"])))
+    st.sidebar.caption(
+        f"Deployment backend: {deployment_status.embedding_backend} | "
+        f"Auto-built: {'yes' if deployment_status.auto_built else 'no'}"
+    )
 
     if page == "Curriculum & Data":
         render_curriculum_page(artifacts=artifacts)

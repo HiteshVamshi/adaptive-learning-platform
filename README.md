@@ -109,6 +109,54 @@ This writes:
 .\.venv\Scripts\python.exe -m streamlit run streamlit_app.py
 ```
 
+## Deployment
+
+### Recommended Target
+
+Use Streamlit Community Cloud for this app. It is a native fit for the current architecture because the repository already ships a Streamlit entrypoint, Python dependencies, and build artifacts.
+
+Netlify is not the right target for the full application in its current form. Netlify's official deployment model is centered on static sites and serverless functions, not a long-running Python Streamlit runtime. If you want Netlify later, the practical route would be to split this project into:
+
+- a separate Python API service for search, RAG, mastery, and recommendations
+- a separate static frontend deployed on Netlify
+
+### Streamlit Community Cloud Checklist
+
+This repo is now prepared for Streamlit Community Cloud with:
+
+- `requirements.txt` for deployment dependencies
+- `.streamlit/config.toml` for headless cloud-friendly runtime settings
+- `.streamlit/secrets.toml.example` as a template for future secret management
+- `scripts/build_all.py` for one-command artifact generation
+- automatic artifact bootstrap in `streamlit_app.py` if a fresh container starts without prebuilt artifacts
+
+### Streamlit Cloud Steps
+
+1. Push the repo to GitHub.
+2. In Streamlit Community Cloud, create a new app from this repository.
+3. Set the main file path to `streamlit_app.py`.
+4. In the app settings, keep Python 3.11 if prompted.
+5. Optionally set these environment variables:
+   - `ADAPTIVE_LEARNING_EMBEDDING_BACKEND=hash`
+   - `ADAPTIVE_LEARNING_AUTO_BUILD=true`
+6. Deploy.
+
+### Predeploy Build Command
+
+For a clean rebuild before pushing:
+
+```powershell
+.\.venv\Scripts\python.exe scripts\build_all.py --force --embedding-backend hash
+```
+
+### Local Production-like Run
+
+```powershell
+.\.venv\Scripts\python.exe -m pip install -r requirements.txt
+.\.venv\Scripts\python.exe scripts\build_all.py --force --embedding-backend hash
+.\.venv\Scripts\python.exe -m streamlit run streamlit_app.py
+```
+
 ## Optional Smoke Checks
 
 ```powershell
