@@ -1,0 +1,10 @@
+{
+  "chunk_count": 69,
+  "embedding_backend": "hash",
+  "embedding_model_name": null,
+  "chunk_types": {
+    "question": 25,
+    "solution": 25,
+    "theory": 19
+  }
+}
