@@ -1,0 +1,96 @@
+{
+  "agent_name": "QueryAgent",
+  "user_query": "hard trigo proof question",
+  "answer": "Rewritten query: hard trigo proof question concept:Introduction to Trigonometry difficulty:hard. Top matching questions: q_trig_002, q_trig_005, q_trig_001.",
+  "tool_trace": [
+    {
+      "tool_name": "rewrite_query",
+      "purpose": "Rewrite the raw question into a clearer retrieval-oriented query.",
+      "input_summary": {
+        "query": "hard trigo proof question"
+      },
+      "output_summary": {
+        "rewritten_query": "hard trigo proof question concept:Introduction to Trigonometry difficulty:hard",
+        "detected_concepts": [
+          "ch_trigonometry"
+        ]
+      }
+    },
+    {
+      "tool_name": "concept_neighbors",
+      "purpose": "Expand the rewritten query with prerequisite and related concepts.",
+      "input_summary": {
+        "concept_id": "ch_trigonometry"
+      },
+      "output_summary": {
+        "neighbor_concepts": []
+      }
+    }
+  ],
+  "metadata": {
+    "rewritten_query": "hard trigo proof question concept:Introduction to Trigonometry difficulty:hard",
+    "intent": {
+      "requested_difficulty": "hard",
+      "detected_concepts": [
+        "ch_trigonometry"
+      ],
+      "expanded_concepts": [
+        "ch_trigonometry",
+        "c_trigonometric_ratios",
+        "c_standard_trig_values",
+        "c_trig_identities",
+        "c_heights_distances"
+      ],
+      "expanded_terms": [
+        "Introduction to Trigonometry",
+        "trigonometry",
+        "applications",
+        "Trigonometric Ratios",
+        "sin",
+        "cos",
+        "tan",
+        "Standard Trigonometric Values",
+        "angles",
+        "exact_values",
+        "Trigonometric Identities",
+        "identity",
+        "simplification",
+        "Heights and Distances",
+        "application",
+        "elevation"
+      ]
+    },
+    "top_results": [
+      {
+        "question_id": "q_trig_002",
+        "concept_name": "Standard Trigonometric Values",
+        "concept_id": "c_standard_trig_values",
+        "chapter_name": "Introduction to Trigonometry",
+        "difficulty": "easy",
+        "prompt": "Write the values of sin 30 degrees, cos 60 degrees, and tan 45 degrees.",
+        "final_answer": "sin 30 degrees = 1/2, cos 60 degrees = 1/2, tan 45 degrees = 1",
+        "hybrid_score": 0.88
+      },
+      {
+        "question_id": "q_trig_005",
+        "concept_name": "Trigonometric Ratios",
+        "concept_id": "c_trigonometric_ratios",
+        "chapter_name": "Introduction to Trigonometry",
+        "difficulty": "medium",
+        "prompt": "If tan(theta) = 3/4 for an acute angle theta, find sin(theta) and cos(theta).",
+        "final_answer": "sin(theta) = 3/5, cos(theta) = 4/5",
+        "hybrid_score": 0.613
+      },
+      {
+        "question_id": "q_trig_001",
+        "concept_name": "Trigonometric Ratios",
+        "concept_id": "c_trigonometric_ratios",
+        "chapter_name": "Introduction to Trigonometry",
+        "difficulty": "easy",
+        "prompt": "In a right triangle, the side opposite angle theta is 7 cm and the adjacent side is 24 cm. Find sin(theta), cos(theta), and tan(theta).",
+        "final_answer": "sin(theta) = 7/25, cos(theta) = 24/25, tan(theta) = 7/24",
+        "hybrid_score": 0.5435
+      }
+    ]
+  }
+}

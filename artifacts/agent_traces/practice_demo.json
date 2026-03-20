@@ -1,0 +1,107 @@
+{
+  "agent_name": "PracticeAgent",
+  "user_query": "Give me practice for my weak concepts",
+  "answer": "Recommended practice sequence: 1. q_tri_001 on Similar Triangles (easy). Focus concept: Similar Triangles at easy difficulty. Generated practice: The sides of two triangles are 5 cm, 12 cm, 13 cm and 10 cm, 24 cm, 26 cm. Are the triangles similar? Answer: Yes, they are similar. Explanation: The corresponding side ratios are 10/5 = 24/12 = 26/13 = 2, so the triangles are similar by SSS similarity.",
+  "tool_trace": [
+    {
+      "tool_name": "rewrite_query",
+      "purpose": "Normalize the practice request into explicit concepts and difficulty signals.",
+      "input_summary": {
+        "query": "Give me practice for my weak concepts"
+      },
+      "output_summary": {
+        "rewritten_query": "Give me practice for my weak concepts",
+        "detected_concepts": []
+      }
+    },
+    {
+      "tool_name": "weak_concepts",
+      "purpose": "Prioritize concepts that currently need support.",
+      "input_summary": {
+        "top_k": 5
+      },
+      "output_summary": {
+        "concept_ids": [
+          "c_similar_triangles",
+          "c_irrational_numbers",
+          "c_decimal_expansions",
+          "c_pythagoras_theorem",
+          "c_similarity_area_ratio"
+        ],
+        "bands": [
+          "needs_support",
+          "needs_support",
+          "needs_support",
+          "needs_support",
+          "needs_support"
+        ]
+      }
+    },
+    {
+      "tool_name": "concept_mastery",
+      "purpose": "Choose a difficulty progression that matches current skill.",
+      "input_summary": {
+        "concept_id": "c_similar_triangles"
+      },
+      "output_summary": {
+        "mastery_band": "needs_support",
+        "target_difficulty": "easy"
+      }
+    },
+    {
+      "tool_name": "recommendation_list",
+      "purpose": "Fetch the highest-value existing questions for the learner right now.",
+      "input_summary": {
+        "top_k": 3,
+        "concept_id": "c_similar_triangles"
+      },
+      "output_summary": {
+        "question_ids": [
+          "q_tri_001"
+        ]
+      }
+    },
+    {
+      "tool_name": "generate_question",
+      "purpose": "Create an additional targeted practice question for the chosen concept.",
+      "input_summary": {
+        "concept_id": "c_similar_triangles",
+        "difficulty": "easy"
+      },
+      "output_summary": {
+        "generated_prompt": "The sides of two triangles are 5 cm, 12 cm, 13 cm and 10 cm, 24 cm, 26 cm. Are the triangles similar?"
+      }
+    }
+  ],
+  "metadata": {
+    "target_concept_id": "c_similar_triangles",
+    "recommendations": [
+      {
+        "user_id": "student_cbse_01",
+        "recommendation_rank": 1,
+        "question_id": "q_tri_001",
+        "chapter_name": "Triangles",
+        "concept_id": "c_similar_triangles",
+        "concept_name": "Similar Triangles",
+        "difficulty": "easy",
+        "recommendation_score": 0.748,
+        "weakness_score": 0.8553,
+        "difficulty_alignment_score": 1.0,
+        "graph_priority_score": 0.2194,
+        "novelty_score": 0.65,
+        "rationale": "Similar Triangles is currently needs_support (mastery=0.14); recommended difficulty is easy and this question is easy; lightly repeated practice; local concept practice."
+      }
+    ],
+    "generated_question": {
+      "concept_id": "c_similar_triangles",
+      "concept_name": "Similar Triangles",
+      "chapter_name": "Triangles",
+      "difficulty": "easy",
+      "prompt": "The sides of two triangles are 5 cm, 12 cm, 13 cm and 10 cm, 24 cm, 26 cm. Are the triangles similar?",
+      "final_answer": "Yes, they are similar.",
+      "explanation": "The corresponding side ratios are 10/5 = 24/12 = 26/13 = 2, so the triangles are similar by SSS similarity.",
+      "tags": "triangles|similarity|easy",
+      "backend": "grounded_templates"
+    }
+  }
+}
