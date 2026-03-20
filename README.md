@@ -107,3 +107,83 @@ Inspect recommendation outputs:
 ```powershell
 .\.venv\Scripts\python.exe scripts\recommendation_demo.py --top-k 5
 ```
+
+## Step 6
+
+Step 6 adds modular content generation:
+
+- generates new practice questions with answers and worked explanations
+- generates concept explanations for a student audience
+- generates summaries for concepts or chapters
+- keeps prompt templates and generation backends separate from callers
+- writes generation artifacts for later agent and UI integration
+
+Build a sample content bundle:
+
+```powershell
+.\.venv\Scripts\python.exe scripts\build_generated_content.py --backend grounded
+```
+
+Run a generation demo:
+
+```powershell
+.\.venv\Scripts\python.exe scripts\content_generation_demo.py --task question --concept-id c_hcf_lcm --difficulty hard
+```
+
+## Step 7
+
+Step 7 adds modular agents with tool traces:
+
+- `TutorAgent` uses retrieval, mastery, and the knowledge graph to explain concepts
+- `PracticeAgent` uses mastery, recommendations, and content generation to assign practice
+- `QueryAgent` rewrites user queries using search-oriented concept and difficulty detection
+- all agents call reusable tool adapters instead of embedding system logic directly
+- each agent can write a structured trace for the future debug view
+
+Run agent demos:
+
+```powershell
+.\.venv\Scripts\python.exe scripts\agent_demo.py --agent tutor --query "Explain why 5 + sqrt(3) is irrational"
+.\.venv\Scripts\python.exe scripts\agent_demo.py --agent practice --query "Give me practice for my weak concepts"
+.\.venv\Scripts\python.exe scripts\agent_demo.py --agent query --query "hard trigo proof question"
+```
+
+## Step 8
+
+Step 8 adds a lightweight fine-tuning and adaptation demo:
+
+- builds a local difficulty-calibration dataset from the curated bank and generated examples
+- trains a small TF-IDF plus logistic regression model to classify difficulty style
+- uses that calibrator to steer generated prompts toward a target difficulty
+- compares baseline and adapted generations with explicit target-alignment probabilities
+- writes artifacts for the future debug view and generation dashboard
+
+Build the adaptation artifacts:
+
+```powershell
+.\.venv\Scripts\python.exe scripts\build_fine_tuning.py
+```
+
+Run a fine-tuning demo:
+
+```powershell
+.\.venv\Scripts\python.exe scripts\fine_tuning_demo.py --concept-id c_hcf_lcm --difficulty hard
+```
+
+## Step 9
+
+Step 9 adds the integrated Streamlit application:
+
+- Search view showing BM25, vector, and hybrid retrieval signals
+- Practice view showing weak concepts, recommendations, and generated questions
+- Test view for recording manual attempts and previewing mastery updates
+- Analysis dashboard for mastery trends and knowledge-graph inspection
+- AI Tutor chat backed by modular agents and visible tool traces
+- Content generation view for questions, explanations, summaries, and adaptation
+- System debug view exposing retrieval context, agent traces, and raw artifact summaries
+
+Run the app locally:
+
+```powershell
+.\.venv\Scripts\streamlit.exe run streamlit_app.py
+```
