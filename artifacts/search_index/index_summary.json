@@ -1,0 +1,17 @@
+{
+  "document_count": 25,
+  "embedding_backend": "hash",
+  "embedding_model_name": null,
+  "chapters": [
+    "Coordinate Geometry",
+    "Introduction to Trigonometry",
+    "Polynomials",
+    "Real Numbers",
+    "Triangles"
+  ],
+  "difficulties": [
+    "easy",
+    "hard",
+    "medium"
+  ]
+}
