@@ -2,34 +2,34 @@
   "user_id": "student_cbse_01",
   "display_name": "Aarav",
   "attempt_count": 60,
-  "mastered_concepts": 1,
-  "developing_concepts": 9,
-  "needs_support_concepts": 9,
+  "mastered_concepts": 0,
+  "developing_concepts": 10,
+  "needs_support_concepts": 29,
   "lowest_mastery_concepts": [
     {
-      "concept_id": "c_similar_triangles",
-      "concept_name": "Similar Triangles",
+      "concept_id": "c_grouped_data_mean",
+      "concept_name": "Mean of Grouped Data",
+      "graph_adjusted_mastery": 0.141244
+    },
+    {
+      "concept_id": "c_sectors_segments",
+      "concept_name": "Sectors and Segments of a Circle",
       "graph_adjusted_mastery": 0.144716
+    },
+    {
+      "concept_id": "c_ap_applications",
+      "concept_name": "Applications of Arithmetic Progressions",
+      "graph_adjusted_mastery": 0.14718000000000003
     },
     {
       "concept_id": "c_irrational_numbers",
       "concept_name": "Irrational Numbers",
-      "graph_adjusted_mastery": 0.16128400000000004
+      "graph_adjusted_mastery": 0.15077600000000002
     },
     {
-      "concept_id": "c_decimal_expansions",
-      "concept_name": "Decimal Expansions of Rational Numbers",
-      "graph_adjusted_mastery": 0.162352
-    },
-    {
-      "concept_id": "c_pythagoras_theorem",
-      "concept_name": "Pythagoras Theorem",
-      "graph_adjusted_mastery": 0.18354
-    },
-    {
-      "concept_id": "c_similarity_area_ratio",
-      "concept_name": "Criteria for Similarity and Area Ratio",
-      "graph_adjusted_mastery": 0.258016
+      "concept_id": "c_grouped_data_median_mode",
+      "concept_name": "Median and Mode of Grouped Data",
+      "graph_adjusted_mastery": 0.153256
     }
   ]
 }

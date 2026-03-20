@@ -1,12 +1,20 @@
 {
-  "document_count": 25,
+  "document_count": 45,
   "embedding_backend": "hash",
   "embedding_model_name": null,
   "chapters": [
+    "Areas Related to Circles",
+    "Arithmetic Progressions",
+    "Circles",
     "Coordinate Geometry",
     "Introduction to Trigonometry",
+    "Pair of Linear Equations in Two Variables",
     "Polynomials",
+    "Probability",
+    "Quadratic Equations",
     "Real Numbers",
+    "Statistics",
+    "Surface Areas and Volumes",
     "Triangles"
   ],
   "difficulties": [

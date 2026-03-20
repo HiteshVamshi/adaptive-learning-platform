@@ -3,8 +3,8 @@ from __future__ import annotations
 import re
 from dataclasses import dataclass
 
-from adaptive_learning.search.text_utils import significant_tokens
 from adaptive_learning.rag.prompt_templates import build_grounded_prompt
+from adaptive_learning.search.text_utils import significant_tokens
 
 
 @dataclass(frozen=True)
@@ -23,6 +23,7 @@ class BaseAnswerGenerator:
 
 class GroundedSynthesisGenerator(BaseAnswerGenerator):
     backend_name = "grounded_synthesis"
+    EXPLANATION_HINTS = {"what", "why", "how", "explain", "define", "meaning", "definition"}
 
     def generate(self, *, query: str, retrieved_chunks: list[dict]) -> GeneratedAnswer:
         context = "\n\n".join(
@@ -36,6 +37,11 @@ class GroundedSynthesisGenerator(BaseAnswerGenerator):
     def _compose_answer(self, *, query: str, retrieved_chunks: list[dict]) -> str:
         if not retrieved_chunks:
             return "I could not find enough grounded context to answer this question."
+
+        if self._should_prefer_explanatory_chunks(query):
+            theory_answer = self._compose_theory_answer(retrieved_chunks)
+            if theory_answer:
+                return theory_answer
 
         for chunk in retrieved_chunks:
             if chunk["chunk_type"] == "solution":
@@ -52,6 +58,37 @@ class GroundedSynthesisGenerator(BaseAnswerGenerator):
                     parts.append(f"Final answer: {final_answer}")
                 if parts:
                     return " ".join(parts)
+
+        theory_answer = self._compose_theory_answer(retrieved_chunks)
+        if theory_answer:
+            return theory_answer
+
+        return self._fallback_sentence_blend(query=query, retrieved_chunks=retrieved_chunks)
+
+    def _compose_theory_answer(self, retrieved_chunks: list[dict]) -> str:
+        curriculum_chunk = next(
+            (chunk for chunk in retrieved_chunks if chunk["chunk_type"] == "syllabus_textbook_grounded"),
+            None,
+        )
+        if curriculum_chunk:
+            summary = self._extract_section(
+                curriculum_chunk["content"], start_label="Summary:", end_label="Official syllabus:"
+            )
+            official_text = self._extract_section(
+                curriculum_chunk["content"], start_label="Official syllabus:", end_label="Textbook sections:"
+            )
+            section_text = self._extract_section(
+                curriculum_chunk["content"], start_label="Textbook sections:", end_label=None
+            )
+            parts = []
+            if summary:
+                parts.append(summary)
+            if official_text:
+                parts.append(f"Official syllabus focus: {official_text}")
+            if section_text:
+                parts.append(f"NCERT section alignment: {section_text}")
+            if parts:
+                return " ".join(parts)
 
         theory_chunk = next(
             (chunk for chunk in retrieved_chunks if chunk["chunk_type"] == "theory"),
@@ -81,8 +118,7 @@ class GroundedSynthesisGenerator(BaseAnswerGenerator):
                     parts.append(f"Relevant answer form: {final_answer}")
             if parts:
                 return " ".join(parts)
-
-        return self._fallback_sentence_blend(query=query, retrieved_chunks=retrieved_chunks)
+        return ""
 
     def _fallback_sentence_blend(self, *, query: str, retrieved_chunks: list[dict]) -> str:
         query_tokens = set(significant_tokens(query))
@@ -114,6 +150,10 @@ class GroundedSynthesisGenerator(BaseAnswerGenerator):
             top_sentences = [retrieved_chunks[0]["content"]]
 
         return " ".join(top_sentences)
+
+    def _should_prefer_explanatory_chunks(self, query: str) -> bool:
+        query_tokens = set(significant_tokens(query))
+        return bool(query_tokens.intersection(self.EXPLANATION_HINTS))
 
     @staticmethod
     def _extract_section(content: str, *, start_label: str, end_label: str | None) -> str:

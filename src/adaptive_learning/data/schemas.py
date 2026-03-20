@@ -18,10 +18,82 @@ class ConceptRecord:
     tags: list[str]
     difficulty_band: str
     order_index: int
+    source_document: str = "bootstrap_seed"
+    source_url: str = ""
+    source_kind: str = "curated"
+    syllabus_session: str = ""
+    unit_name: str = ""
+    unit_marks: int | None = None
+    periods: int | None = None
 
     def to_dict(self) -> dict[str, Any]:
         record = asdict(self)
         record["tags"] = "|".join(self.tags)
+        return record
+
+
+@dataclass(frozen=True)
+class SyllabusTopicRecord:
+    topic_id: str
+    topic_name: str
+    class_level: str
+    syllabus_session: str
+    unit_id: str
+    unit_name: str
+    unit_marks: int
+    chapter_id: str
+    chapter_name: str
+    periods: int
+    official_text: str
+    source_lines: str
+    source_document: str
+    source_url: str
+    source_notes: str = ""
+
+    def to_dict(self) -> dict[str, Any]:
+        return asdict(self)
+
+
+@dataclass(frozen=True)
+class TextbookSectionRecord:
+    section_id: str
+    class_level: str
+    chapter_number: int
+    chapter_id: str
+    chapter_name: str
+    section_number: str
+    section_title: str
+    start_page: int
+    chapter_pdf_url: str
+    source_document: str
+    source_url: str
+    source_lines: str
+
+    def to_dict(self) -> dict[str, Any]:
+        return asdict(self)
+
+
+@dataclass(frozen=True)
+class TheoryContentRecord:
+    content_id: str
+    class_level: str
+    chapter_id: str
+    chapter_name: str
+    concept_id: str
+    concept_name: str
+    title: str
+    content_type: str
+    summary_text: str
+    official_syllabus_text: str
+    textbook_sections: list[str]
+    textbook_section_ids: list[str]
+    source_document: str
+    source_url: str
+
+    def to_dict(self) -> dict[str, Any]:
+        record = asdict(self)
+        record["textbook_sections"] = "|".join(self.textbook_sections)
+        record["textbook_section_ids"] = "|".join(self.textbook_section_ids)
         return record
 
 

@@ -165,8 +165,11 @@ class GroundedContentGenerator:
     def _question_for_concept(
         self, *, concept_id: str, difficulty: str, concept: pd.Series
     ) -> GeneratedQuestionRecord:
-        generator = CONCEPT_GENERATORS.get(concept_id, self._generic_conceptual_question)
-        prompt, final_answer, explanation, tags = generator(self, concept, difficulty)
+        if concept_id in CONCEPT_GENERATORS:
+            generator = CONCEPT_GENERATORS[concept_id]
+            prompt, final_answer, explanation, tags = generator(self, concept, difficulty)
+        else:
+            prompt, final_answer, explanation, tags = self._generic_conceptual_question(concept, difficulty)
         return GeneratedQuestionRecord(
             concept_id=str(concept_id),
             concept_name=str(concept["name"]),

@@ -1,52 +1,52 @@
 {
   "recommendation_count": 10,
   "chapters": {
-    "Triangles": 4,
-    "Real Numbers": 2,
+    "Introduction to Trigonometry": 3,
+    "Arithmetic Progressions": 2,
     "Polynomials": 2,
-    "Coordinate Geometry": 1,
-    "Introduction to Trigonometry": 1
+    "Statistics": 1,
+    "Quadratic Equations": 1,
+    "Areas Related to Circles": 1
   },
   "difficulties": {
     "medium": 6,
-    "easy": 2,
-    "hard": 2
+    "easy": 4
   },
   "top_recommendations": [
     {
-      "question_id": "q_tri_001",
-      "concept_name": "Similar Triangles",
+      "question_id": "q_trig_002",
+      "concept_name": "Standard Trigonometric Values",
       "difficulty": "easy",
-      "recommendation_score": 0.748,
-      "rationale": "Similar Triangles is currently needs_support (mastery=0.14); recommended difficulty is easy and this question is easy; lightly repeated practice; local concept practice."
+      "recommendation_score": 0.7927,
+      "rationale": "Standard Trigonometric Values is currently needs_support (mastery=0.17); recommended difficulty is easy and this question is easy; lightly repeated practice; local concept practice."
     },
     {
-      "question_id": "q_tri_002",
-      "concept_name": "Basic Proportionality Theorem",
-      "difficulty": "medium",
-      "recommendation_score": 0.6257,
-      "rationale": "Basic Proportionality Theorem is currently needs_support (mastery=0.49); recommended difficulty is easy and this question is medium; new question; high graph priority."
+      "question_id": "q_tb_grouped_data_mean_001",
+      "concept_name": "Mean of Grouped Data",
+      "difficulty": "easy",
+      "recommendation_score": 0.7422,
+      "rationale": "Mean of Grouped Data is currently needs_support (mastery=0.14); recommended difficulty is easy and this question is easy; lightly repeated practice; local concept practice."
     },
     {
-      "question_id": "q_rn_003",
-      "concept_name": "Decimal Expansions of Rational Numbers",
+      "question_id": "q_tb_ap_applications_001",
+      "concept_name": "Applications of Arithmetic Progressions",
       "difficulty": "medium",
-      "recommendation_score": 0.6121,
-      "rationale": "Decimal Expansions of Rational Numbers is currently needs_support (mastery=0.16); recommended difficulty is easy and this question is medium; lightly repeated practice; local concept practice."
+      "recommendation_score": 0.7144,
+      "rationale": "Applications of Arithmetic Progressions is currently needs_support (mastery=0.15); recommended difficulty is easy and this question is medium; lightly repeated practice; local concept practice."
     },
     {
-      "question_id": "q_tri_003",
-      "concept_name": "Pythagoras Theorem",
+      "question_id": "q_tb_ap_sum_001",
+      "concept_name": "Sum of First n Terms of an Arithmetic Progression",
       "difficulty": "medium",
-      "recommendation_score": 0.5926,
-      "rationale": "Pythagoras Theorem is currently needs_support (mastery=0.18); recommended difficulty is easy and this question is medium; lightly repeated practice; local concept practice."
+      "recommendation_score": 0.7132,
+      "rationale": "Sum of First n Terms of an Arithmetic Progression is currently needs_support (mastery=0.19); recommended difficulty is easy and this question is medium; lightly repeated practice; high graph priority."
     },
     {
-      "question_id": "q_cg_003",
-      "concept_name": "Area of a Triangle in Coordinates",
-      "difficulty": "medium",
-      "recommendation_score": 0.5773,
-      "rationale": "Area of a Triangle in Coordinates is currently developing (mastery=0.51); recommended difficulty is medium and this question is medium; new question; local concept practice."
+      "question_id": "q_trig_001",
+      "concept_name": "Trigonometric Ratios",
+      "difficulty": "easy",
+      "recommendation_score": 0.7065,
+      "rationale": "Trigonometric Ratios is currently needs_support (mastery=0.37); recommended difficulty is easy and this question is easy; lightly repeated practice; high graph priority."
     }
   ]
 }

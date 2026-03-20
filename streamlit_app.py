@@ -21,6 +21,7 @@ from adaptive_learning.ui.data_access import (
 from adaptive_learning.ui.pages import (
     render_analysis_dashboard,
     render_content_generation_page,
+    render_curriculum_page,
     render_debug_page,
     render_practice_page,
     render_search_page,
@@ -45,7 +46,7 @@ def get_services():
 def main() -> None:
     st.set_page_config(
         page_title="Adaptive Learning Platform",
-        page_icon="📘",
+        page_icon="book",
         layout="wide",
         initial_sidebar_state="expanded",
     )
@@ -70,6 +71,7 @@ def main() -> None:
     page = st.sidebar.radio(
         "Navigate",
         options=[
+            "Curriculum & Data",
             "Search",
             "Practice",
             "Test",
@@ -81,16 +83,13 @@ def main() -> None:
     )
     st.sidebar.markdown("---")
     st.sidebar.metric("Concepts", int(len(live_snapshot)))
-    st.sidebar.metric(
-        "Manual Attempts This Session",
-        int(len(st.session_state["manual_attempts"])),
-    )
-    st.sidebar.metric(
-        "Recommendations Available",
-        int(len(artifacts.recommendations)),
-    )
+    st.sidebar.metric("Questions", int(len(artifacts.questions)))
+    st.sidebar.metric("Theory Notes", int(len(artifacts.theory_content)))
+    st.sidebar.metric("Manual Attempts This Session", int(len(st.session_state["manual_attempts"])))
 
-    if page == "Search":
+    if page == "Curriculum & Data":
+        render_curriculum_page(artifacts=artifacts)
+    elif page == "Search":
         render_search_page(artifacts=artifacts, services=services)
     elif page == "Practice":
         render_practice_page(artifacts=artifacts, services=services, live_snapshot=live_snapshot)

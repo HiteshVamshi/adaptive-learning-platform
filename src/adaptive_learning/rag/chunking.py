@@ -8,6 +8,7 @@ def build_rag_chunks(
     concepts: pd.DataFrame,
     questions: pd.DataFrame,
     solutions: pd.DataFrame,
+    theory_content: pd.DataFrame | None = None,
 ) -> pd.DataFrame:
     concept_rows = concepts[concepts["node_type"] == "concept"].copy()
     theory_chunks = pd.DataFrame(
@@ -33,6 +34,30 @@ def build_rag_chunks(
             ),
         }
     )
+
+    textbook_theory_chunks = pd.DataFrame()
+    if theory_content is not None and not theory_content.empty:
+        textbook_theory_chunks = pd.DataFrame(
+            {
+                "chunk_id": theory_content["content_id"],
+                "chunk_type": theory_content["content_type"],
+                "source_id": theory_content["content_id"],
+                "chapter_id": theory_content["chapter_id"],
+                "chapter_name": theory_content["chapter_name"],
+                "concept_id": theory_content["concept_id"],
+                "concept_name": theory_content["concept_name"],
+                "difficulty": "medium",
+                "title": theory_content["title"],
+                "content": (
+                    "Summary: "
+                    + theory_content["summary_text"].fillna("")
+                    + ". Official syllabus: "
+                    + theory_content["official_syllabus_text"].fillna("")
+                    + ". Textbook sections: "
+                    + theory_content["textbook_sections"].fillna("").str.replace("|", ", ", regex=False)
+                ),
+            }
+        )
 
     question_chunks = pd.DataFrame(
         {
@@ -81,7 +106,10 @@ def build_rag_chunks(
         }
     )
 
-    chunks = pd.concat([theory_chunks, question_chunks, solution_chunks], ignore_index=True)
+    chunks = pd.concat(
+        [theory_chunks, textbook_theory_chunks, question_chunks, solution_chunks],
+        ignore_index=True,
+    )
     chunks["retrieval_text"] = (
         chunks["title"].fillna("")
         + " "

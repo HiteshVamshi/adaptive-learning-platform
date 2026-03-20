@@ -28,11 +28,14 @@ def build_rag_index(
     concepts = pd.read_csv(data_dir / "concepts.csv")
     questions = pd.read_csv(data_dir / "questions.csv")
     solutions = pd.read_csv(data_dir / "solutions.csv")
+    theory_content_path = data_dir / "theory_content.csv"
+    theory_content = pd.read_csv(theory_content_path) if theory_content_path.exists() else None
 
     chunks = build_rag_chunks(
         concepts=concepts,
         questions=questions,
         solutions=solutions,
+        theory_content=theory_content,
     )
     vector_store = build_rag_vector_store(
         chunks=chunks,

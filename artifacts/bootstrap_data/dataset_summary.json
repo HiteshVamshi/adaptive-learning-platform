@@ -1,18 +1,49 @@
 {
-  "concept_count": 24,
-  "question_count": 25,
-  "solution_count": 25,
-  "relationship_count": 17,
+  "concept_count": 52,
+  "question_count": 45,
+  "solution_count": 45,
+  "relationship_count": 32,
+  "official_topic_count": 15,
+  "official_chapter_count": 13,
+  "textbook_section_count": 43,
+  "theory_content_count": 39,
+  "official_chapters": [
+    "Areas Related to Circles",
+    "Arithmetic Progressions",
+    "Circles",
+    "Coordinate Geometry",
+    "Pair of Linear Equations in Two Variables",
+    "Polynomials",
+    "Probability",
+    "Quadratic Equations",
+    "Real Numbers",
+    "Statistics",
+    "Surface Areas and Volumes",
+    "Triangles",
+    "Introduction to Trigonometry"
+  ],
   "questions_per_chapter": {
     "Polynomials": 6,
-    "Real Numbers": 5,
-    "Introduction to Trigonometry": 5,
+    "Real Numbers": 6,
     "Triangles": 5,
-    "Coordinate Geometry": 4
+    "Introduction to Trigonometry": 5,
+    "Coordinate Geometry": 4,
+    "Quadratic Equations": 4,
+    "Pair of Linear Equations in Two Variables": 3,
+    "Arithmetic Progressions": 3,
+    "Areas Related to Circles": 2,
+    "Circles": 2,
+    "Statistics": 2,
+    "Surface Areas and Volumes": 2,
+    "Probability": 1
   },
   "questions_per_difficulty": {
-    "easy": 7,
-    "hard": 8,
-    "medium": 10
+    "easy": 13,
+    "hard": 10,
+    "medium": 22
+  },
+  "questions_per_source": {
+    "synthetic_curated": 25,
+    "textbook_bootstrap": 20
   }
 }

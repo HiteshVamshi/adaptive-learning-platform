@@ -6,11 +6,242 @@ import streamlit as st
 from adaptive_learning.ui.data_access import (
     PlatformArtifacts,
     PlatformServices,
+    build_chapter_coverage_table,
     build_manual_attempts,
     compute_live_mastery_snapshot,
     target_difficulty_for_band,
 )
-from adaptive_learning.ui.visualization import graph_to_dot, mastery_color_map, parse_pipe_list
+from adaptive_learning.ui.visualization import graph_to_dot, parse_pipe_list
+
+
+def render_curriculum_page(*, artifacts: PlatformArtifacts) -> None:
+    st.title("Curriculum & Data")
+    st.caption(
+        "Official CBSE syllabus and NCERT textbook structure used to build the local curriculum, "
+        "knowledge graph, theory notes, and question bank."
+    )
+
+    summary = artifacts.dataset_summary
+    metric_cols = st.columns(6)
+    metric_cols[0].metric("Official Chapters", int(summary.get("official_chapter_count", 0)))
+    metric_cols[1].metric("Syllabus Topics", int(summary.get("official_topic_count", 0)))
+    metric_cols[2].metric("Textbook Sections", int(summary.get("textbook_section_count", 0)))
+    metric_cols[3].metric("Theory Notes", int(summary.get("theory_content_count", 0)))
+    metric_cols[4].metric("Questions", int(summary.get("question_count", 0)))
+    metric_cols[5].metric("Solutions", int(summary.get("solution_count", 0)))
+
+    st.subheader("Official Sources")
+    sources_df = pd.DataFrame(artifacts.official_sources)
+    st.dataframe(sources_df, use_container_width=True, hide_index=True)
+
+    coverage_df = build_chapter_coverage_table(artifacts=artifacts)
+    st.subheader("Coverage by Official Chapter")
+    st.dataframe(
+        coverage_df[
+            [
+                "chapter_name",
+                "unit_name",
+                "unit_marks",
+                "periods",
+                "textbook_section_count",
+                "concept_count",
+                "theory_count",
+                "question_count",
+                "question_sources",
+                "coverage_status",
+            ]
+        ],
+        use_container_width=True,
+        hide_index=True,
+    )
+
+    chart_df = coverage_df.set_index("chapter_name")[["question_count", "theory_count"]]
+    st.bar_chart(chart_df)
+
+    syllabus_tab, textbook_tab, theory_tab, data_tab, db_tab = st.tabs(
+        ["Syllabus", "Textbook Index", "Theory Content", "Actual Data", "SQLite DB"]
+    )
+
+    with syllabus_tab:
+        unit_options = ["All units"] + sorted(artifacts.syllabus_topics["unit_name"].dropna().unique().tolist())
+        selected_unit = st.selectbox("Filter syllabus by unit", options=unit_options, key="syllabus_unit")
+        syllabus_df = artifacts.syllabus_topics.copy()
+        if selected_unit != "All units":
+            syllabus_df = syllabus_df[syllabus_df["unit_name"] == selected_unit]
+        st.dataframe(
+            syllabus_df[
+                [
+                    "unit_name",
+                    "chapter_name",
+                    "topic_name",
+                    "unit_marks",
+                    "periods",
+                    "official_text",
+                    "source_url",
+                ]
+            ],
+            use_container_width=True,
+            hide_index=True,
+        )
+
+    with textbook_tab:
+        chapter_options = ["All chapters"] + sorted(
+            artifacts.textbook_sections["chapter_name"].dropna().unique().tolist()
+        )
+        selected_chapter = st.selectbox(
+            "Filter textbook sections by chapter",
+            options=chapter_options,
+            key="textbook_chapter",
+        )
+        textbook_df = artifacts.textbook_sections.copy()
+        if selected_chapter != "All chapters":
+            textbook_df = textbook_df[textbook_df["chapter_name"] == selected_chapter]
+        st.dataframe(
+            textbook_df[
+                [
+                    "chapter_number",
+                    "chapter_name",
+                    "section_number",
+                    "section_title",
+                    "start_page",
+                    "chapter_pdf_url",
+                    "source_url",
+                ]
+            ],
+            use_container_width=True,
+            hide_index=True,
+        )
+
+    with theory_tab:
+        theory_chapter = st.selectbox(
+            "Filter theory notes by chapter",
+            options=["All chapters"] + sorted(artifacts.theory_content["chapter_name"].dropna().unique().tolist()),
+            key="theory_chapter",
+        )
+        theory_df = artifacts.theory_content.copy()
+        if theory_chapter != "All chapters":
+            theory_df = theory_df[theory_df["chapter_name"] == theory_chapter]
+        st.dataframe(
+            theory_df[
+                [
+                    "chapter_name",
+                    "concept_name",
+                    "title",
+                    "content_type",
+                    "textbook_sections",
+                    "source_url",
+                ]
+            ],
+            use_container_width=True,
+            hide_index=True,
+        )
+
+        with st.expander("Theory Note Preview"):
+            preview_df = theory_df[["title", "summary_text", "official_syllabus_text"]].head(5).copy()
+            st.dataframe(preview_df, use_container_width=True, hide_index=True)
+
+    with data_tab:
+        source_counts = (
+            artifacts.questions["source"].value_counts().rename_axis("source").reset_index(name="question_count")
+        )
+        left_col, right_col = st.columns(2)
+        with left_col:
+            st.subheader("Question Source Mix")
+            st.dataframe(source_counts, use_container_width=True, hide_index=True)
+        with right_col:
+            st.subheader("Question Coverage by Chapter")
+            st.dataframe(
+                _question_source_summary(artifacts=artifacts),
+                use_container_width=True,
+                hide_index=True,
+            )
+
+        chapter_filter = st.selectbox(
+            "Filter question bank by chapter",
+            options=["All chapters"] + sorted(artifacts.questions["chapter_name"].dropna().unique().tolist()),
+            key="question_bank_chapter",
+        )
+        source_filter = st.selectbox(
+            "Filter question bank by source",
+            options=["All sources"] + sorted(artifacts.questions["source"].dropna().unique().tolist()),
+            key="question_bank_source",
+        )
+        difficulty_filter = st.selectbox(
+            "Filter question bank by difficulty",
+            options=["All difficulties", "easy", "medium", "hard"],
+            key="question_bank_difficulty",
+        )
+
+        questions_df = artifacts.questions.copy()
+        if chapter_filter != "All chapters":
+            questions_df = questions_df[questions_df["chapter_name"] == chapter_filter]
+        if source_filter != "All sources":
+            questions_df = questions_df[questions_df["source"] == source_filter]
+        if difficulty_filter != "All difficulties":
+            questions_df = questions_df[questions_df["difficulty"] == difficulty_filter]
+
+        st.dataframe(
+            questions_df[
+                [
+                    "question_id",
+                    "chapter_name",
+                    "concept_name",
+                    "difficulty",
+                    "source",
+                    "prompt",
+                    "answer",
+                ]
+            ],
+            use_container_width=True,
+            hide_index=True,
+        )
+
+        with st.expander("Concept Table"):
+            concept_df = artifacts.concepts.copy()
+            st.dataframe(
+                concept_df[
+                    [
+                        "concept_id",
+                        "name",
+                        "node_type",
+                        "chapter_name",
+                        "source_kind",
+                        "source_url",
+                    ]
+                ],
+                use_container_width=True,
+                hide_index=True,
+            )
+
+    with db_tab:
+        db_status = artifacts.db_status
+        st.subheader("SQLite Mirror Status")
+        st.code(db_status["sqlite_path"])
+        if not db_status["available"]:
+            st.warning("SQLite mirror not found. Re-run generate_data.py with --sqlite-path.")
+        else:
+            db_cols = st.columns(3)
+            db_cols[0].metric("Tables", int(len(db_status["table_counts"])))
+            db_cols[1].metric(
+                "Rows in questions",
+                int(db_status["table_counts"].get("questions", 0)),
+            )
+            db_cols[2].metric(
+                "Rows in theory_content",
+                int(db_status["table_counts"].get("theory_content", 0)),
+            )
+            st.dataframe(
+                pd.DataFrame(
+                    [
+                        {"table_name": table_name, "row_count": row_count}
+                        for table_name, row_count in db_status["table_counts"].items()
+                    ]
+                ),
+                use_container_width=True,
+                hide_index=True,
+            )
+            st.subheader("Stored Dataset Metadata")
+            st.json(db_status["metadata"])
 
 
 def render_search_page(*, artifacts: PlatformArtifacts, services: PlatformServices) -> None:
@@ -302,7 +533,13 @@ def render_test_page(
     before_scores = before_snapshot.set_index("concept_id")["graph_adjusted_mastery"].to_dict()
     after_rows = after_snapshot[after_snapshot["concept_id"].isin(touched_concepts)].copy()
     after_rows["delta"] = after_rows["concept_id"].map(
-        lambda concept_id: round(float(after_rows.set_index("concept_id").loc[concept_id, "graph_adjusted_mastery"] - before_scores.get(concept_id, 0.0)), 4)
+        lambda concept_id: round(
+            float(
+                after_rows.set_index("concept_id").loc[concept_id, "graph_adjusted_mastery"]
+                - before_scores.get(concept_id, 0.0)
+            ),
+            4,
+        )
     )
     st.subheader("Mastery Impact")
     st.dataframe(
@@ -600,6 +837,7 @@ def render_debug_page(
     summary_name = st.selectbox(
         "Summary artifact",
         options=[
+            "dataset_summary",
             "search_summary",
             "rag_summary",
             "mastery_summary",
@@ -625,6 +863,16 @@ def render_debug_page(
 
     st.subheader("Adaptation Comparisons")
     st.dataframe(artifacts.adaptation_comparisons, use_container_width=True, hide_index=True)
+
+
+def _question_source_summary(*, artifacts: PlatformArtifacts) -> pd.DataFrame:
+    summary_df = (
+        artifacts.questions.groupby(["chapter_name", "source"])["question_id"]
+        .count()
+        .reset_index(name="question_count")
+        .sort_values(by=["chapter_name", "source"])
+    )
+    return summary_df
 
 
 def _concept_options(concepts: pd.DataFrame) -> list[tuple[str, str]]:

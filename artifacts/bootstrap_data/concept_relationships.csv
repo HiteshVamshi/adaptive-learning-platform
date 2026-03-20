@@ -1,18 +1,33 @@
 source_concept_id,target_concept_id,relation_type,weight,rationale
-c_euclid_division_lemma,c_hcf_lcm,prerequisite,1.0,Euclid's division lemma underpins Euclid's algorithm for HCF computation.
-c_polynomial_degree_terms,c_zeroes_of_polynomial,prerequisite,1.0,Students must recognize polynomial structure before solving for zeroes.
-c_pythagoras_theorem,c_trigonometric_ratios,prerequisite,0.7,Right-triangle side relationships help learners derive trigonometric ratios.
-c_similar_triangles,c_basic_proportionality_theorem,prerequisite,1.0,BPT is proved and applied using triangle similarity.
+c_ap_nth_term,c_ap_sum,prerequisite,0.9,Nth-term understanding supports deriving AP sums.
+c_ap_sum,c_ap_applications,prerequisite,0.9,Application problems use the AP sum formula.
+c_basic_proportionality_theorem,c_similarity_area_ratio,prerequisite,0.8,Proportional triangle sides support area-ratio reasoning.
+c_euclid_division_lemma,c_hcf_lcm,prerequisite,0.9,Division-lemma reasoning supports algorithmic HCF computations.
+c_fundamental_theorem_arithmetic,c_decimal_expansions,prerequisite,0.95,Denominator prime factors determine whether a rational decimal terminates.
+c_fundamental_theorem_arithmetic,c_hcf_lcm,prerequisite,1.0,Prime factorization reasoning supports HCF and LCM computation.
+c_pair_linear_equations_consistency,c_pair_linear_equations_algebraic,prerequisite,0.85,Understanding solution cases supports choosing algebraic methods.
+c_pair_linear_equations_graphical,c_pair_linear_equations_consistency,prerequisite,0.95,Graphical interpretation motivates the number of solutions.
+c_polynomial_degree_terms,c_zeroes_of_polynomial,prerequisite,0.8,Structural understanding supports zero-finding.
+c_pythagoras_theorem,c_trigonometric_ratios,prerequisite,0.7,Right-triangle side reasoning supports ratio derivation.
+c_quadratic_formula,c_discriminant_nature_roots,prerequisite,0.9,The discriminant arises directly from the quadratic formula.
+c_sectors_segments,c_circle_perimeter_area_applications,prerequisite,0.9,Area and perimeter applications build on sector and segment formulas.
+c_similar_triangles,c_basic_proportionality_theorem,prerequisite,1.0,BPT is grounded in triangle similarity reasoning.
 c_similar_triangles,c_similarity_area_ratio,prerequisite,1.0,Area ratios for similar triangles depend directly on triangle similarity.
-c_trigonometric_ratios,c_heights_distances,prerequisite,1.0,Heights and distances problems are direct applications of trigonometric ratios.
-c_trigonometric_ratios,c_standard_trig_values,prerequisite,1.0,Students use ratio definitions before memorizing standard values.
-c_trigonometric_ratios,c_trig_identities,prerequisite,0.9,Identities are manipulated using core trigonometric ratios.
+c_tangent_radius_perpendicular,c_tangents_from_external_point,prerequisite,0.85,The tangent-radius theorem supports tangent-length proofs.
+c_trigonometric_ratios,c_heights_distances,prerequisite,1.0,Heights and distances are applications of trigonometric ratios.
+c_trigonometric_ratios,c_standard_trig_values,prerequisite,1.0,Standard values are evaluations of trigonometric ratios.
+c_trigonometric_ratios,c_trig_identities,prerequisite,0.95,Identity work depends on ratio definitions.
 c_zeroes_of_polynomial,c_factorisation_remainder,prerequisite,0.9,Factor and remainder theorems extend the idea of polynomial zeroes.
-c_zeroes_of_polynomial,c_zero_coeff_relationship,prerequisite,0.9,Understanding roots supports reasoning about coefficient relationships.
+c_zeroes_of_polynomial,c_zero_coeff_relationship,prerequisite,1.0,Root understanding precedes coefficient relationships.
 c_basic_proportionality_theorem,c_similarity_area_ratio,related,0.65,Both topics rely on proportional side relationships in triangles.
+c_combination_solids_surface_area,c_combination_solids_volume,related,0.55,Composite-solid problems commonly pair surface-area and volume reasoning.
+c_discriminant_nature_roots,c_quadratic_applications,related,0.65,Root interpretation helps in contextual quadratic problems.
 c_distance_formula,c_area_of_triangle,related,0.6,Coordinate geometry tasks often combine distance and area reasoning.
-c_distance_formula,c_section_formula,related,0.55,Both rely on coordinate-plane reasoning with ordered pairs.
+c_distance_formula,c_section_formula,related,0.55,Both are coordinate-geometry techniques on line segments.
+c_grouped_data_mean,c_grouped_data_median_mode,related,0.6,All are central-tendency measures for grouped data.
 c_hcf_lcm,c_decimal_expansions,related,0.55,Prime factor reasoning used in HCF/LCM supports denominator analysis for decimal expansions.
-c_irrational_numbers,c_decimal_expansions,related,0.5,Both concepts reason about rational versus irrational behaviour of number representations.
-c_section_formula,c_area_of_triangle,related,0.5,Interpolated points are frequently used in coordinate-area constructions.
+c_irrational_numbers,c_decimal_expansions,related,0.55,Both concepts distinguish rational and irrational number behavior.
+c_quadratic_factorization,c_quadratic_formula,related,0.7,Both are standard solution methods for quadratics.
+c_section_formula,c_area_of_triangle,related,0.5,Coordinate triangle problems often combine section and area reasoning.
 c_standard_trig_values,c_heights_distances,related,0.6,Standard values accelerate solving applied height-distance problems.
+c_zeroes_of_polynomial,c_factorisation_remainder,related,0.75,Factor checks and zeroes are tightly connected.
