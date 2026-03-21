@@ -5,8 +5,12 @@ from dataclasses import dataclass
 from pathlib import Path
 
 import pandas as pd
+
+from adaptive_learning.learn.io import load_learn_resources
+from adaptive_learning.learn.selector import format_learn_summary, select_learn_plan
 from networkx.readwrite import json_graph
 
+from adaptive_learning.config import rag_generator_backend
 from adaptive_learning.content_generation.generator import build_content_generator
 from adaptive_learning.content_generation.pipeline import load_generation_context
 from adaptive_learning.rag.pipeline import RAGEngine
@@ -47,7 +51,7 @@ class AgentToolbox:
             self._rag_engine = RAGEngine.from_artifacts(
                 data_dir=self.data_dir,
                 index_dir=self.rag_index_dir,
-                generator_backend="grounded",
+                generator_backend=rag_generator_backend(),
             )
         return self._rag_engine
 
@@ -96,44 +100,66 @@ class AgentToolbox:
         return self._content_generator
 
     def hybrid_search(self, query: str, top_k: int = 3) -> dict:
-        intent, results = self.search_engine.search(query, top_k=top_k)
-        return {
-            "intent": {
-                "requested_difficulty": intent.requested_difficulty,
-                "detected_concepts": intent.detected_concept_ids,
-                "expanded_concepts": intent.expanded_concept_ids,
-                "expanded_terms": intent.expanded_terms,
-            },
-            "results": [
+        try:
+            intent, results = self.search_engine.search(query, top_k=top_k)
+            return {
+                "intent": {
+                    "requested_difficulty": intent.requested_difficulty,
+                    "detected_concepts": intent.detected_concept_ids,
+                    "expanded_concepts": intent.expanded_concept_ids,
+                    "expanded_terms": intent.expanded_terms,
+                },
+                "results": [
+                    {
+                        "question_id": result.question_id,
+                        "concept_name": result.concept_name,
+                        "concept_id": self._concept_id_for_question(result.question_id),
+                        "chapter_name": result.chapter_name,
+                        "difficulty": result.difficulty,
+                        "prompt": result.prompt,
+                        "final_answer": result.final_answer,
+                        "hybrid_score": round(result.hybrid_score, 4),
+                    }
+                    for result in results
+                ],
+            }
+        except Exception as exc:
+            return _tool_error_payload(
+                "hybrid_search",
+                str(exc),
                 {
-                    "question_id": result.question_id,
-                    "concept_name": result.concept_name,
-                    "concept_id": self._concept_id_for_question(result.question_id),
-                    "chapter_name": result.chapter_name,
-                    "difficulty": result.difficulty,
-                    "prompt": result.prompt,
-                    "final_answer": result.final_answer,
-                    "hybrid_score": round(result.hybrid_score, 4),
-                }
-                for result in results
-            ],
-        }
+                    "intent": {
+                        "requested_difficulty": None,
+                        "detected_concepts": [],
+                        "expanded_concepts": [],
+                        "expanded_terms": [],
+                    },
+                    "results": [],
+                },
+            )
 
     def rag_answer(self, query: str, top_k: int = 4) -> dict:
-        response = self.rag_engine.answer_question(query, top_k=top_k)
-        return {
-            "answer": response.answer.answer,
-            "retrieved_chunks": [
-                {
-                    "chunk_id": chunk.chunk_id,
-                    "chunk_type": chunk.chunk_type,
-                    "concept_name": chunk.concept_name,
-                    "chapter_name": chunk.chapter_name,
-                    "score": round(chunk.score, 4),
-                }
-                for chunk in response.retrieved_chunks
-            ],
-        }
+        try:
+            response = self.rag_engine.answer_question(query, top_k=top_k)
+            return {
+                "answer": response.answer.answer,
+                "retrieved_chunks": [
+                    {
+                        "chunk_id": chunk.chunk_id,
+                        "chunk_type": chunk.chunk_type,
+                        "concept_name": chunk.concept_name,
+                        "chapter_name": chunk.chapter_name,
+                        "score": round(chunk.score, 4),
+                    }
+                    for chunk in response.retrieved_chunks
+                ],
+            }
+        except Exception as exc:
+            return _tool_error_payload(
+                "rag_answer",
+                str(exc),
+                {"answer": "", "retrieved_chunks": []},
+            )
 
     def concept_mastery(self, concept_id: str) -> dict:
         row = self.mastery_snapshot[self.mastery_snapshot["concept_id"] == concept_id]
@@ -187,6 +213,8 @@ class AgentToolbox:
 
     def rewrite_query(self, query: str) -> dict:
         search_payload = self.hybrid_search(query, top_k=3)
+        if search_payload.get("_tool_error"):
+            return search_payload
         intent = search_payload["intent"]
         concept_names = []
         for concept_id in intent["detected_concepts"]:
@@ -209,3 +237,64 @@ class AgentToolbox:
         if row.empty:
             return ""
         return str(row.iloc[0]["concept_id"])
+
+    def learn_recommendations(
+        self,
+        *,
+        live_mastery_snapshot: pd.DataFrame | None = None,
+        focus_concept_ids: list[str] | None = None,
+        max_concepts: int = 6,
+    ) -> dict:
+        artifacts_dir = self.data_dir.parent
+        resources_df = load_learn_resources(artifacts_dir)
+        if resources_df.empty:
+            return {
+                "summary": "No learn_resources.csv yet. Run: python scripts/build_learn_index.py --subject <math|science> or build_all / generate_data.",
+                "items": [],
+            }
+
+        snapshot = live_mastery_snapshot if live_mastery_snapshot is not None else self.mastery_snapshot
+        if focus_concept_ids:
+            ids = {str(x) for x in focus_concept_ids}
+            snapshot = snapshot[snapshot["concept_id"].astype(str).isin(ids)].copy()
+            if snapshot.empty:
+                weak = self.weak_concepts(top_k=max_concepts)
+                if weak:
+                    wids = [str(w["concept_id"]) for w in weak]
+                    snapshot = self.mastery_snapshot[
+                        self.mastery_snapshot["concept_id"].astype(str).isin(wids)
+                    ].copy()
+
+        plan = select_learn_plan(
+            live_snapshot=snapshot,
+            resources_df=resources_df,
+            concepts=self.concepts,
+            max_concepts=max_concepts,
+        )
+        items: list[dict] = []
+        for concept_row, res_df in plan:
+            for _, r in res_df.iterrows():
+                items.append(
+                    {
+                        "concept_id": concept_row.get("concept_id"),
+                        "concept_name": concept_row.get("concept_name"),
+                        "mastery_band": concept_row.get("mastery_band"),
+                        "resource_id": r["resource_id"],
+                        "resource_type": r["resource_type"],
+                        "title": r["title"],
+                        "url": r["url"],
+                        "source": r["source"],
+                    }
+                )
+        return {
+            "summary": format_learn_summary(plan),
+            "items": items,
+        }
+
+
+def _tool_error_payload(tool: str, message: str, payload: dict) -> dict:
+    merged = dict(payload)
+    merged["_tool_error"] = True
+    merged["tool"] = tool
+    merged["message"] = message
+    return merged

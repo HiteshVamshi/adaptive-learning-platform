@@ -5,6 +5,7 @@ from pathlib import Path
 
 from networkx.readwrite import json_graph
 
+from adaptive_learning.data.dataset_validation import validate_generated_dataset
 from adaptive_learning.data.generator import GeneratedDataset
 
 
@@ -19,6 +20,7 @@ def _dataset_summary(dataset: GeneratedDataset) -> dict:
         .sort_values(by=["chapter_id"])
     )
     return {
+        "subject": dataset.subject,
         "concept_count": int(len(dataset.concepts)),
         "question_count": int(len(dataset.questions)),
         "solution_count": int(len(dataset.solutions)),
@@ -31,10 +33,12 @@ def _dataset_summary(dataset: GeneratedDataset) -> dict:
         "questions_per_chapter": chapter_counts.to_dict(),
         "questions_per_difficulty": difficulty_counts.to_dict(),
         "questions_per_source": dataset.questions["source"].value_counts().to_dict(),
+        "concept_question_bank_count": int((dataset.questions["source"] == "concept_question_bank").sum()),
     }
 
 
 def write_dataset(dataset: GeneratedDataset, output_dir: Path) -> None:
+    validate_generated_dataset(dataset)
     output_dir.mkdir(parents=True, exist_ok=True)
 
     dataset.concepts.to_csv(output_dir / "concepts.csv", index=False)

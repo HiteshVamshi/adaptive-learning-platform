@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+import pandas as pd
+
 from adaptive_learning.agents.base import BaseAgent
 from adaptive_learning.agents.schemas import AgentResponse
 
@@ -8,10 +10,21 @@ class TutorAgent(BaseAgent):
     def __init__(self, toolbox) -> None:
         super().__init__(name="TutorAgent", toolbox=toolbox)
 
-    def respond(self, user_query: str) -> AgentResponse:
+    def respond(self, user_query: str, **kwargs) -> AgentResponse:
         traces = []
+        live_snapshot = kwargs.get("live_mastery_snapshot")
+        if live_snapshot is not None and not isinstance(live_snapshot, pd.DataFrame):
+            live_snapshot = None
 
         search_payload = self.toolbox.hybrid_search(user_query, top_k=3)
+        if search_payload.get("_tool_error"):
+            return AgentResponse(
+                agent_name=self.name,
+                user_query=user_query,
+                answer=f"Hybrid search failed ({search_payload.get('tool')}): {search_payload.get('message', '')}",
+                tool_trace=traces,
+                metadata={"tool_error": search_payload},
+            )
         self._trace(
             traces=traces,
             tool_name="hybrid_search",
@@ -45,6 +58,14 @@ class TutorAgent(BaseAgent):
             )
 
         rag_payload = self.toolbox.rag_answer(user_query, top_k=4)
+        if rag_payload.get("_tool_error"):
+            return AgentResponse(
+                agent_name=self.name,
+                user_query=user_query,
+                answer=f"RAG tool failed ({rag_payload.get('tool')}): {rag_payload.get('message', '')}",
+                tool_trace=traces,
+                metadata={"tool_error": rag_payload},
+            )
         self._trace(
             traces=traces,
             tool_name="rag_answer",
@@ -81,7 +102,28 @@ class TutorAgent(BaseAgent):
             names = ", ".join(row["concept_name"] for row in neighbors_payload["neighbors"][:3] if row["concept_name"])
             follow_up = f"Related concepts to review next: {names}."
 
-        answer = f"{mastery_sentence}{rag_payload['answer']} {follow_up}".strip()
+        learn_sentence = ""
+        if primary_concept_id:
+            learn_payload = self.toolbox.learn_recommendations(
+                live_mastery_snapshot=live_snapshot,
+                focus_concept_ids=[primary_concept_id],
+                max_concepts=3,
+            )
+            if learn_payload.get("items"):
+                self._trace(
+                    traces=traces,
+                    tool_name="learn_recommendations",
+                    purpose="Surface curated videos and NCERT PDFs for the primary concept.",
+                    input_summary={"concept_id": primary_concept_id},
+                    output_summary={"item_count": len(learn_payload["items"])},
+                )
+                learn_sentence = (
+                    "\n\n**Learn (curated)**\n"
+                    + learn_payload["summary"][:1200]
+                    + ("\n…" if len(learn_payload["summary"]) > 1200 else "")
+                )
+
+        answer = f"{mastery_sentence}{rag_payload['answer']} {follow_up}{learn_sentence}".strip()
         return AgentResponse(
             agent_name=self.name,
             user_query=user_query,

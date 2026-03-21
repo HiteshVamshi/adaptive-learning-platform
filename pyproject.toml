@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "adaptive-learning-platform"
 version = "0.1.0"
-description = "Portfolio-grade adaptive learning platform for CBSE Class 10 mathematics."
+description = "Portfolio-grade adaptive learning platform for CBSE Class 10 Mathematics and Science."
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
@@ -18,7 +18,16 @@ dependencies = [
     "rank-bm25>=0.2.2",
     "scikit-learn>=1.4",
     "joblib>=1.4",
+    "plotly>=5.18",
 ]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
 
 [tool.setuptools]
 package-dir = {"" = "src"}

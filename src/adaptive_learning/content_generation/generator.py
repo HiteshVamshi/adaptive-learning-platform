@@ -24,6 +24,15 @@ class GenerationContext:
     solutions: pd.DataFrame
 
 
+_MAX_OUTPUT_FIELD_LEN = 6000
+_ALLOWED_DIFFICULTY = frozenset({"easy", "medium", "hard"})
+
+
+def _clip_text(text: str, max_len: int = _MAX_OUTPUT_FIELD_LEN) -> str:
+    value = str(text)
+    return value if len(value) <= max_len else value[: max_len - 3] + "..."
+
+
 GERUND_MAP = {
     "apply": "applying",
     "classify": "classifying",
@@ -70,18 +79,27 @@ class GroundedContentGenerator:
         self.rng = np.random.default_rng(random_seed)
 
     def generate_question(self, *, concept_id: str, difficulty: str) -> tuple[GeneratedQuestionRecord, str]:
+        difficulty_key = str(difficulty).strip().lower()
+        if difficulty_key not in _ALLOWED_DIFFICULTY:
+            difficulty_key = "medium"
+        if concept_id not in self.concepts_by_id.index:
+            raise ValueError(f"Unknown concept_id: {concept_id!r}")
         concept = self.concepts_by_id.loc[concept_id]
         prompt = question_generation_prompt(
             concept_name=str(concept["name"]),
             chapter_name=str(concept["chapter_name"]),
-            difficulty=difficulty,
+            difficulty=difficulty_key,
         )
-        generated = self._question_for_concept(concept_id=concept_id, difficulty=difficulty, concept=concept)
+        generated = self._question_for_concept(
+            concept_id=concept_id, difficulty=difficulty_key, concept=concept
+        )
         return generated, prompt
 
     def generate_explanation(
         self, *, concept_id: str, audience_level: str = "class_10_student"
     ) -> tuple[GeneratedExplanationRecord, str]:
+        if concept_id not in self.concepts_by_id.index:
+            raise ValueError(f"Unknown concept_id: {concept_id!r}")
         concept = self.concepts_by_id.loc[concept_id]
         prompt = explanation_generation_prompt(
             concept_name=str(concept["name"]),
@@ -104,8 +122,8 @@ class GroundedContentGenerator:
                 concept_name=str(concept["name"]),
                 chapter_name=str(concept["chapter_name"]),
                 audience_level=audience_level,
-                explanation=explanation,
-                key_points=key_points,
+                explanation=_clip_text(explanation),
+                key_points=[_clip_text(item, 2000) for item in key_points],
                 backend=self.backend_name,
             ),
             prompt,
@@ -131,14 +149,16 @@ class GroundedContentGenerator:
                 GeneratedSummaryRecord(
                     scope_type=scope_type,
                     scope_id=scope_id,
-                    title=chapter_name,
-                    summary=summary,
-                    bullet_points=bullet_points,
+                    title=_clip_text(chapter_name, 500),
+                    summary=_clip_text(summary),
+                    bullet_points=[_clip_text(b, 2000) for b in bullet_points],
                     backend=self.backend_name,
                 ),
                 prompt,
             )
 
+        if scope_id not in self.concepts_by_id.index:
+            raise ValueError(f"Unknown concept_id for summary: {scope_id!r}")
         concept = self.concepts_by_id.loc[scope_id]
         prompt = summary_generation_prompt(title=str(concept["name"]))
         summary = (
@@ -154,9 +174,9 @@ class GroundedContentGenerator:
             GeneratedSummaryRecord(
                 scope_type=scope_type,
                 scope_id=scope_id,
-                title=str(concept["name"]),
-                summary=summary,
-                bullet_points=bullet_points,
+                title=_clip_text(str(concept["name"]), 500),
+                summary=_clip_text(summary),
+                bullet_points=[_clip_text(b, 2000) for b in bullet_points],
                 backend=self.backend_name,
             ),
             prompt,
@@ -175,10 +195,10 @@ class GroundedContentGenerator:
             concept_name=str(concept["name"]),
             chapter_name=str(concept["chapter_name"]),
             difficulty=difficulty,
-            prompt=prompt,
-            final_answer=final_answer,
-            explanation=explanation,
-            tags=tags,
+            prompt=_clip_text(prompt),
+            final_answer=_clip_text(final_answer, 2000),
+            explanation=_clip_text(explanation),
+            tags=[_clip_text(str(t), 200) for t in tags],
             backend=self.backend_name,
         )
 

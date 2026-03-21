@@ -8,10 +8,18 @@ class QueryAgent(BaseAgent):
     def __init__(self, toolbox) -> None:
         super().__init__(name="QueryAgent", toolbox=toolbox)
 
-    def respond(self, user_query: str) -> AgentResponse:
+    def respond(self, user_query: str, **kwargs) -> AgentResponse:
         traces = []
 
         rewrite_payload = self.toolbox.rewrite_query(user_query)
+        if rewrite_payload.get("_tool_error"):
+            return AgentResponse(
+                agent_name=self.name,
+                user_query=user_query,
+                answer=f"Search tool failed ({rewrite_payload.get('tool')}): {rewrite_payload.get('message', '')}",
+                tool_trace=traces,
+                metadata={"tool_error": rewrite_payload},
+            )
         self._trace(
             traces=traces,
             tool_name="rewrite_query",

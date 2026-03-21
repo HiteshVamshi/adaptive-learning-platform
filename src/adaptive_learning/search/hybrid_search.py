@@ -1,15 +1,25 @@
 from __future__ import annotations
 
-import json
 from dataclasses import dataclass
 from pathlib import Path
 
 import pandas as pd
-from networkx.readwrite import json_graph
 
+from adaptive_learning.data.curriculum_artifacts import load_concepts_and_graph
 from adaptive_learning.search.bm25 import BM25Retriever
 from adaptive_learning.search.query_understanding import QueryIntent, QueryUnderstandingEngine
 from adaptive_learning.search.vector_store import FaissVectorStore, build_embedder
+
+
+@dataclass(frozen=True)
+class HybridRankingWeights:
+    """Keyword vs vector vs intent signals for hybrid_score (sum need not be 1)."""
+
+    bm25: float = 0.36
+    vector: float = 0.28
+    exact_concept: float = 0.28
+    concept_overlap: float = 0.05
+    difficulty_match: float = 0.03
 
 
 @dataclass(frozen=True)
@@ -98,12 +108,14 @@ class HybridSearchEngine:
         bm25_retriever: BM25Retriever,
         vector_store: FaissVectorStore,
         query_engine: QueryUnderstandingEngine,
+        ranking_weights: HybridRankingWeights | None = None,
     ) -> None:
         self.documents = documents.copy()
         self.documents_by_id = self.documents.set_index("doc_id")
         self.bm25_retriever = bm25_retriever
         self.vector_store = vector_store
         self.query_engine = query_engine
+        self.ranking_weights = ranking_weights or HybridRankingWeights()
 
     @classmethod
     def from_artifacts(
@@ -114,9 +126,7 @@ class HybridSearchEngine:
         embedding_backend: str | None = None,
         model_name: str | None = None,
     ) -> "HybridSearchEngine":
-        concepts = pd.read_csv(data_dir / "concepts.csv")
-        with (data_dir / "concept_graph.json").open("r", encoding="utf-8") as file_obj:
-            concept_graph = json_graph.node_link_graph(json.load(file_obj), multigraph=True)
+        concepts, concept_graph = load_concepts_and_graph(data_dir)
 
         vector_store = FaissVectorStore.load(
             input_dir=index_dir,
@@ -155,12 +165,13 @@ class HybridSearchEngine:
                 intent.requested_difficulty is not None
                 and document["difficulty"] == intent.requested_difficulty
             )
+            w = self.ranking_weights
             hybrid_score = (
-                0.42 * bm25_norm.get(doc_id, 0.0)
-                + 0.42 * vector_norm.get(doc_id, 0.0)
-                + 0.10 * float(exact_concept_match)
-                + 0.04 * float(concept_overlap)
-                + 0.02 * float(difficulty_match)
+                w.bm25 * bm25_norm.get(doc_id, 0.0)
+                + w.vector * vector_norm.get(doc_id, 0.0)
+                + w.exact_concept * float(exact_concept_match)
+                + w.concept_overlap * float(concept_overlap)
+                + w.difficulty_match * float(difficulty_match)
             )
 
             results.append(

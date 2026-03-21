@@ -10,20 +10,28 @@ SRC = ROOT / "src"
 if str(SRC) not in sys.path:
     sys.path.insert(0, str(SRC))
 
+from adaptive_learning.data.generator import SUPPORTED_SUBJECTS
 from adaptive_learning.mastery.pipeline import run_mastery_pipeline
+from adaptive_learning.ui.data_access import default_paths
 
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Simulate student attempts and build mastery artifacts.")
     parser.add_argument(
+        "--subject",
+        default="math",
+        choices=SUPPORTED_SUBJECTS,
+        help="Subject artifact set to use.",
+    )
+    parser.add_argument(
         "--data-dir",
         type=Path,
-        default=ROOT / "artifacts" / "bootstrap_data",
+        default=None,
     )
     parser.add_argument(
         "--output-dir",
         type=Path,
-        default=ROOT / "artifacts" / "mastery",
+        default=None,
     )
     parser.add_argument(
         "--user-id",
@@ -44,13 +52,17 @@ def parse_args() -> argparse.Namespace:
 
 def main() -> None:
     args = parse_args()
+    paths = default_paths(ROOT, subject=args.subject)
+    data_dir = args.data_dir or paths.data_dir
+    output_dir = args.output_dir or paths.mastery_dir
     result = run_mastery_pipeline(
-        data_dir=args.data_dir,
-        output_dir=args.output_dir,
+        data_dir=data_dir,
+        output_dir=output_dir,
         user_id=args.user_id,
         num_attempts=args.num_attempts,
         random_seed=args.random_seed,
     )
+    print(f"Subject: {args.subject}")
     print(f"Wrote mastery artifacts to {result.output_dir}")
     print(
         f"Simulated {len(result.attempts)} attempts for {result.student_profile.display_name} "

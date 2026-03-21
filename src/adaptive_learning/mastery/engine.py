@@ -6,20 +6,8 @@ import networkx as nx
 import numpy as np
 import pandas as pd
 
+from adaptive_learning.mastery.config import MasteryModelConfig
 from adaptive_learning.mastery.schemas import MasteryHistoryRecord
-
-
-DIFFICULTY_WEIGHT = {
-    "easy": 1.0,
-    "medium": 1.15,
-    "hard": 1.3,
-}
-
-CHALLENGE_SCORE = {
-    "easy": 0.55,
-    "medium": 0.75,
-    "hard": 1.0,
-}
 
 
 @dataclass(frozen=True)
@@ -29,20 +17,31 @@ class MasteryRunResult:
 
 
 class ConceptMasteryEngine:
-    def __init__(self, *, concepts: pd.DataFrame, concept_graph: nx.MultiDiGraph) -> None:
+    def __init__(
+        self,
+        *,
+        concepts: pd.DataFrame,
+        concept_graph: nx.MultiDiGraph,
+        config: MasteryModelConfig | None = None,
+    ) -> None:
         self.concepts = concepts[concepts["node_type"] == "concept"].copy()
         self.concepts_by_id = self.concepts.set_index("concept_id")
         self.concept_graph = concept_graph
+        self.config = config or MasteryModelConfig()
 
     def run(self, *, attempts: pd.DataFrame) -> MasteryRunResult:
         attempts = attempts.sort_values(by=["simulation_step", "timestamp"], ignore_index=True)
 
         history_rows: list[MasteryHistoryRecord] = []
         latest_snapshot = pd.DataFrame()
+        snapshot_by_step: dict[int, pd.DataFrame] = {}
 
         for _, attempt in attempts.iterrows():
-            step_attempts = attempts[attempts["simulation_step"] <= attempt["simulation_step"]]
-            latest_snapshot = self.compute_snapshot(step_attempts)
+            step = int(attempt["simulation_step"])
+            if step not in snapshot_by_step:
+                step_attempts = attempts[attempts["simulation_step"] <= step]
+                snapshot_by_step[step] = self.compute_snapshot(step_attempts)
+            latest_snapshot = snapshot_by_step[step]
 
             for row in latest_snapshot.to_dict(orient="records"):
                 history_rows.append(
@@ -79,7 +78,8 @@ class ConceptMasteryEngine:
             lambda concept_id: self._graph_support(concept_id, snapshot)
         )
         snapshot["graph_adjusted_mastery"] = (
-            0.92 * snapshot["direct_mastery"] + 0.08 * snapshot["graph_support"]
+            self.config.direct_blend_direct * snapshot["direct_mastery"]
+            + self.config.direct_blend_graph * snapshot["graph_support"]
         ).clip(0.0, 1.0)
         snapshot["mastery_band"] = snapshot["graph_adjusted_mastery"].map(self._band_for_score)
         snapshot["explanation"] = snapshot.apply(self._build_explanation, axis=1)
@@ -113,10 +113,11 @@ class ConceptMasteryEngine:
 
         for attempt in concept_attempts.to_dict(orient="records"):
             difficulty = str(attempt["difficulty"])
-            weight = DIFFICULTY_WEIGHT[difficulty]
+            weight = self.config.difficulty_weight[difficulty]
             weighted_total += weight
             weighted_correct += weight * int(attempt["correct"])
-            challenge_scores.append(CHALLENGE_SCORE[difficulty] if int(attempt["correct"]) else 0.0)
+            ch = self.config.challenge_score[difficulty]
+            challenge_scores.append(ch if int(attempt["correct"]) else 0.0)
 
             expected_time = max(1, int(attempt["expected_time_sec"]))
             response_time = max(1, int(attempt["response_time_sec"]))

@@ -3,6 +3,7 @@ from __future__ import annotations
 from dataclasses import dataclass
 from pathlib import Path
 
+from adaptive_learning.agents.learn_agent import LearnAgent
 from adaptive_learning.agents.practice_agent import PracticeAgent
 from adaptive_learning.agents.query_agent import QueryAgent
 from adaptive_learning.agents.tools import AgentToolbox
@@ -14,12 +15,14 @@ class AgentSuite:
     tutor_agent: TutorAgent
     practice_agent: PracticeAgent
     query_agent: QueryAgent
+    learn_agent: LearnAgent
 
     def get(self, agent_name: str):
         mapping = {
             "tutor": self.tutor_agent,
             "practice": self.practice_agent,
             "query": self.query_agent,
+            "learn": self.learn_agent,
         }
         return mapping[agent_name]
 
@@ -43,4 +46,5 @@ def build_agent_suite(
         tutor_agent=TutorAgent(toolbox),
         practice_agent=PracticeAgent(toolbox),
         query_agent=QueryAgent(toolbox),
+        learn_agent=LearnAgent(toolbox),
     )

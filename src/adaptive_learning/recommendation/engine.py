@@ -3,6 +3,7 @@ from __future__ import annotations
 import networkx as nx
 import pandas as pd
 
+from adaptive_learning.recommendation.config import RecommendationConfig
 from adaptive_learning.recommendation.schemas import RecommendationRecord
 
 
@@ -27,11 +28,13 @@ class RecommendationEngine:
         mastery_snapshot: pd.DataFrame,
         attempts: pd.DataFrame,
         concept_graph: nx.MultiDiGraph,
+        config: RecommendationConfig | None = None,
     ) -> None:
         self.questions = questions.copy()
         self.mastery_snapshot = mastery_snapshot.copy()
         self.attempts = attempts.copy()
         self.concept_graph = concept_graph
+        self.config = config or RecommendationConfig()
         self.mastery_by_concept = self.mastery_snapshot.set_index("concept_id").to_dict(orient="index")
         self.question_attempt_counts = self.attempts["question_id"].value_counts().to_dict()
 
@@ -41,8 +44,10 @@ class RecommendationEngine:
         for question in self.questions.to_dict(orient="records"):
             concept_id = str(question["concept_id"])
             mastery = self.mastery_by_concept.get(concept_id, {})
-            graph_adjusted_mastery = float(mastery.get("graph_adjusted_mastery", 0.0))
-            mastery_band = str(mastery.get("mastery_band", "needs_support"))
+            graph_adjusted_mastery = float(
+                mastery.get("graph_adjusted_mastery", self.config.cold_start_mastery)
+            )
+            mastery_band = str(mastery.get("mastery_band", self.config.cold_start_band))
 
             weakness_score = 1.0 - graph_adjusted_mastery
             target_difficulty = TARGET_DIFFICULTY_ORDER[mastery_band][0]
@@ -50,11 +55,12 @@ class RecommendationEngine:
             graph_priority_score = self._graph_priority(concept_id)
             novelty_score = self._novelty_score(str(question["question_id"]))
 
+            weights = self.config.weights
             recommendation_score = (
-                0.48 * weakness_score
-                + 0.22 * difficulty_alignment_score
-                + 0.18 * graph_priority_score
-                + 0.12 * novelty_score
+                weights.weakness * weakness_score
+                + weights.difficulty_alignment * difficulty_alignment_score
+                + weights.graph_priority * graph_priority_score
+                + weights.novelty * novelty_score
             )
 
             scored_rows.append(

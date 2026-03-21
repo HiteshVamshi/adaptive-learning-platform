@@ -9,6 +9,7 @@ import pandas as pd
 from networkx.readwrite import json_graph
 
 from adaptive_learning.agents.pipeline import AgentSuite, build_agent_suite
+from adaptive_learning.config import content_generation_backend, rag_generator_backend
 from adaptive_learning.content_generation.generator import build_content_generator
 from adaptive_learning.content_generation.pipeline import load_generation_context
 from adaptive_learning.fine_tuning.adapter import DifficultyTunedGenerator
@@ -20,7 +21,9 @@ from adaptive_learning.search.hybrid_search import HybridSearchEngine
 
 @dataclass(frozen=True)
 class PlatformPaths:
+    subject: str
     root_dir: Path
+    artifacts_dir: Path
     data_dir: Path
     search_index_dir: Path
     rag_index_dir: Path
@@ -33,6 +36,7 @@ class PlatformPaths:
 
 @dataclass(frozen=True)
 class PlatformArtifacts:
+    subject: str
     concepts: pd.DataFrame
     questions: pd.DataFrame
     solutions: pd.DataFrame
@@ -71,18 +75,21 @@ class PlatformServices:
     tuned_generator: DifficultyTunedGenerator | None
 
 
-def default_paths(root_dir: Path) -> PlatformPaths:
-    artifacts_dir = root_dir / "artifacts"
+def default_paths(root_dir: Path, subject: str = "math") -> PlatformPaths:
+    normalized_subject = subject.strip().lower()
+    subject_root = root_dir / "artifacts" / "subjects" / normalized_subject
     return PlatformPaths(
+        subject=normalized_subject,
         root_dir=root_dir,
-        data_dir=artifacts_dir / "bootstrap_data",
-        search_index_dir=artifacts_dir / "search_index",
-        rag_index_dir=artifacts_dir / "rag_index",
-        mastery_dir=artifacts_dir / "mastery",
-        recommendation_dir=artifacts_dir / "recommendations",
-        generated_content_dir=artifacts_dir / "generated_content",
-        fine_tuning_dir=artifacts_dir / "fine_tuning",
-        agent_trace_dir=artifacts_dir / "agent_traces",
+        artifacts_dir=subject_root,
+        data_dir=subject_root / "bootstrap_data",
+        search_index_dir=subject_root / "search_index",
+        rag_index_dir=subject_root / "rag_index",
+        mastery_dir=subject_root / "mastery",
+        recommendation_dir=subject_root / "recommendations",
+        generated_content_dir=subject_root / "generated_content",
+        fine_tuning_dir=subject_root / "fine_tuning",
+        agent_trace_dir=subject_root / "agent_traces",
     )
 
 
@@ -91,6 +98,7 @@ def load_platform_artifacts(*, paths: PlatformPaths) -> PlatformArtifacts:
         concept_graph = json_graph.node_link_graph(json.load(file_obj), multigraph=True)
 
     return PlatformArtifacts(
+        subject=paths.subject,
         concepts=pd.read_csv(paths.data_dir / "concepts.csv"),
         questions=pd.read_csv(paths.data_dir / "questions.csv"),
         solutions=pd.read_csv(paths.data_dir / "solutions.csv"),
@@ -114,7 +122,7 @@ def load_platform_artifacts(*, paths: PlatformPaths) -> PlatformArtifacts:
         fine_tuning_summary=_read_json(paths.fine_tuning_dir / "fine_tuning_summary.json"),
         fine_tuning_metrics=_read_json(paths.fine_tuning_dir / "difficulty_metrics.json"),
         dataset_summary=_read_json(paths.data_dir / "dataset_summary.json"),
-        official_sources=_official_sources(),
+        official_sources=_official_sources(paths.subject),
         db_status=_load_db_status(paths.data_dir / "adaptive_learning.db"),
         agent_traces=_load_agent_traces(paths.agent_trace_dir),
     )
@@ -128,7 +136,7 @@ def build_platform_services(*, paths: PlatformPaths, artifacts: PlatformArtifact
     rag_engine = RAGEngine.from_artifacts(
         data_dir=paths.data_dir,
         index_dir=paths.rag_index_dir,
-        generator_backend="grounded",
+        generator_backend=rag_generator_backend(),
     )
     agent_suite = build_agent_suite(
         data_dir=paths.data_dir,
@@ -142,7 +150,10 @@ def build_platform_services(*, paths: PlatformPaths, artifacts: PlatformArtifact
         concept_graph=artifacts.concept_graph,
     )
     generation_context = load_generation_context(data_dir=paths.data_dir)
-    content_generator = build_content_generator(context=generation_context, backend="grounded")
+    content_generator = build_content_generator(
+        context=generation_context,
+        backend=content_generation_backend(),
+    )
 
     tuned_generator = None
     calibrator_path = paths.fine_tuning_dir / "difficulty_calibrator.joblib"
@@ -160,6 +171,41 @@ def build_platform_services(*, paths: PlatformPaths, artifacts: PlatformArtifact
         content_generator=content_generator,
         tuned_generator=tuned_generator,
     )
+
+
+def build_practice_attempt(
+    *,
+    concept_id: str,
+    concept_name: str,
+    chapter_name: str,
+    difficulty: str,
+    correct: bool,
+    response_time_sec: int,
+    user_id: str,
+    simulation_step: int,
+) -> pd.DataFrame:
+    """Single attempt row for a generated practice question (no question_id in bank)."""
+    import pandas as pd
+    from adaptive_learning.mastery.schemas import AttemptRecord
+
+    ts = pd.Timestamp.utcnow().floor("s").isoformat()
+    qid = f"q_gen_{concept_id}_{simulation_step:04d}"
+    record = AttemptRecord(
+        attempt_id=f"{user_id}_practice_{simulation_step:04d}",
+        user_id=user_id,
+        simulation_step=simulation_step,
+        timestamp=ts,
+        question_id=qid,
+        concept_id=concept_id,
+        concept_name=concept_name,
+        chapter_name=chapter_name,
+        difficulty=difficulty,
+        correct=int(correct),
+        response_time_sec=response_time_sec,
+        expected_time_sec=90,
+        source="streamlit_practice",
+    )
+    return pd.DataFrame([record.to_dict()])
 
 
 def build_manual_attempts(
@@ -207,6 +253,34 @@ def compute_live_mastery_snapshot(
         return fallback_snapshot.copy()
     combined_attempts = pd.concat([base_attempts, manual_attempts], ignore_index=True)
     return mastery_engine.compute_snapshot(combined_attempts)
+
+
+def build_empty_mastery_snapshot(concepts: pd.DataFrame, reference_snapshot: pd.DataFrame) -> pd.DataFrame:
+    """Fallback snapshot with zero mastery when user has no attempts."""
+    concept_rows = concepts[concepts["node_type"] == "concept"].copy()
+    if concept_rows.empty:
+        return reference_snapshot.head(0)
+    records = []
+    for _, row in concept_rows.iterrows():
+        records.append({
+            "user_id": "",
+            "concept_id": str(row["concept_id"]),
+            "concept_name": str(row["name"]),
+            "chapter_name": str(row["chapter_name"]),
+            "attempts_count": 0,
+            "correct_count": 0,
+            "weighted_accuracy": 0.0,
+            "completion": 0.0,
+            "speed": 0.0,
+            "challenge": 0.0,
+            "confidence": 0.0,
+            "direct_mastery": 0.0,
+            "graph_support": 0.0,
+            "graph_adjusted_mastery": 0.0,
+            "mastery_band": "needs_support",
+            "explanation": "No attempts recorded yet.",
+        })
+    return pd.DataFrame(records)
 
 
 def target_difficulty_for_band(mastery_band: str) -> str:
@@ -276,7 +350,31 @@ def _read_json(path: Path) -> dict:
         return json.load(file_obj)
 
 
-def _official_sources() -> list[dict[str, str]]:
+def _official_sources(subject: str) -> list[dict[str, str]]:
+    if subject == "science":
+        return [
+            {
+                "label": "CBSE Class X Science Syllabus 2025-26",
+                "kind": "syllabus",
+                "document": "CBSE Science Subject Code 086 Classes IX and X (2025-26)",
+                "url": "https://cbseacademic.nic.in/web_material/CurriculumMain26/Sec/Science_Sec_2025-26.pdf",
+                "usage": "Canonical chapter scope, official topic wording, unit marks, and periods.",
+            },
+            {
+                "label": "NCERT Class X Science Textbook Contents",
+                "kind": "textbook_index",
+                "document": "NCERT Science Textbook for Class X (Contents)",
+                "url": "https://ncert.nic.in/textbook/pdf/jesc1ps.pdf",
+                "usage": "Canonical chapter decomposition used to infer official textbook-backed concept coverage.",
+            },
+            {
+                "label": "NCERT Class X Science Textbook Index Page",
+                "kind": "textbook_portal",
+                "document": "NCERT Textbook Portal",
+                "url": "https://ncert.nic.in/textbook.php?jesc1=ps-13",
+                "usage": "Human-readable entry point for textbook contents and chapter PDFs.",
+            },
+        ]
     return [
         {
             "label": "CBSE Class X Mathematics Syllabus 2024-25",

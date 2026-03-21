@@ -10,13 +10,24 @@ SRC = ROOT / "src"
 if str(SRC) not in sys.path:
     sys.path.insert(0, str(SRC))
 
-from adaptive_learning.deployment.runtime import DeploymentConfig, ensure_platform_ready
+from adaptive_learning.data.generator import SUPPORTED_SUBJECTS
+from adaptive_learning.deployment.runtime import ensure_platform_ready
+from adaptive_learning.deployment.settings import DeploymentConfig
 from adaptive_learning.ui.data_access import default_paths
+
+
+ALL_SUBJECTS = [*SUPPORTED_SUBJECTS, "all"]
 
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
         description="Build all local artifacts needed by the adaptive learning platform."
+    )
+    parser.add_argument(
+        "--subject",
+        default="all",
+        choices=ALL_SUBJECTS,
+        help="Subject artifact set to build.",
     )
     parser.add_argument(
         "--embedding-backend",
@@ -32,23 +43,32 @@ def parse_args() -> argparse.Namespace:
     return parser.parse_args()
 
 
+def _subjects_to_build(subject_arg: str) -> list[str]:
+    if subject_arg == "all":
+        return list(SUPPORTED_SUBJECTS)
+    return [subject_arg]
+
+
 def main() -> None:
     args = parse_args()
-    paths = default_paths(ROOT)
     config = DeploymentConfig(
         embedding_backend=args.embedding_backend,
         auto_build=True,
     )
-    status = ensure_platform_ready(paths=paths, config=config, force_rebuild=args.force)
-    print(
-        f"artifacts_ready={status.artifacts_ready} "
-        f"auto_built={status.auto_built} "
-        f"embedding_backend={status.embedding_backend}"
-    )
-    if status.missing_paths:
-        print("missing_paths=")
-        for path in status.missing_paths:
-            print(path)
+
+    for subject in _subjects_to_build(args.subject):
+        paths = default_paths(ROOT, subject=subject)
+        status = ensure_platform_ready(paths=paths, config=config, force_rebuild=args.force)
+        print(
+            f"subject={subject} "
+            f"artifacts_ready={status.artifacts_ready} "
+            f"auto_built={status.auto_built} "
+            f"embedding_backend={status.embedding_backend}"
+        )
+        if status.missing_paths:
+            print("missing_paths=")
+            for path in status.missing_paths:
+                print(path)
 
 
 if __name__ == "__main__":

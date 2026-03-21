@@ -1,10 +1,18 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
-from typing import Any
+from typing import Any, Protocol, runtime_checkable
 
 from adaptive_learning.agents.schemas import AgentResponse, ToolTrace
 from adaptive_learning.agents.tools import AgentToolbox
+
+
+@runtime_checkable
+class Agent(Protocol):
+    name: str
+    toolbox: AgentToolbox
+
+    def respond(self, user_query: str, **kwargs: Any) -> AgentResponse: ...
 
 
 @dataclass
@@ -12,7 +20,7 @@ class BaseAgent:
     name: str
     toolbox: AgentToolbox
 
-    def respond(self, user_query: str) -> AgentResponse:
+    def respond(self, user_query: str, **kwargs: Any) -> AgentResponse:
         raise NotImplementedError
 
     def _trace(

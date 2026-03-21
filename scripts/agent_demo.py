@@ -19,7 +19,7 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Run a modular agent demo.")
     parser.add_argument(
         "--agent",
-        choices=["tutor", "practice", "query"],
+        choices=["tutor", "practice", "query", "learn"],
         required=True,
     )
     parser.add_argument(

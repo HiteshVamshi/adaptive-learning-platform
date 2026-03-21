@@ -1,12 +1,12 @@
 from __future__ import annotations
 
-import json
 from dataclasses import asdict, dataclass
 from pathlib import Path
 
 import pandas as pd
-from networkx.readwrite import json_graph
 
+from adaptive_learning.config import rag_generator_backend
+from adaptive_learning.data.curriculum_artifacts import load_concepts_and_graph
 from adaptive_learning.rag.generator import GeneratedAnswer, build_answer_generator
 from adaptive_learning.search.query_understanding import QueryIntent, QueryUnderstandingEngine
 from adaptive_learning.search.vector_store import FaissVectorStore, build_embedder
@@ -42,11 +42,13 @@ class RAGEngine:
         query_engine: QueryUnderstandingEngine,
         generator_backend: str = "auto",
         generator_model_name: str = "google/flan-t5-base",
+        max_context_chars: int = 12_000,
     ) -> None:
         self.chunks = chunks.copy()
         self.chunks_by_id = self.chunks.set_index("chunk_id")
         self.vector_store = vector_store
         self.query_engine = query_engine
+        self.max_context_chars = max_context_chars
         self.answer_generator = build_answer_generator(
             generator_backend=generator_backend,
             model_name=generator_model_name,
@@ -60,12 +62,12 @@ class RAGEngine:
         index_dir: Path,
         embedding_backend: str | None = None,
         embedding_model_name: str | None = None,
-        generator_backend: str = "auto",
+        generator_backend: str | None = None,
         generator_model_name: str = "google/flan-t5-base",
+        max_context_chars: int = 12_000,
     ) -> "RAGEngine":
-        concepts = pd.read_csv(data_dir / "concepts.csv")
-        with (data_dir / "concept_graph.json").open("r", encoding="utf-8") as file_obj:
-            concept_graph = json_graph.node_link_graph(json.load(file_obj), multigraph=True)
+        concepts, concept_graph = load_concepts_and_graph(data_dir)
+        resolved_backend = generator_backend if generator_backend is not None else rag_generator_backend()
 
         vector_store = FaissVectorStore.load(
             input_dir=index_dir,
@@ -78,20 +80,21 @@ class RAGEngine:
             chunks=vector_store.documents,
             vector_store=vector_store,
             query_engine=query_engine,
-            generator_backend=generator_backend,
+            generator_backend=resolved_backend,
             generator_model_name=generator_model_name,
+            max_context_chars=max_context_chars,
         )
 
     def answer_question(self, query: str, top_k: int = 4) -> RAGResponse:
         intent = self.query_engine.understand(query)
         expanded_query = self._expanded_query(intent)
-        vector_hits = self.vector_store.search(expanded_query, top_k=top_k)
+        vector_hits = self.vector_store.search(expanded_query, top_k=top_k * 2)
         vector_hits = self._enrich_with_linked_solutions(vector_hits)
 
-        retrieved_chunks: list[RetrievedChunk] = []
-        for hit in vector_hits[:top_k]:
+        raw_chunks: list[RetrievedChunk] = []
+        for hit in vector_hits:
             row = self.chunks_by_id.loc[hit.doc_id]
-            retrieved_chunks.append(
+            raw_chunks.append(
                 RetrievedChunk(
                     chunk_id=str(hit.doc_id),
                     chunk_type=str(row["chunk_type"]),
@@ -104,6 +107,12 @@ class RAGEngine:
                     score=float(hit.score),
                 )
             )
+
+        retrieved_chunks = self._dedupe_and_budget_chunks(
+            raw_chunks,
+            top_k=top_k,
+            max_chars=self.max_context_chars,
+        )
 
         answer = self.answer_generator.generate(
             query=query,
@@ -130,6 +139,36 @@ class RAGEngine:
                 )
                 seen_doc_ids.add(solution_chunk_id)
         return sorted(enriched_hits, key=lambda item: item.score, reverse=True)
+
+    @staticmethod
+    def _dedupe_and_budget_chunks(
+        chunks: list[RetrievedChunk],
+        *,
+        top_k: int,
+        max_chars: int,
+    ) -> list[RetrievedChunk]:
+        by_source: dict[str, RetrievedChunk] = {}
+        for chunk in sorted(chunks, key=lambda item: item.score, reverse=True):
+            source_key = str(chunk.source_id)
+            if source_key in by_source:
+                continue
+            by_source[source_key] = chunk
+        ordered = sorted(by_source.values(), key=lambda item: item.score, reverse=True)
+        selected: list[RetrievedChunk] = []
+        total = 0
+        for chunk in ordered:
+            if len(selected) >= top_k:
+                break
+            piece_len = len(str(chunk.content))
+            if not selected:
+                selected.append(chunk)
+                total += piece_len
+                continue
+            if total + piece_len > max_chars:
+                continue
+            selected.append(chunk)
+            total += piece_len
+        return selected
 
     def _expanded_query(self, intent: QueryIntent) -> str:
         segments = [intent.original_query, *intent.expanded_terms]

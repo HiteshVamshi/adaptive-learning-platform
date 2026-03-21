@@ -43,6 +43,7 @@ def _write_metadata(connection: sqlite3.Connection, dataset: GeneratedDataset) -
     cursor.execute("drop table if exists dataset_metadata")
     cursor.execute("create table dataset_metadata (key text primary key, value text not null)")
     metadata = {
+        "subject": dataset.subject,
         "concept_count": len(dataset.concepts),
         "question_count": len(dataset.questions),
         "question_sources": dataset.questions["source"].value_counts().to_dict(),

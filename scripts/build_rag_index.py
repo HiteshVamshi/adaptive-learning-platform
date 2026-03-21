@@ -10,20 +10,28 @@ SRC = ROOT / "src"
 if str(SRC) not in sys.path:
     sys.path.insert(0, str(SRC))
 
+from adaptive_learning.data.generator import SUPPORTED_SUBJECTS
 from adaptive_learning.rag.build_index import build_rag_index
+from adaptive_learning.ui.data_access import default_paths
 
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Build the RAG chunk index.")
     parser.add_argument(
+        "--subject",
+        default="math",
+        choices=SUPPORTED_SUBJECTS,
+        help="Subject artifact set to use.",
+    )
+    parser.add_argument(
         "--data-dir",
         type=Path,
-        default=ROOT / "artifacts" / "bootstrap_data",
+        default=None,
     )
     parser.add_argument(
         "--output-dir",
         type=Path,
-        default=ROOT / "artifacts" / "rag_index",
+        default=None,
     )
     parser.add_argument(
         "--embedding-backend",
@@ -39,12 +47,16 @@ def parse_args() -> argparse.Namespace:
 
 def main() -> None:
     args = parse_args()
+    paths = default_paths(ROOT, subject=args.subject)
+    data_dir = args.data_dir or paths.data_dir
+    output_dir = args.output_dir or paths.rag_index_dir
     result = build_rag_index(
-        data_dir=args.data_dir,
-        output_dir=args.output_dir,
+        data_dir=data_dir,
+        output_dir=output_dir,
         embedding_backend=args.embedding_backend,
         model_name=args.embedding_model,
     )
+    print(f"Subject: {args.subject}")
     print(f"Wrote RAG index to {result.output_dir}")
     print(
         "Indexed "
