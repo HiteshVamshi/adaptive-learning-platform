@@ -8,7 +8,7 @@ import plotly.graph_objects as go
 import streamlit as st
 
 from adaptive_learning.ui.data_access import PlatformArtifacts
-from adaptive_learning.ui.pages._common import subject_label
+from adaptive_learning.ui.page_views._common import subject_label
 from adaptive_learning.ui.table_display import column_config_mastery, show_table
 
 __all__ = ["render_user_dashboard"]

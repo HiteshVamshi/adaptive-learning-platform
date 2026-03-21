@@ -10,9 +10,9 @@ from adaptive_learning.ui.data_access import (
     build_manual_attempts,
     compute_live_mastery_snapshot,
 )
-from adaptive_learning.ui.pages._common import concept_options
+from adaptive_learning.ui.page_views._common import concept_options
 from adaptive_learning.ui.table_display import column_config_mastery, show_table
-from adaptive_learning.ui.pages.session import session_keys
+from adaptive_learning.ui.page_views.session import session_keys
 from adaptive_learning.ui.user_progress import append_attempts, get_user_attempts, get_next_simulation_step
 
 __all__ = ["render_test_page"]

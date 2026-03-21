@@ -4,7 +4,7 @@ import pandas as pd
 import streamlit as st
 
 from adaptive_learning.ui.data_access import PlatformArtifacts, PlatformServices
-from adaptive_learning.ui.pages._common import concept_options
+from adaptive_learning.ui.page_views._common import concept_options
 from adaptive_learning.ui.table_display import column_config_adaptation_comparison, show_table
 from adaptive_learning.ui.visualization import parse_pipe_list
 

@@ -9,7 +9,7 @@ from adaptive_learning.ui.data_access import (
     build_practice_attempt,
     target_difficulty_for_band,
 )
-from adaptive_learning.ui.pages._common import concept_options, option_index
+from adaptive_learning.ui.page_views._common import concept_options, option_index
 from adaptive_learning.ui.table_display import column_config_mastery, column_config_recommendations, show_table
 from adaptive_learning.ui.user_progress import append_attempts, get_next_simulation_step
 

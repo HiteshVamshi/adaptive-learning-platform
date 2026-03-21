@@ -4,7 +4,7 @@ import pandas as pd
 import streamlit as st
 
 from adaptive_learning.ui.data_access import PlatformArtifacts, PlatformServices
-from adaptive_learning.ui.pages._common import subject_label
+from adaptive_learning.ui.page_views._common import subject_label
 from adaptive_learning.ui.table_display import column_config_search_results, show_table
 
 __all__ = ["render_search_page"]

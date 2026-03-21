@@ -4,7 +4,7 @@ import pandas as pd
 import streamlit as st
 
 from adaptive_learning.ui.data_access import PlatformArtifacts, build_chapter_coverage_table
-from adaptive_learning.ui.pages._common import question_source_summary
+from adaptive_learning.ui.page_views._common import question_source_summary
 from adaptive_learning.ui.table_display import (
     column_config_chapter_sources,
     column_config_concepts_compact,
