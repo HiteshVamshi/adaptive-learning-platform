@@ -8,15 +8,14 @@ from pathlib import Path
 import pandas as pd
 from networkx.readwrite import json_graph
 
-from adaptive_learning.agents.pipeline import AgentSuite, build_agent_suite
-from adaptive_learning.config import content_generation_backend, rag_generator_backend
-from adaptive_learning.content_generation.generator import build_content_generator
-from adaptive_learning.content_generation.pipeline import load_generation_context
-from adaptive_learning.fine_tuning.adapter import DifficultyTunedGenerator
-from adaptive_learning.mastery.engine import ConceptMasteryEngine
-from adaptive_learning.mastery.schemas import AttemptRecord
-from adaptive_learning.rag.pipeline import RAGEngine
-from adaptive_learning.search.hybrid_search import HybridSearchEngine
+from typing import TYPE_CHECKING
+
+if TYPE_CHECKING:
+    from adaptive_learning.agents.pipeline import AgentSuite
+    from adaptive_learning.fine_tuning.adapter import DifficultyTunedGenerator
+    from adaptive_learning.mastery.engine import ConceptMasteryEngine
+    from adaptive_learning.rag.pipeline import RAGEngine
+    from adaptive_learning.search.hybrid_search import HybridSearchEngine
 
 
 @dataclass(frozen=True)
@@ -67,12 +66,12 @@ class PlatformArtifacts:
 
 @dataclass(frozen=True)
 class PlatformServices:
-    search_engine: HybridSearchEngine
-    rag_engine: RAGEngine
-    agent_suite: AgentSuite
-    mastery_engine: ConceptMasteryEngine
+    search_engine: "HybridSearchEngine"
+    rag_engine: "RAGEngine"
+    agent_suite: "AgentSuite"
+    mastery_engine: "ConceptMasteryEngine"
     content_generator: object
-    tuned_generator: DifficultyTunedGenerator | None
+    tuned_generator: "DifficultyTunedGenerator | None"
 
 
 def default_paths(root_dir: Path, subject: str = "math") -> PlatformPaths:
@@ -129,6 +128,15 @@ def load_platform_artifacts(*, paths: PlatformPaths) -> PlatformArtifacts:
 
 
 def build_platform_services(*, paths: PlatformPaths, artifacts: PlatformArtifacts) -> PlatformServices:
+    from adaptive_learning.agents.pipeline import build_agent_suite
+    from adaptive_learning.config import content_generation_backend, rag_generator_backend
+    from adaptive_learning.content_generation.generator import build_content_generator
+    from adaptive_learning.content_generation.pipeline import load_generation_context
+    from adaptive_learning.fine_tuning.adapter import DifficultyTunedGenerator
+    from adaptive_learning.mastery.engine import ConceptMasteryEngine
+    from adaptive_learning.rag.pipeline import RAGEngine
+    from adaptive_learning.search.hybrid_search import HybridSearchEngine
+
     search_engine = HybridSearchEngine.from_artifacts(
         data_dir=paths.data_dir,
         index_dir=paths.search_index_dir,
@@ -215,6 +223,8 @@ def build_manual_attempts(
     start_step: int,
     user_id: str,
 ) -> pd.DataFrame:
+    from adaptive_learning.mastery.schemas import AttemptRecord
+
     question_lookup = questions.set_index("question_id")
     timestamp = pd.Timestamp.utcnow().floor("s")
     attempts: list[dict] = []
@@ -246,7 +256,7 @@ def compute_live_mastery_snapshot(
     *,
     base_attempts: pd.DataFrame,
     manual_attempts: pd.DataFrame,
-    mastery_engine: ConceptMasteryEngine,
+    mastery_engine: "ConceptMasteryEngine",
     fallback_snapshot: pd.DataFrame,
 ) -> pd.DataFrame:
     if manual_attempts.empty:

@@ -1,8 +1,11 @@
+# Keep in sync with pyproject.toml (Streamlit Community Cloud uses this file).
 streamlit>=1.43
 numpy>=1.26
 pandas>=2.2
 networkx>=3.2
+sentence-transformers>=3.3
 faiss-cpu>=1.8
 rank-bm25>=0.2.2
 scikit-learn>=1.4
 joblib>=1.4
+plotly>=5.18

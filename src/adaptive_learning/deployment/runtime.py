@@ -2,7 +2,6 @@ from __future__ import annotations
 
 from pathlib import Path
 
-from adaptive_learning.deployment.build_pipeline import run_full_build
 from adaptive_learning.deployment.settings import DeploymentConfig, DeploymentStatus
 
 
@@ -24,6 +23,9 @@ def ensure_platform_ready(*, paths, config: DeploymentConfig | None = None, forc
             missing_paths=[str(path) for path in missing],
             embedding_backend=config.embedding_backend,
         )
+
+    # Import only when a full build is required (avoids loading generator/RAG/search on normal app startup).
+    from adaptive_learning.deployment.build_pipeline import run_full_build
 
     run_full_build(paths=paths, config=config)
     still_missing = missing_artifacts(paths=paths)
